@@ -1,0 +1,25 @@
+﻿namespace Alpha.UserGuide
+{
+    using System.Reflection;
+    using System.Web;
+
+    public class MvcApplication : HttpApplication
+    {
+        protected void Application_Start()
+        {
+            this.CheatApplicationName();
+        }
+
+        private void CheatApplicationName()
+        {
+            string applicationName = "AlphaSite";
+
+            //// Change the Application Name in runtime.
+            var runtimeInfo = typeof(HttpRuntime).GetField("_theRuntime", BindingFlags.Static | BindingFlags.NonPublic);
+            var theRuntime = (HttpRuntime)runtimeInfo.GetValue(null);
+            var appNameInfo = typeof(HttpRuntime).GetField("_appDomainAppId", BindingFlags.Instance | BindingFlags.NonPublic);
+
+            appNameInfo.SetValue(theRuntime, applicationName);
+        }
+    }
+}
