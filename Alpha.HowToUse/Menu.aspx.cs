@@ -1,5 +1,6 @@
 namespace Alpha.HowToUse
 {
+    using System.Text.RegularExpressions;
     using System.Web;
     using System.Web.UI;
     using Fanex.Age.UI;
@@ -42,7 +43,7 @@ namespace Alpha.HowToUse
             SiteMapNode rootNode = SiteMap.RootNode;
             SiteMapNode contextNode = null;
             contextNode = rootNode.ChildNodes[0];
-
+            
             RenderMenu(contextNode, ref tpl);
         }
 
@@ -57,6 +58,11 @@ namespace Alpha.HowToUse
 
             int subMenuCount = node.ChildNodes.Count;
             tpl.SubMenu.Clear();
+
+            tpl.AgUI.userguideurl = Regex.Replace(Response.ApplyAppPathModifier("~/index.aspx"),
+                "site-howtouse",
+                "site-userguide",
+                RegexOptions.IgnoreCase);
 
             for (int i = 0; i < subMenuCount; i++)
             {

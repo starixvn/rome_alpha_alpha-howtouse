@@ -122,17 +122,21 @@ namespace Alpha.HowToUse
 
 		public class Menu_AgUI_Block: Block
 		{
-			protected static string s20 = "<div class=\"button_left\"><div class=\"Bleft_Parent0\"><a class=\"Bleft_ParentNew\" id=\"b0\" href=\"/site-userguide/index.aspx\" onclick=\"MenuClick('b0')\" target=\"_blank\"><span id=\"menu2\">";
-			protected static string s21{get{return LocalResources.HowToUse.UserGuide;}}
-			protected static string s22 = "</span></a></div></div>";
+			protected static string s20 = "<div class=\"button_left\"><div class=\"Bleft_Parent0\"><a class=\"Bleft_ParentNew\" id=\"b0\" href=\"";
+			public string userguideurl = "{userguideurl}";
+			protected static string s21 = "\" onclick=\"MenuClick('b0')\" target=\"_blank\"><span id=\"menu2\">";
+			protected static string s22{get{return LocalResources.HowToUse.UserGuide;}}
+			protected static string s23 = "</span></a></div></div>";
 			public override void ToString(ref StringBuilder bd)
 			{
 				if(!Visible) return;
 				if(RenderChild)
 				{
 					bd.Append(s20);
+					bd.Append(userguideurl);
 					bd.Append(s21);
 					bd.Append(s22);
+					bd.Append(s23);
 				}
 				if(IsAssigned){bd.Append(Value);}
 			}
