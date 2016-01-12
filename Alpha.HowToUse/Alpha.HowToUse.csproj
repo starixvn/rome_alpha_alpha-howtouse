@@ -513,6 +513,9 @@
       <DependentUpon>Content.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Content.htm.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -520,6 +523,9 @@
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.htm.cs" />
     <Compile Include="LocalResources\HowToUse.Designer.cs">
@@ -531,39 +537,66 @@
       <DependentUpon>Menu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Menu.htm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_en-US.aspx.cs">
       <DependentUpon>AnnouncementHRFixedOdds_en-US.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_en-US.aspx.designer.cs">
+      <DependentUpon>AnnouncementHRFixedOdds_en-US.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ja-JP.aspx.cs">
       <DependentUpon>AnnouncementHRFixedOdds_ja-JP.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ja-JP.aspx.designer.cs">
+      <DependentUpon>AnnouncementHRFixedOdds_ja-JP.aspx</DependentUpon>
     </Compile>
     <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ko-KR.aspx.cs">
       <DependentUpon>AnnouncementHRFixedOdds_ko-KR.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ko-KR.aspx.designer.cs">
+      <DependentUpon>AnnouncementHRFixedOdds_ko-KR.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_th-TH.aspx.cs">
       <DependentUpon>AnnouncementHRFixedOdds_th-TH.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_th-TH.aspx.designer.cs">
+      <DependentUpon>AnnouncementHRFixedOdds_th-TH.aspx</DependentUpon>
     </Compile>
     <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_vi-VN.aspx.cs">
       <DependentUpon>AnnouncementHRFixedOdds_vi-VN.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_vi-VN.aspx.designer.cs">
+      <DependentUpon>AnnouncementHRFixedOdds_vi-VN.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-CN.aspx.cs">
       <DependentUpon>AnnouncementHRFixedOdds_zh-CN.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-CN.aspx.designer.cs">
+      <DependentUpon>AnnouncementHRFixedOdds_zh-CN.aspx</DependentUpon>
     </Compile>
     <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-TW.aspx.cs">
       <DependentUpon>AnnouncementHRFixedOdds_zh-TW.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-TW.aspx.designer.cs">
+      <DependentUpon>AnnouncementHRFixedOdds_zh-TW.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Top.aspx.cs">
       <DependentUpon>Top.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
     </Compile>
     <Compile Include="Top.htm.cs" />
   </ItemGroup>

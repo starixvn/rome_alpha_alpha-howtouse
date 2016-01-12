@@ -13,7 +13,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:30:00</publishTime>
     </File>
     <File Include="bin/Alpha.HowToUse.dll">
-      <publishTime>01/12/2016 09:33:56</publishTime>
+      <publishTime>01/12/2016 12:36:41</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>01/12/2016 09:30:00</publishTime>
@@ -97,7 +97,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:30:00</publishTime>
     </File>
     <File Include="bin/ja-JP/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 09:33:56</publishTime>
+      <publishTime>01/12/2016 12:36:42</publishTime>
     </File>
     <File Include="bin/ja-JP/Fanex.CustomerSetting.Module.Casino.resources.dll">
       <publishTime>01/12/2016 09:30:00</publishTime>
@@ -112,7 +112,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:58</publishTime>
     </File>
     <File Include="bin/ko-KR/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 09:33:57</publishTime>
+      <publishTime>01/12/2016 12:36:42</publishTime>
     </File>
     <File Include="bin/ko-KR/Fanex.CustomerSetting.Module.Casino.resources.dll">
       <publishTime>01/12/2016 09:30:00</publishTime>
@@ -214,7 +214,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/09/2013 11:05:12</publishTime>
     </File>
     <File Include="bin/th-TH/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 09:33:57</publishTime>
+      <publishTime>01/12/2016 12:36:42</publishTime>
     </File>
     <File Include="bin/th-TH/Fanex.CustomerSetting.Module.Casino.resources.dll">
       <publishTime>01/12/2016 09:30:00</publishTime>
@@ -232,7 +232,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:30:00</publishTime>
     </File>
     <File Include="bin/vi-VN/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 09:33:57</publishTime>
+      <publishTime>01/12/2016 12:36:42</publishTime>
     </File>
     <File Include="bin/vi-VN/Fanex.CustomerSetting.Module.Casino.resources.dll">
       <publishTime>01/12/2016 09:30:00</publishTime>
@@ -247,7 +247,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:58</publishTime>
     </File>
     <File Include="bin/zh-CN/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 09:33:57</publishTime>
+      <publishTime>01/12/2016 12:36:42</publishTime>
     </File>
     <File Include="bin/zh-CN/Fanex.CustomerSetting.Module.Casino.resources.dll">
       <publishTime>01/12/2016 09:30:01</publishTime>
@@ -262,7 +262,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:58</publishTime>
     </File>
     <File Include="bin/zh-TW/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 09:33:57</publishTime>
+      <publishTime>01/12/2016 12:36:42</publishTime>
     </File>
     <File Include="bin/zh-TW/Fanex.CustomerSetting.Module.Casino.resources.dll">
       <publishTime>01/12/2016 09:30:01</publishTime>
@@ -280,7 +280,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:27</publishTime>
     </File>
     <File Include="Content.aspx">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>01/12/2016 12:35:52</publishTime>
     </File>
     <File Include="Content.htm">
       <publishTime>01/12/2016 09:29:27</publishTime>
@@ -295,7 +295,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:27</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>01/12/2016 12:35:52</publishTime>
     </File>
     <File Include="Index.htm">
       <publishTime>01/12/2016 09:29:27</publishTime>
@@ -322,7 +322,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:27</publishTime>
     </File>
     <File Include="Menu.aspx">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>01/12/2016 12:35:51</publishTime>
     </File>
     <File Include="Menu.htm">
       <publishTime>01/12/2016 09:29:27</publishTime>
@@ -700,25 +700,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:28</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_en-US.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:51</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_ja-JP.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:51</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_ko-KR.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:51</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_th-TH.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:51</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_vi-VN.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:28</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_zh-CN.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:28</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_zh-TW.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:28</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/betsetting-CN.png">
       <publishTime>01/12/2016 09:29:28</publishTime>
@@ -1009,13 +1009,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/12/2016 09:29:28</publishTime>
     </File>
     <File Include="Top.aspx">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 12:35:27</publishTime>
     </File>
     <File Include="Top.htm">
       <publishTime>01/12/2016 09:29:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/12/2016 09:33:57</publishTime>
+      <publishTime>01/12/2016 12:36:43</publishTime>
     </File>
     <File Include="Web.sitemap">
       <publishTime>01/12/2016 09:29:28</publishTime>

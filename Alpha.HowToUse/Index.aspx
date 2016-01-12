@@ -1,1 +1,1 @@
-﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Index.aspx.cs" Inherits="Alpha.HowToUse.Index_Page" %>
+﻿<%@ Page Language="C#" AutoEventWireup="false" Inherits="Alpha.HowToUse.Index_Page" Codebehind="Index.aspx.cs" %>
