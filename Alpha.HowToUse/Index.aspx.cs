@@ -1,5 +1,6 @@
 namespace Alpha.HowToUse
 {
+    using System.Web.Security;
     using Sunplus.Agent.Model.Entities;
 
     public partial class Index_Page : Fanex.Age.UI.TplPage
@@ -8,6 +9,13 @@ namespace Alpha.HowToUse
 
         public override void ProcessRequest(ref System.Collections.Hashtable p)
         {
+            if (UserSession.Current.CustId == 0)
+            {
+                Response.Redirect(FormsAuthentication.LoginUrl, true);
+
+                return;
+            }
+
             string url = Request["src"];
             if (!string.IsNullOrEmpty(url))
             {

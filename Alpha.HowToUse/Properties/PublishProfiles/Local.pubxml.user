@@ -6,1019 +6,1028 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\Deploy\AlphaResultDeploy\howtouse</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\nexcelprojects\_gitlab\alpha\fanex.alpha\__Public\HowToUse</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Alpha.Auth.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>01/06/2016 13:45:45</publishTime>
     </File>
     <File Include="bin/Alpha.HowToUse.dll">
-      <publishTime>01/12/2016 12:36:41</publishTime>
+      <publishTime>01/12/2016 13:43:30</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:19:20</publishTime>
     </File>
     <File Include="bin/AutoMapper.dll">
-      <publishTime>01/12/2016 09:29:56</publishTime>
+      <publishTime>12/30/2015 10:17:58</publishTime>
     </File>
     <File Include="bin/CaptchaMvc.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:31:36</publishTime>
     </File>
     <File Include="bin/CasinoLibrary.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/CasinoSetting.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/CasinoUtility.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/Couchbase.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:38:36</publishTime>
     </File>
     <File Include="bin/DNAide.dll">
-      <publishTime>01/12/2016 09:29:54</publishTime>
+      <publishTime>12/30/2015 10:19:56</publishTime>
     </File>
     <File Include="bin/Enyim.Caching.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:38:36</publishTime>
     </File>
     <File Include="bin/Fanex.Age.UI.dll">
-      <publishTime>01/12/2016 09:29:55</publishTime>
+      <publishTime>12/30/2015 09:23:05</publishTime>
     </File>
     <File Include="bin/Fanex.Caching.dll">
-      <publishTime>01/12/2016 09:29:54</publishTime>
+      <publishTime>12/30/2015 12:26:39</publishTime>
     </File>
     <File Include="bin/Fanex.Common.dll">
-      <publishTime>01/12/2016 09:29:53</publishTime>
+      <publishTime>12/30/2015 09:18:10</publishTime>
     </File>
     <File Include="bin/Fanex.CustomerSetting.Client40.dll">
-      <publishTime>01/12/2016 09:29:54</publishTime>
+      <publishTime>12/30/2015 10:18:00</publishTime>
     </File>
     <File Include="bin/Fanex.CustomerSetting.Module.Casino.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/Fanex.CustomerSetting.Module.Core.dll">
-      <publishTime>01/12/2016 09:29:54</publishTime>
+      <publishTime>12/30/2015 10:17:56</publishTime>
     </File>
     <File Include="bin/Fanex.CustomerSetting.Module.KenoStatus.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 09:18:10</publishTime>
     </File>
     <File Include="bin/Fanex.CustomerSetting.Security.dll">
-      <publishTime>01/12/2016 09:29:55</publishTime>
+      <publishTime>12/30/2015 10:17:57</publishTime>
     </File>
     <File Include="bin/Fanex.GoldDeluxe.CoreSetting.dll">
-      <publishTime>01/12/2016 09:29:56</publishTime>
+      <publishTime>12/30/2015 10:17:58</publishTime>
     </File>
     <File Include="bin/Fanex.LiveCasino.CoreSetting.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:17:59</publishTime>
     </File>
     <File Include="bin/Fanex.Logging.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:23:04</publishTime>
     </File>
     <File Include="bin/Fanex.PTEngine.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:40:07</publishTime>
     </File>
     <File Include="bin/Fanex.Razorbill.Security.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:18:01</publishTime>
     </File>
     <File Include="bin/Fanex.Security.Captcha.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:31:36</publishTime>
     </File>
     <File Include="bin/Fanex.Security.SpamFilter.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:31:53</publishTime>
     </File>
     <File Include="bin/HandHistoryLibrary.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/IBCCrypt.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:35:38</publishTime>
     </File>
     <File Include="bin/ILogger.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:35:24</publishTime>
     </File>
     <File Include="bin/ja-JP/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 12:36:42</publishTime>
+      <publishTime>01/12/2016 13:43:35</publishTime>
     </File>
     <File Include="bin/ja-JP/Fanex.CustomerSetting.Module.Casino.resources.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/ja-JP/Fanex.GoldDeluxe.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:55</publishTime>
+      <publishTime>12/30/2015 10:17:57</publishTime>
     </File>
     <File Include="bin/ja-JP/Fanex.LiveCasino.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:17:59</publishTime>
     </File>
     <File Include="bin/ja-JP/Fanex.Razorbill.Security.resources.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:18:01</publishTime>
     </File>
     <File Include="bin/ko-KR/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 12:36:42</publishTime>
+      <publishTime>01/12/2016 13:43:41</publishTime>
     </File>
     <File Include="bin/ko-KR/Fanex.CustomerSetting.Module.Casino.resources.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/ko-KR/Fanex.GoldDeluxe.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:55</publishTime>
+      <publishTime>12/30/2015 10:17:57</publishTime>
     </File>
     <File Include="bin/ko-KR/Fanex.LiveCasino.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:17:59</publishTime>
     </File>
     <File Include="bin/ko-KR/Fanex.Razorbill.Security.resources.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:18:01</publishTime>
     </File>
     <File Include="bin/LiveCasinoLibrary.dll">
-      <publishTime>01/12/2016 09:29:56</publishTime>
+      <publishTime>12/30/2015 10:35:40</publishTime>
     </File>
     <File Include="bin/log4net.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:35:39</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Caching.dll">
-      <publishTime>01/12/2016 09:29:53</publishTime>
+      <publishTime>12/30/2015 10:39:04</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
-      <publishTime>01/12/2016 09:29:54</publishTime>
+      <publishTime>12/30/2015 09:23:03</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
-      <publishTime>01/12/2016 09:29:53</publishTime>
+      <publishTime>12/30/2015 10:39:23</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Logging.dll">
-      <publishTime>01/12/2016 09:29:54</publishTime>
+      <publishTime>12/30/2015 09:23:03</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:23:02</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.Unity.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:23:02</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:23:02</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>07/08/2013 15:15:08</publishTime>
+      <publishTime>07/19/2012 10:59:52</publishTime>
     </File>
     <File Include="bin/Nini.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 09:25:45</publishTime>
     </File>
     <File Include="bin/Recaptcha.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:31:36</publishTime>
     </File>
     <File Include="bin/RestSharp.dll">
-      <publishTime>01/12/2016 09:30:03</publishTime>
+      <publishTime>12/30/2015 10:18:00</publishTime>
     </File>
     <File Include="bin/Sunplus.Agent.Configurations.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:25:45</publishTime>
     </File>
     <File Include="bin/Sunplus.Agent.Model.Base.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:18:10</publishTime>
     </File>
     <File Include="bin/Sunplus.Agent.Model.Definitions.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:18:10</publishTime>
     </File>
     <File Include="bin/Sunplus.Agent.Utilities.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:23:04</publishTime>
     </File>
     <File Include="bin/Sunplus.Core.Common.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:36:35</publishTime>
     </File>
     <File Include="bin/Sunplus.Libraries.AOP.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:36:54</publishTime>
     </File>
     <File Include="bin/Sunplus.Libraries.APILogger.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:37:15</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>12/30/2015 09:10:52</publishTime>
     </File>
     <File Include="bin/System.Net.Http.dll">
-      <publishTime>07/09/2013 11:04:48</publishTime>
+      <publishTime>07/10/2012 21:52:12</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>07/09/2013 11:04:28</publishTime>
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>12/30/2015 09:10:52</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.dll">
+      <publishTime>12/30/2015 09:10:52</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>07/09/2013 11:04:28</publishTime>
+      <publishTime>07/10/2012 21:51:54</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>07/09/2013 11:04:28</publishTime>
+      <publishTime>07/10/2012 21:51:54</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>07/09/2013 11:04:28</publishTime>
+      <publishTime>07/10/2012 21:51:54</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>07/09/2013 11:05:12</publishTime>
+      <publishTime>08/17/2012 11:22:26</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>07/09/2013 11:05:12</publishTime>
+      <publishTime>07/10/2012 12:03:34</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>07/09/2013 11:05:12</publishTime>
+      <publishTime>07/10/2012 12:03:34</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>07/09/2013 11:05:12</publishTime>
+      <publishTime>07/10/2012 12:03:34</publishTime>
     </File>
     <File Include="bin/th-TH/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 12:36:42</publishTime>
+      <publishTime>01/12/2016 13:43:47</publishTime>
     </File>
     <File Include="bin/th-TH/Fanex.CustomerSetting.Module.Casino.resources.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/th-TH/Fanex.GoldDeluxe.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:55</publishTime>
+      <publishTime>12/30/2015 10:17:57</publishTime>
     </File>
     <File Include="bin/th-TH/Fanex.LiveCasino.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:17:59</publishTime>
     </File>
     <File Include="bin/th-TH/Fanex.Razorbill.Security.resources.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:18:01</publishTime>
     </File>
     <File Include="bin/TplCore.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 09:23:05</publishTime>
     </File>
     <File Include="bin/vi-VN/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 12:36:42</publishTime>
+      <publishTime>01/12/2016 13:43:54</publishTime>
     </File>
     <File Include="bin/vi-VN/Fanex.CustomerSetting.Module.Casino.resources.dll">
-      <publishTime>01/12/2016 09:30:00</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/vi-VN/Fanex.GoldDeluxe.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:56</publishTime>
+      <publishTime>12/30/2015 10:17:58</publishTime>
     </File>
     <File Include="bin/vi-VN/Fanex.LiveCasino.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:17:59</publishTime>
     </File>
     <File Include="bin/vi-VN/Fanex.Razorbill.Security.resources.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:18:01</publishTime>
     </File>
     <File Include="bin/zh-CN/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 12:36:42</publishTime>
+      <publishTime>01/12/2016 13:44:01</publishTime>
     </File>
     <File Include="bin/zh-CN/Fanex.CustomerSetting.Module.Casino.resources.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/zh-CN/Fanex.GoldDeluxe.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:56</publishTime>
+      <publishTime>12/30/2015 10:17:58</publishTime>
     </File>
     <File Include="bin/zh-CN/Fanex.LiveCasino.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:17:59</publishTime>
     </File>
     <File Include="bin/zh-CN/Fanex.Razorbill.Security.resources.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:18:01</publishTime>
     </File>
     <File Include="bin/zh-TW/Alpha.HowToUse.resources.dll">
-      <publishTime>01/12/2016 12:36:42</publishTime>
+      <publishTime>01/12/2016 13:44:18</publishTime>
     </File>
     <File Include="bin/zh-TW/Fanex.CustomerSetting.Module.Casino.resources.dll">
-      <publishTime>01/12/2016 09:30:01</publishTime>
+      <publishTime>12/30/2015 10:19:38</publishTime>
     </File>
     <File Include="bin/zh-TW/Fanex.GoldDeluxe.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:56</publishTime>
+      <publishTime>12/30/2015 10:17:58</publishTime>
     </File>
     <File Include="bin/zh-TW/Fanex.LiveCasino.CoreSetting.resources.dll">
-      <publishTime>01/12/2016 09:29:59</publishTime>
+      <publishTime>12/30/2015 10:17:59</publishTime>
     </File>
     <File Include="bin/zh-TW/Fanex.Razorbill.Security.resources.dll">
-      <publishTime>01/12/2016 09:29:58</publishTime>
+      <publishTime>12/30/2015 10:18:01</publishTime>
     </File>
     <File Include="BlankPage.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Content.aspx">
-      <publishTime>01/12/2016 12:35:52</publishTime>
+      <publishTime>01/12/2016 12:44:14</publishTime>
     </File>
     <File Include="Content.htm">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:30:12</publishTime>
     </File>
     <File Include="Footer.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>01/12/2016 13:30:02</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 10:24:58</publishTime>
     </File>
     <File Include="Handlers/Flash.ashx">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 14:15:10</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>01/12/2016 12:35:52</publishTime>
+      <publishTime>01/12/2016 12:44:14</publishTime>
     </File>
     <File Include="Index.htm">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 14:11:22</publishTime>
     </File>
     <File Include="Intro/Intro_en-US.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Intro/Intro_ja-JP.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Intro/Intro_ko-KR.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Intro/Intro_th-TH.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Intro/Intro_vi-VN.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Intro/Intro_zh-CN.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Intro/Intro_zh-TW.html">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Menu.aspx">
-      <publishTime>01/12/2016 12:35:51</publishTime>
+      <publishTime>01/12/2016 12:44:14</publishTime>
     </File>
     <File Include="Menu.htm">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>01/06/2016 16:33:25</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/06/2016 16:16:22</publishTime>
     </File>
     <File Include="Resources/Content.css">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>01/12/2016 13:30:36</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/Accinfo2_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/Accinfo2_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/Accinfo2_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/Accinfo2_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/Accinfo2_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/Accinfo2_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/Accinfo2_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo3_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo3_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo3_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo3_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo3_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo3_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo3_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo4_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo4_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo4_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo4_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo4_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo4_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AccInfo/AccInfo4_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT3_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT3_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT3_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT3_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT3_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT3_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT3_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT4_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT4_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT4_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT4_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT4_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT4_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/AutoPT/AutoPT4_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:24</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide2_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide3_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4_en-US.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4_th-TH.swf">
-      <publishTime>01/12/2016 09:29:27</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:25</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/CasinoGuide/casinoGuide4_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame2_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame2_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame2_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame2_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame2_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame2_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame2_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame3_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame3_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame3_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame3_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame3_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame3_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame3_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame4_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame4_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame4_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame4_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame4_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame4_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/NumberGame/NumberGame4_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog2_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog2_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog2_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog2_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog2_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog2_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog2_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog3_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog3_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog3_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog3_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog3_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog3_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog3_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog4_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog4_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog4_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog4_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog4_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog4_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/ViewLog/ViewLog4_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI2_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI2_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:26</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI2_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI2_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI2_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI2_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI2_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI3_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI3_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI3_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI3_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI3_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI3_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI3_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI4_en-US.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI4_ja-JP.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI4_ko-KR.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI4_th-TH.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI4_vi-VN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI4_zh-CN.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Flash/WapUI/WapUI4_zh-TW.swf">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_en-US.aspx">
-      <publishTime>01/12/2016 12:35:51</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_ja-JP.aspx">
-      <publishTime>01/12/2016 12:35:51</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_ko-KR.aspx">
-      <publishTime>01/12/2016 12:35:51</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_th-TH.aspx">
-      <publishTime>01/12/2016 12:35:51</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_vi-VN.aspx">
-      <publishTime>01/12/2016 12:35:28</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_zh-CN.aspx">
-      <publishTime>01/12/2016 12:35:28</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/AnnouncementHRFixedOdds_zh-TW.aspx">
-      <publishTime>01/12/2016 12:35:28</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/betsetting-CN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/betsetting-EN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/betsetting-KO.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/betsetting-TH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/betsetting-TW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/Comm-CN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/Comm-EN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/Comm-KO.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/Comm-TH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/Comm-TW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Agent-CN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Agent-EN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Agent-KO.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Agent-TH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Agent-TW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Master-CN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Master-EN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Master-KO.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Master-TH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Master-TW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Super-CN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Super-EN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Super-KO.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Super-TH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Images/PT-Super-TW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/HRFixedOdds/Style/AnnouncementHRFixedOdds.css">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 13:51:36</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcAuto.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcAutoCN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcAutoKR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcAutoTH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcAutoTW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCol.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColCN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColKR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColShow.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColShowCN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColShowKR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColShowTH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColShowTW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColTH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcColTW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimit.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimit2.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimit2CN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimit2KR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimit2TH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimit2TW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimitCN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimitKR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimitTH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcCurrentWinLimitTW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcForm.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcFormCN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcFormKR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcFormTH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcFormTW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMaxWin.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMaxWinCN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMaxWinKR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMaxWinTH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMaxWinTW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMenu.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMenuCN.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMenuKR.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMenuTH.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Images/lcMenuTW.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/Resources/HtmlForm.css">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 13:51:49</publishTime>
     </File>
     <File Include="Resources/HTML/Resources/SecurityCode.css">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 13:30:40</publishTime>
     </File>
     <File Include="Resources/HTML/SecurityCode/SecurityCode_en-US.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/SecurityCode/SecurityCode_ja-JP.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/SecurityCode/SecurityCode_ko-KR.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/SecurityCode/SecurityCode_th-TH.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/SecurityCode/SecurityCode_vi-VN.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/SecurityCode/SecurityCode_zh-CN.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/SecurityCode/SecurityCode_zh-TW.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/WinLimit/WinLimit_en-US.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/WinLimit/WinLimit_ja-JP.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/WinLimit/WinLimit_ko-KR.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/WinLimit/WinLimit_th-TH.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/WinLimit/WinLimit_vi-VN.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/WinLimit/WinLimit_zh-CN.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/HTML/WinLimit/WinLimit_zh-TW.html">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/bgHeader.gif">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/bg_leftbt.jpg">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/bg_leftUI.jpg">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/handbook.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/handbook_CS.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/handbook_CT.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/icon_activeUI.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/icon_activeUI2.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/icon_offUI.png">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/Images/top_leftUI.jpg">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/LeftMenu.css">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>01/12/2016 13:31:03</publishTime>
     </File>
     <File Include="Resources/LeftMenu.js">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:11:27</publishTime>
     </File>
     <File Include="Resources/toppanel.css">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 13:49:56</publishTime>
     </File>
     <File Include="SecurityCode.config">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:22:56</publishTime>
     </File>
     <File Include="Top.aspx">
-      <publishTime>01/12/2016 12:35:27</publishTime>
+      <publishTime>01/12/2016 12:44:15</publishTime>
     </File>
     <File Include="Top.htm">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:36:45</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/12/2016 12:36:43</publishTime>
+      <publishTime>01/12/2016 13:34:25</publishTime>
     </File>
     <File Include="Web.sitemap">
-      <publishTime>01/12/2016 09:29:28</publishTime>
+      <publishTime>12/30/2015 09:14:59</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -32,7 +32,7 @@ namespace Alpha.HowToUse
             {
                 tpl.AgUI = null;
             }
-            tpl.scriptcore = "<script src='/main/_GlobalResources/Js/Core.js' type='text/javascript'></script>";
+            tpl.scriptcore = "<script src='/site-main/_GlobalResources/Js/Core.js' type='text/javascript'></script>";
             RenderMenu(ref tpl);
             writer.Write(tpl);
         }
