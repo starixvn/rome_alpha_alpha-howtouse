@@ -610,6 +610,18 @@
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <None Include="Web.napexternal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.napinternal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.proi1.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.proi7.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
