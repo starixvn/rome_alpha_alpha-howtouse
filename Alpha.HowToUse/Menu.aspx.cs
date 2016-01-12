@@ -59,10 +59,13 @@ namespace Alpha.HowToUse
             int subMenuCount = node.ChildNodes.Count;
             tpl.SubMenu.Clear();
 
-            tpl.AgUI.userguideurl = Regex.Replace(Response.ApplyAppPathModifier("~/index.aspx"),
-                "site-howtouse",
-                "site-userguide",
-                RegexOptions.IgnoreCase);
+            if (tpl.AgUI != null)
+            {
+                tpl.AgUI.userguideurl = Regex.Replace(Response.ApplyAppPathModifier("~/index.aspx"),
+                    "site-howtouse",
+                    "site-userguide",
+                    RegexOptions.IgnoreCase);
+            }
 
             for (int i = 0; i < subMenuCount; i++)
             {
@@ -155,7 +158,7 @@ namespace Alpha.HowToUse
 
             if (menuItem.Title.Equals("MemberWinLimit", System.StringComparison.OrdinalIgnoreCase))
             {
-               itemBlock.item_url = string.Format("Resources/HTML/WinLimit/WinLimit_{0}.html", CurrentUserSession.Language);
+               itemBlock.item_url = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
             }
             else
             {

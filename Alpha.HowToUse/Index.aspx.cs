@@ -18,11 +18,11 @@ namespace Alpha.HowToUse
             }
             else if (Request.QueryString["lang"] != null)
             {
-                mainSource = string.Format("Resources/HTML/WinLimit/WinLimit_{0}.html", CurrentUserSession.Language);
+                mainSource = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
             }
             else
             {
-                mainSource = string.Format("Intro/Intro_{0}.html", UserSession.Current.Language);
+                mainSource = string.Format("{0}/Intro/Intro_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
             }
         }
 
