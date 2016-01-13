@@ -617,18 +617,18 @@
     <Content Include="Web.local.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <None Include="Web.napexternal.config">
+    <Content Include="Web.napexternal.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.napinternal.config">
+    </Content>
+    <Content Include="Web.napinternal.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.proi1.config">
+    </Content>
+    <Content Include="Web.proi1.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.proi7.config">
+    </Content>
+    <Content Include="Web.proi7.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
