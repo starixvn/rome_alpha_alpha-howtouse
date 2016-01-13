@@ -42,8 +42,20 @@ namespace Alpha.HowToUse
             int roleId = CurrentUserSession.RoleId;
             SiteMapNode rootNode = SiteMap.RootNode;
             SiteMapNode contextNode = null;
-            contextNode = rootNode.ChildNodes[0];
-            
+
+            if (roleId == (int)(UserTypes.Agent))
+            {
+                contextNode = rootNode.ChildNodes[0];
+            }
+            else if (roleId == (int)(UserTypes.Master))
+            {
+                contextNode = rootNode.ChildNodes[1];
+            }
+            else if (roleId == (int)(UserTypes.Super))
+            {
+                contextNode = rootNode.ChildNodes[2];
+            }
+
             RenderMenu(contextNode, ref tpl);
         }
 
