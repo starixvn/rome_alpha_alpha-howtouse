@@ -155,6 +155,13 @@ namespace Alpha.HowToUse
                     }
                 }
 
+                // Check Show ColossusBets
+                if (item.Description.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
+                {
+                    if (Sunplus.Agent.Model.Entities.Permission.UserPermission.IsNeutral ||
+                        !Sunplus.Agent.Model.Entities.Permission.UserPermission.IsShowColossusBets) continue;
+                }
+
                 RenderMenuItem(item, ref itemBlock, j, index);
                 subBlock.MenuItem.Append(itemBlock);
                 isShowSiteMapNode = true;
@@ -171,6 +178,10 @@ namespace Alpha.HowToUse
             if (menuItem.Title.Equals("MemberWinLimit", System.StringComparison.OrdinalIgnoreCase))
             {
                itemBlock.item_url = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
+            }
+            else if (menuItem.Title.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
+            {
+                itemBlock.item_url = "Resources/HTML/ColossusBets/ColossusBets_" + CurrentUserSession.Language + ".html";
             }
             else
             {
