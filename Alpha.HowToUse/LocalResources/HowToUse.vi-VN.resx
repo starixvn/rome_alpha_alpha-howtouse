@@ -112,51 +112,54 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="AccInfoFunction" xml:space="preserve">
+  <data name="AccInfoFunction" xml:space="preserve">
     <value>Chức năng thông tin tài khoản</value>
   </data>
-	<data name="AgentUserGuide" xml:space="preserve">
+  <data name="AgentUserGuide" xml:space="preserve">
     <value>Những hướng dẫn dành cho Agent</value>
   </data>
-	<data name="AgentWapUserGuide" xml:space="preserve">
+  <data name="AgentWapUserGuide" xml:space="preserve">
     <value>Agent Wap User Guide</value>
   </data>
-	<data name="AutoPT" xml:space="preserve">
+  <data name="AutoPT" xml:space="preserve">
     <value>Tự động PT </value>
   </data>
-	<data name="Help" xml:space="preserve">
+  <data name="Help" xml:space="preserve">
     <value>Giúp đỡ</value>
   </data>
-	<data name="HowToEnableCasino" xml:space="preserve">
+  <data name="HowToEnableCasino" xml:space="preserve">
     <value>Cho phép những thành viên cấp dưới được chơi Casino</value>
   </data>
-	<data name="HowToUsePro" xml:space="preserve">
+  <data name="HowToUsePro" xml:space="preserve">
     <value>Cách sử dụng</value>
   </data>
-	<data name="MasterAutoPT" xml:space="preserve">
+  <data name="MasterAutoPT" xml:space="preserve">
     <value>Cho phép Master lấy Auto PT</value>
   </data>
-	<data name="NumberGame" xml:space="preserve">
+  <data name="NumberGame" xml:space="preserve">
     <value>Number Game</value>
   </data>
-	<data name="ProductsFeatures" xml:space="preserve">
+  <data name="ProductsFeatures" xml:space="preserve">
     <value>Sản phẩm / Chi tiết</value>
   </data>
-	<data name="UserGuide" xml:space="preserve">
+  <data name="UserGuide" xml:space="preserve">
     <value>Hướng dẫn sử dụng</value>
   </data>
-	<data name="ViewLogFunction" xml:space="preserve">
+  <data name="ViewLogFunction" xml:space="preserve">
     <value>Chức năng kiểm tra thông bị thay đổi</value>
   </data>
-	<data name="MemberWinLimit" xml:space="preserve">
+  <data name="MemberWinLimit" xml:space="preserve">
     <value>Configure Live Casino Win Limit</value>
   </data>
-	<data name="SecurityCode" xml:space="preserve">
+  <data name="SecurityCode" xml:space="preserve">
     <value>Security Code FAQS</value>
+  </data>
+  <data name="ColossusBets" xml:space="preserve">
+    <value>Colossus Bets</value>
   </data>
 </root>

@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AccInfoFunction" xml:space="preserve">
     <value>Account Info Function</value>
@@ -156,7 +156,10 @@
   <data name="MemberWinLimit" xml:space="preserve">
     <value>Configure Live Casino Win Limit</value>
   </data>
-	<data name="SecurityCode" xml:space="preserve">
+  <data name="SecurityCode" xml:space="preserve">
     <value>Security Code FAQS</value>
+  </data>
+  <data name="ColossusBets" xml:space="preserve">
+    <value>Colossus Bets</value>
   </data>
 </root>

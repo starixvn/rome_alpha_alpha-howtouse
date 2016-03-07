@@ -158,8 +158,8 @@ namespace Alpha.HowToUse
                 // Check Show ColossusBets
                 if (item.Description.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
                 {
-                    if (Sunplus.Agent.Model.Entities.Permission.UserPermission.IsNeutral ||
-                        !Sunplus.Agent.Model.Entities.Permission.UserPermission.IsShowColossusBets) continue;
+                    if (UserPermission.IsNeutral ||
+                        !UserPermission.IsShowColossusBets) continue;
                 }
 
                 RenderMenuItem(item, ref itemBlock, j, index);
