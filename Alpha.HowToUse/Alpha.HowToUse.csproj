@@ -627,6 +627,19 @@
     <Content Include="Handlers\Flash.ashx" />
     <Content Include="SecurityCode.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Web.backupMNLExNapInternal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.backupMNLI1.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.backupMNLI7.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.backupMNLNapInternal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
