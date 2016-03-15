@@ -28,6 +28,14 @@ namespace Alpha.HowToUse
             {
                 mainSource = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
             }
+            else if (!string.IsNullOrWhiteSpace(Request["redirectto"]))
+            {
+                var redirectUrl = Request["redirectto"];
+                if (redirectUrl.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
+                {
+                    mainSource = "Resources/HTML/ColossusBets/ColossusBets_" + CurrentUserSession.Language + ".html";
+                }   
+            }
             else
             {
                 mainSource = string.Format("{0}/Intro/Intro_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);

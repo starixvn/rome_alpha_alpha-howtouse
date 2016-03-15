@@ -1,0 +1,281 @@
+body {
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+    ol > li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 1.5em;
+    }
+
+li.feature:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;
+}
+
+li li {
+    line-height: 1.75;
+}
+
+img {
+    display: block;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.28);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.28);
+}
+
+li.feature > ol > li:before {
+    content: counters(item, ".") " ";
+    font-weight: bold;
+    color: #ec750a;
+}
+
+.feature .feature-title, li.feature:before {
+    color: #365f91;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.feature .feature-title, .feature .feature-desc {
+    margin-bottom: 15px;
+}
+
+.feature-number {
+    font-weight: bold;
+    color: #ec750a;
+}
+
+.feature.setting .feature-desc {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.feature.setting .level-extra {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.level-extra > li {
+    list-style: none;
+}
+
+.level-extra li .extra-text {
+    color: #00b0f0;
+}
+
+.level-extra > li:before {
+    content: url("Images/star.png");
+    margin-right: 10px;
+}
+
+/*.setting .level-1 {
+    padding-left: 40px;
+}*/
+
+.level-1 {
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 30px;
+    list-style: disc;
+}
+
+    .level-1 > li {
+        margin-bottom: 10px;
+    }
+
+.level-2 {
+    padding-left: 0;
+}
+
+    .level-2 li {
+        list-style: none;
+    }
+
+        .level-2 li:before {
+            content: '-';
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+.level-4 li, .level-3 li {
+    list-style: none;
+}
+
+.level-3 {
+    padding-left: 13px;
+}
+
+.level-4 {
+    padding-left: 30px;
+}
+
+    .level-4 li:before {
+        content: "\2713";
+        margin-right: 15px;
+    }
+
+.level-3 > li:before {
+    content: url("Images/arrow2.png");
+    margin-right: 15px;
+}
+
+.window {
+    background: url(Images/windows.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 0 48px;
+    margin-top: 3px;
+    position: relative;
+    top: 8px;
+}
+
+    .window:after, .window:before {
+        content: "\2192";
+        position: relative;
+        right: 10px;
+        font-weight: bold;
+        font-size: 26px;
+        top: -6px;
+    }
+
+    .window:before {
+        left: -33px;
+        margin-right: 8px;
+    }
+
+    .window:after {
+        margin-left: 8px;
+    }
+
+.acc-info:after {
+    content: "\2192";
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0 5px;
+    position: relative;
+    top: 3px;
+}
+
+.fomular-1 {
+    padding-left: 161px;
+}
+
+.fomular-2 {
+    padding-left: 167px;
+}
+
+.fomular-3 {
+    padding-left: 187px;
+}
+
+.window.master {
+    margin: 0 30px 0 5px;
+}
+
+    .window.master:before {
+        content: '';
+    }
+
+    .window.master:after {
+        right: -5px;
+    }
+
+
+.intro {
+    float: left;
+    width: 50%;
+}
+
+    .intro img {
+        margin-top: 0;
+        width: 200px;
+        margin-left: 30px;
+    }
+
+    .intro p {
+        margin-top: 0;
+    }
+
+.curly-brace, .curly-brace th, .curly-brace td {
+    border: none;
+    padding: 0 5px;
+}
+
+    .curly-brace td:first-child {
+        padding: 0;
+    }
+
+    .curly-brace th {
+        background: none;
+    }
+
+    .curly-brace tr:nth-child(even) {
+        background: none;
+    }
+
+    .curly-brace tr:nth-child(odd) {
+        background: none;
+    }
+
+    .curly-brace img {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        margin-top: 0;
+    }
+
+table, th, td {
+    border: 1px solid #1ca0c3;
+    border-collapse: collapse;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+}
+
+table th {
+    background: #4bacc6;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #b6dde8;
+}
+
+table tr:nth-child(odd) {
+    background: #e8f2f4;
+}
+
+.tbl-MBI {
+    width: 350px;
+    margin-left: -20px;
+}

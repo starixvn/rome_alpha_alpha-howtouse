@@ -106,6 +106,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cricket.
+        /// </summary>
+        public static string Cricket {
+            get {
+                return ResourceManager.GetString("Cricket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Help.
         /// </summary>
         public static string Help {
