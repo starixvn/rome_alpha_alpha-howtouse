@@ -11,7 +11,7 @@
         <siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
         <siteMapNode title="NumberGameFunction" description="NumberGame" width="480" height="280"></siteMapNode>
         <siteMapNode title="ColossusBets" description="ColossusBets" width="480" height="280"></siteMapNode>
-        <siteMapNode title="Cricket" description="Cricket" width="480" height="280"></siteMapNode>
+        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -25,7 +25,7 @@
         <siteMapNode title="AutoPT" description="AutoPT" width="410" height="320"></siteMapNode>
         <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>
         <siteMapNode title="ColossusBets" description="ColossusBets" width="480" height="280"></siteMapNode>
-        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/ColossusBets/ColossusBets_{0}.html"></siteMapNode>
+        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -39,7 +39,7 @@
         <siteMapNode title="MasterAutoPT" description="AutoPT" width="410" height="320"></siteMapNode>
         <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>
         <siteMapNode title="ColossusBets" description="ColossusBets" width="480" height="280"></siteMapNode>
-        <siteMapNode title="Cricket" description="Cricket" width="480" height="280"></siteMapNode>
+        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
     <!--/HowToUse-->
