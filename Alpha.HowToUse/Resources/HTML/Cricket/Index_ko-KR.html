@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cricket</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="Styles/page.css" />
+</head>
+<body>
+    <ol class="feature-list">
+        <li class="feature first">
+            <div class="feature-title">Introduction</div>
+            <div class="feature-desc">
+                <div class="intro">
+                    <p>Cricket betting has seen significant growth since the emergence of dedicated sports channels and bookmakers. Match Winner is the most basic cricket bet involves betting on the winner of a match.</p>
+                    <p>In our system, we configure Match Winner’s settings with the same settings as Sportsbook − Other Sports. Besides that, we also offer feature “Net Position” to Match Winner for enabling members to play more bets. We will explain more details about Net Position in the next section.</p>
+                </div>
+                <div class="intro">
+                    <img src="Styles/Images/Cricket-1.png" />
+                </div>
+            </div>
+        </li>
+        <li class="feature setting">
+            <div class="feature-title">Net Position</div>
+            <ol>
+                <li>
+                    <span class="feature-number">Definition</span>
+                    <div class="feature-desc">
+                        Net Position is the minimum payout that member could get from his tickets bet on Match Winner of each match.
+                    </div>
+                    <ul class="level-2">
+                        <li>
+                            If the payout is greater than the total actual stake, the Net Position is the total actual stake.
+                            <p class="italic center">
+                                Actual Stake = Stake deducted in the balance.
+                            </p>
+                        </li>
+                        <li>This amount is added into member’s Bet Credit to enable the member to play more bets.</li>
+                        <li>
+                            After the match is settled, Net Position of the match will be cleared and the actual winning/losing amount will be added to member balance.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="feature-number">Location</span>
+
+                    <div class="feature-desc">
+                        Net Position amount is displayed in Balance Info at member level only.
+                    </div>
+                    <div>
+                        <img src="Styles/Images/Cricket-2.png" />
+                    </div>
+                </li>
+                <li>
+                    <span class="feature-number">Examples</span>
+                    <ul class="level-extra">
+                        <li>
+                            <span class="extra-text italic bold">Example 1: Total Payout Home Wins > Total Stake > Total Payout Away Wins</span>
+                            <div class="feature-desc">
+                                On bet type Match Winner, member A has placed stake $100 for Home team with Malay odds - 0.94. The possible outcome of this ticket will be:
+                            </div>
+                            <table class="center" style="width:100%">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="5">Bet Tickets</th>
+                                        <th colspan="2">Possible Payout</th>
+
+                                    </tr>
+                                    <tr class="bold">
+                                        <td>#</td>
+                                        <td>Bet type</td>
+                                        <td>Bet team</td>
+                                        <td>Stake</td>
+                                        <td>Odds</td>
+                                        <td>Home Wins</td>
+                                        <td>Away Wins</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Match Winner</td>
+                                        <td>Home</td>
+                                        <td>100</td>
+                                        <td>-0.94</td>
+                                        <td>194</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td colspan="2">Total</td>
+                                        <td>100</td>
+                                        <td></td>
+                                        <td>194</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <span>According to the table above:</span>
+                                <table class="curly-brace">
+                                    <tr>
+                                        <td>- If Home team wins => Payout Home Wins = $194</td>
+                                        <td rowspan="3">
+                                            <img src="Styles/Images/brace-small.png" />
+                                        </td>
+                                        <td rowspan="3">  => Net Position = 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>- If Away teams wins => Payout Away Wins = 0</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>- Malay Odds = - 0.94 < 0 => Total Actual Stake = stake * |odds| = $100 * |- 0.94| = $94</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <span>Member Balance Info will be displayed as below:</span>
+                                <table style="width:40%;">
+                                    <tr>
+                                        <th colspan="2" class="center">Member Balance Info</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Given Credit</td>
+                                        <td class="center">300</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Outstanding</td>
+                                        <td class="center">100</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Net Position</td>
+                                        <td class="center">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Bet Credit</td>
+                                        <td class="center">200</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="extra-text italic bold">Example 2: Total Payout Away Wins > Total Stake > Total Payout Home Wins</span>
+                            <div>
+                                <span>On bet type Match Winner, member A has placed 2 tickets:</span>
+                                <ul class="level-2">
+                                    <li>Ticket 1 placed on Home team with stake $100 and Hong Kong odds 0.8.</li>
+                                    <li>Ticket 2 placed on Away team with stake $100 and Hong Kong odds 1.02.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>The possible outcome of these tickets will be:</span>
+                                <table class="center" style="width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5">Bet Tickets</th>
+                                            <th colspan="2">Possible Outcome</th>
+
+                                        </tr>
+                                        <tr class="bold">
+                                            <td>#</td>
+                                            <td>Bet type</td>
+                                            <td>Bet team</td>
+                                            <td>Stake</td>
+                                            <td>Odds</td>
+                                            <td>Home Wins</td>
+                                            <td>Away Wins</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Match Winner</td>
+                                            <td>Home</td>
+                                            <td>100</td>
+                                            <td>0.8</td>
+                                            <td>180</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Match Winner</td>
+                                            <td>Away</td>
+                                            <td>100</td>
+                                            <td>1.02</td>
+                                            <td>0</td>
+                                            <td>202</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td colspan="2">Total</td>
+                                            <td>200</td>
+                                            <td></td>
+                                            <td>180</td>
+                                            <td>202</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="level-1">
+                                <li>
+                                    <span class="bold">Ticket 1 is bet on Home Team</span>
+                                    <ul class="level-2">
+                                        <li>If Home team wins => Payout Home Wins = $180</li>
+                                        <li>If Away teams wins => Payout Away Wins = 0</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="bold">Ticket 2 is bet on Away team</span>
+                                    <ul class="level-2">
+                                        <li>If Home team wins => Payout Home Wins = 0</li>
+                                        <li>If Away teams wins => Payout Away Wins = $202</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>In total</span>
+                                    <table class="curly-brace">
+                                        <tr>
+                                            <td>- Total Payout Home Wins = $180</td>
+                                            <td rowspan="3">
+                                                <img src="Styles/Images/brace-small.png" />
+                                            </td>
+                                            <td rowspan="3">  => Net Position = $180</td>
+                                        </tr>
+                                        <tr>
+                                            <td>- Total Payout Away Wins = $202</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>- Total Actual Stake = $200</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <span>Member Balance Info will be displayed as below:</span>
+                                    <table class="tbl-MBI">
+                                        <tr>
+                                            <th colspan="2" class="center">Member Balance Info</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Given Credit</td>
+                                            <td class="center">300</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Outstanding</td>
+                                            <td class="center">200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Net Position</td>
+                                            <td class="center">180</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Bet Credit</td>
+                                            <td class="center">280</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                            <div>
+                                <p><span class="extra-text bold">Note: </span><span class="italic">The Net Position amount has been added into member’s Bet Credit already.</span></p>
+                                <p class="center bold italic">Bet Credit = Given Credit – Outstanding + Net Position</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="extra-text italic bold">Example 3: Total Payout Away Wins > Total Payout Home Wins > Total Stake</span>
+                            <div>
+                                <span>On bet type Match Winner, member A has placed 2 tickets:</span>
+                                <ul class="level-2">
+                                    <li>Ticket 1 placed on Home team with stake $100 and Decimal odds 2.1.</li>
+                                    <li>Ticket 2 placed on Away team with stake $100 and Decimal odds 2.3.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>The possible outcome of these tickets will be:</span>
+                                <table class="center" style="width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5">Bet Tickets</th>
+                                            <th colspan="2">Possible Outcome</th>
+
+                                        </tr>
+                                        <tr class="bold">
+                                            <td>#</td>
+                                            <td>Bet type</td>
+                                            <td>Bet team</td>
+                                            <td>Stake</td>
+                                            <td>Odds</td>
+                                            <td>Home Wins</td>
+                                            <td>Away Wins</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Match Winner</td>
+                                            <td>Home</td>
+                                            <td>100</td>
+                                            <td>2.1</td>
+                                            <td>210</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Match Winner</td>
+                                            <td>Away</td>
+                                            <td>100</td>
+                                            <td>2.3</td>
+                                            <td>0</td>
+                                            <td>230</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td colspan="2">Total</td>
+                                            <td>200</td>
+                                            <td></td>
+                                            <td>210</td>
+                                            <td>230</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="level-1">
+                                <li>
+                                    <span class="bold">Ticket 1 is bet on Home Team</span>
+                                    <ul class="level-2">
+                                        <li>If Home team wins => Payout Home Wins = $210</li>
+                                        <li>If Away teams wins => Payout Away Wins = 0</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="bold">Ticket 2 is bet on Away team</span>
+                                    <ul class="level-2">
+                                        <li>If Home team wins => Payout Home Wins = 0</li>
+                                        <li>If Away teams wins => Payout Away Wins = $230</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>In total</span>
+                                    <table class="curly-brace">
+                                        <tr>
+                                            <td>- Total Payout Home Wins = $210</td>
+                                            <td rowspan="3">
+                                                <img src="Styles/Images/brace-small.png" />
+                                            </td>
+                                            <td rowspan="3">=> Net Position = $200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>- Total Payout Away Wins = $230</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>- Total Actual Stake = $200</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <span>Member Balance Info will be displayed as below:</span>
+                                    <table class="tbl-MBI">
+                                        <tr>
+                                            <th colspan="2" class="center">Member Balance Info</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Given Credit</td>
+                                            <td class="center">300</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Outstanding</td>
+                                            <td class="center">200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Net Position</td>
+                                            <td class="center">200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bold">Bet Credit</td>
+                                            <td class="center">300</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>    
+</body>
+</html>

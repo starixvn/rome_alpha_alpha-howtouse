@@ -183,6 +183,10 @@ namespace Alpha.HowToUse
             {
                 itemBlock.item_url = "Resources/HTML/ColossusBets/ColossusBets_" + CurrentUserSession.Language + ".html";
             }
+            else if (!string.IsNullOrWhiteSpace(menuItem.GetAttribute("href")))
+            {
+                itemBlock.item_url = string.Format(menuItem.GetAttribute("href"), CurrentUserSession.Language);
+            }
             else
             {
                 itemBlock.item_url = string.Format(

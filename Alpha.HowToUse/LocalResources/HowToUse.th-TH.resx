@@ -162,4 +162,7 @@
   <data name="ColossusBets" xml:space="preserve">
     <value>Colossus Bets</value>
   </data>
+  <data name="Cricket" xml:space="preserve">
+    <value>คริกเก็ต</value>
+  </data>
 </root>
