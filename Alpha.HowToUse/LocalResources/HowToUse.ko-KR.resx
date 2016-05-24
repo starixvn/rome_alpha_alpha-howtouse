@@ -165,4 +165,7 @@
   <data name="Cricket" xml:space="preserve">
     <value>크리켓</value>
   </data>
+  <data name="SystemParlay" xml:space="preserve">
+    <value>시스템 팔레이</value>
+  </data>
 </root>

@@ -187,6 +187,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to System Parlay.
+        /// </summary>
+        public static string SystemParlay {
+            get {
+                return ResourceManager.GetString("SystemParlay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User Guide.
         /// </summary>
         public static string UserGuide {

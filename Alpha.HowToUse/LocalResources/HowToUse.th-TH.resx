@@ -165,4 +165,7 @@
   <data name="Cricket" xml:space="preserve">
     <value>คริกเก็ต</value>
   </data>
+  <data name="SystemParlay" xml:space="preserve">
+    <value>ระบบของ Parlay</value>
+  </data>
 </root>
