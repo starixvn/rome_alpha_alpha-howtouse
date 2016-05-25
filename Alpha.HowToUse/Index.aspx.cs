@@ -31,10 +31,17 @@ namespace Alpha.HowToUse
             else if (!string.IsNullOrWhiteSpace(Request["redirectto"]))
             {
                 var redirectUrl = Request["redirectto"];
-                if (redirectUrl.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
+                if (!string.IsNullOrWhiteSpace(redirectUrl))
                 {
-                    mainSource = "Resources/HTML/ColossusBets/ColossusBets_" + CurrentUserSession.Language + ".html";
-                }   
+                    if (redirectUrl.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
+                    {
+                        mainSource = "Resources/HTML/ColossusBets/ColossusBets_" + CurrentUserSession.Language + ".html";
+                    }
+                    else
+                    {
+                        mainSource = string.Format("Resources/HTML/{0}/{1}.html", redirectUrl, CurrentUserSession.Language);
+                    }
+                }
             }
             else
             {

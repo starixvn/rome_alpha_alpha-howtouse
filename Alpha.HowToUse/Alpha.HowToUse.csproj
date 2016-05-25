@@ -514,7 +514,13 @@
     <Content Include="Resources\HTML\SecurityCode\SecurityCode_vi-VN.html" />
     <Content Include="Resources\HTML\SecurityCode\SecurityCode_zh-CN.html" />
     <Content Include="Resources\HTML\SecurityCode\SecurityCode_zh-TW.html" />
-    <Content Include="Resources\HTML\SystemParlay\Index.html" />
+    <Content Include="Resources\HTML\SystemParlay\en-US.html" />
+    <Content Include="Resources\HTML\SystemParlay\ja-JP.html" />
+    <Content Include="Resources\HTML\SystemParlay\ko-KR..html" />
+    <Content Include="Resources\HTML\SystemParlay\th-TH.html" />
+    <Content Include="Resources\HTML\SystemParlay\vi-VN.html" />
+    <Content Include="Resources\HTML\SystemParlay\zh-CN.html" />
+    <Content Include="Resources\HTML\SystemParlay\zh-TW.html" />
     <Content Include="Resources\HTML\SystemParlay\Styles\Images\brace-small.png" />
     <Content Include="Resources\HTML\SystemParlay\Styles\Images\bullet.png" />
     <Content Include="Resources\HTML\SystemParlay\Styles\Images\img-1.png" />
@@ -655,47 +661,25 @@
     <Content Include="Handlers\Flash.ashx" />
     <Content Include="SecurityCode.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Web.backupMNLExNapInternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.backupMNLI1.config">
-      <DependentUpon>Web.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.backupMNLI7.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.backupMNLNapInternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    <Content Include="Web.backupMNLExNapInternal.config" />
+    <Content Include="Web.backupMNLI1.config" />
+    <Content Include="Web.backupMNLI7.config" />
+    <Content Include="Web.backupMNLNapInternal.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.local.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.napexternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.napinternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.proi1.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.proi7.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    <Content Include="Web.local.config" />
+    <Content Include="Web.napexternal.config" />
+    <Content Include="Web.napinternal.config" />
+    <Content Include="Web.proi1.config" />
+    <Content Include="Web.proi7.config" />
+    <Content Include="Web.sitemap" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.sitemap" />
-    <Content Include="Web.uati1.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.uati7.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    <Content Include="Web.sit.config" />
+    <Content Include="Web.uati1.config" />
+    <Content Include="Web.uati7.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LocalResources\HowToUse.ja-JP.resx" />
@@ -721,7 +705,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>8218</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
