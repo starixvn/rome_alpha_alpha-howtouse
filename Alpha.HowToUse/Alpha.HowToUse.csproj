@@ -517,6 +517,8 @@
     <Content Include="Resources\HTML\SystemParlay\en-US.html" />
     <Content Include="Resources\HTML\SystemParlay\ja-JP.html" />
     <Content Include="Resources\HTML\SystemParlay\ko-KR..html" />
+    <Content Include="Resources\HTML\SystemParlay\Styles\Images\img-13.png" />
+    <Content Include="Resources\HTML\SystemParlay\Styles\Images\img-14.png" />
     <Content Include="Resources\HTML\SystemParlay\th-TH.html" />
     <Content Include="Resources\HTML\SystemParlay\vi-VN.html" />
     <Content Include="Resources\HTML\SystemParlay\zh-CN.html" />
