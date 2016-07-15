@@ -681,7 +681,9 @@
     </None>
     <Content Include="Web.sit.config" />
     <Content Include="Web.uati1.config" />
-    <Content Include="Web.uati7.config" />
+    <Content Include="Web.uati7.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LocalResources\HowToUse.ja-JP.resx" />
