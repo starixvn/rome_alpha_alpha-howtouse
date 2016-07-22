@@ -9,7 +9,7 @@
       <siteMapNode title="ProductsFeatures" expand="true">
         <siteMapNode title="AccInfoFunction" description="AccInfo" width="560" height="310"></siteMapNode>
         <siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
-        <siteMapNode title="NumberGameFunction" description="NumberGame" width="480" height="280"></siteMapNode>
+        <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>
         <siteMapNode title="ColossusBets" description="ColossusBets" width="480" height="280"></siteMapNode>
         <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
