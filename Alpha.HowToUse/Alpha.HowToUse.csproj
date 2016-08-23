@@ -663,7 +663,9 @@
     <Content Include="Handlers\Flash.ashx" />
     <Content Include="SecurityCode.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Web.backupMNLExNapInternal.config" />
+    <Content Include="Web.backupMNLExNapInternal.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.backupMNLI1.config" />
     <Content Include="Web.backupMNLI7.config" />
     <Content Include="Web.backupMNLNapInternal.config" />

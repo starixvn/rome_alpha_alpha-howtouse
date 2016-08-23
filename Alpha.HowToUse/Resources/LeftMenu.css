@@ -41,7 +41,7 @@ td {
     width: 200px;
     line-height: 20px;
     padding-bottom: 7px;
-    background: url(/site-oldmain/_GlobalResources/Images/bg_leftB01.jpg) repeat-x bottom;
+    background: url(/ex-main/_GlobalResources/Images/bg_leftB01.jpg) repeat-x bottom;
     font-weight: bold;
     padding-left: 1px;
     outline: none 0;
@@ -110,7 +110,7 @@ a.Bleft_ParentAcNew {
 .Bleft_Sub0 {
     width: 190px;
     border: 1px #b2b2b2 solid;
-    background: url(/site-oldmain/_GlobalResources/Images/bg_leftSub.jpg) repeat-x top;
+    background: url(/ex-main/_GlobalResources/Images/bg_leftSub.jpg) repeat-x top;
     background-color: #FFFFFF;
     padding-left: 8px;
     margin-bottom: 3px;
@@ -124,7 +124,7 @@ a.Bleft_Sub {
     color: #333333;
     text-decoration: none;
     padding-left: 12px;
-    background: url(/site-oldmain/_GlobalResources/Images/icon_left02.jpg) no-repeat left;
+    background: url(/ex-main/_GlobalResources/Images/icon_left02.jpg) no-repeat left;
     line-height: 20px;
     outline: none 0;
 }
@@ -135,11 +135,11 @@ a.Bleft_Sub_2 {
     color: #EB6003;
     text-decoration: none;
     padding-left: 12px;
-    background: url(/site-oldmain/_GlobalResources/Images/icon_left01.jpg) no-repeat left;
+    background: url(/ex-main/_GlobalResources/Images/icon_left01.jpg) no-repeat left;
     outline: none 0;
 }
 
 a.Bleft_Sub:hover {
     color: #dd0000;
-    background: url(/site-oldmain/_GlobalResources/Images/icon_left01.jpg) no-repeat left;
+    background: url(/ex-main/_GlobalResources/Images/icon_left01.jpg) no-repeat left;
 }
