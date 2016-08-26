@@ -32,7 +32,7 @@ namespace Alpha.HowToUse
             {
                 tpl.AgUI = null;
             }
-            tpl.scriptcore = "<script src='/site-main/_GlobalResources/Js/Core.js' type='text/javascript'></script>";
+            tpl.scriptcore = "<script src='/ex-main/_GlobalResources/Js/Core.js' type='text/javascript'></script>";
             RenderMenu(ref tpl);
             writer.Write(tpl);
         }
@@ -177,7 +177,7 @@ namespace Alpha.HowToUse
 
             if (menuItem.Title.Equals("MemberWinLimit", System.StringComparison.OrdinalIgnoreCase))
             {
-               itemBlock.item_url = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
+                itemBlock.item_url = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
             }
             else if (menuItem.Title.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
             {
