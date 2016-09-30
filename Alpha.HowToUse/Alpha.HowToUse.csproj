@@ -567,7 +567,6 @@
   <ItemGroup>
     <Compile Include="Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
@@ -578,7 +577,6 @@
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -591,7 +589,6 @@
     </Compile>
     <Compile Include="Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -649,7 +646,6 @@
     </Compile>
     <Compile Include="Top.aspx.cs">
       <DependentUpon>Top.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Top.aspx.designer.cs">
       <DependentUpon>Top.aspx</DependentUpon>
@@ -673,11 +669,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Web.local.config" />
-    <Content Include="Web.napexternal.config" />
+    <Content Include="Web.napexternal.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.napinternal.config" />
     <Content Include="Web.proi1.config" />
     <Content Include="Web.proi7.config" />
     <Content Include="Web.sitemap" />
+    <Content Include="Web.napexternali7.config" />
+    <Content Include="Web.napinternali7.config" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
