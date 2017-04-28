@@ -560,6 +560,24 @@
     <Content Include="Resources\toppanel.css" />
     <Content Include="Top.aspx" />
     <Content Include="Top.htm" />
+    <Content Include="Web.sitemap" />
+    <None Include="Web.uati7.config">
+      <SubType>Designer</SubType>
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.backupMNL.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.backupMNL2.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.backupMNLExNap.config">
+      <SubType>Designer</SubType>
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.backupMNLNap.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -663,33 +681,47 @@
     <Content Include="Handlers\Flash.ashx" />
     <Content Include="SecurityCode.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Web.backupMNLExNap.config">
+    <None Include="Web.backupMNLExNap2.config">
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.backupMNLI1.config" />
-    <Content Include="Web.backupMNLI7.config" />
-    <Content Include="Web.backupMNLNap.config" />
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.backupMNLNap2.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.local.config" />
-    <Content Include="Web.napexternal.config">
+    <None Include="Web.local.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.napexternal.config">
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.napinternal.config" />
-    <Content Include="Web.proi1.config" />
-    <Content Include="Web.proi7.config" />
-    <Content Include="Web.sitemap" />
-    <Content Include="Web.napexternali7.config" />
-    <Content Include="Web.napinternali7.config" />
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.napexternali7.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.napinternal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.napinternali7.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.proi1.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.proi7.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.sit.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.sit.config" />
-    <Content Include="Web.uati1.config" />
-    <Content Include="Web.uati7.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <None Include="Web.uati1.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LocalResources\HowToUse.ja-JP.resx" />
