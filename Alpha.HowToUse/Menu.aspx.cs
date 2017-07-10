@@ -174,7 +174,7 @@ namespace Alpha.HowToUse
         {
             itemBlock.item_title = LocalResources.HowToUse.ResourceManager.GetString(menuItem.Title);
             itemBlock.order = string.Format("{0}{1}", parentIndex + 1, index + 1);
-
+          
             if (menuItem.Title.Equals("MemberWinLimit", System.StringComparison.OrdinalIgnoreCase))
             {
                 itemBlock.item_url = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
