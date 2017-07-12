@@ -406,6 +406,16 @@
     <Content Include="Resources\Flash\WapUI\WapUI4_vi-VN.swf" />
     <Content Include="Resources\Flash\WapUI\WapUI4_zh-CN.swf" />
     <Content Include="Resources\Flash\WapUI\WapUI4_zh-TW.swf" />
+    <Content Include="Resources\HTML\AccInfo\AccInfo.html" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\account-details.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\balance-info.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\icon-search.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\login-tab.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\online-list-1.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\online-list-2.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\search-account.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\Images\setting-tab.png" />
+    <Content Include="Resources\HTML\AccInfo\Styles\page.css" />
     <Content Include="Resources\HTML\ColossusBets\ColossusBets_en-US.html" />
     <Content Include="Resources\HTML\ColossusBets\ColossusBets_ja-JP.html" />
     <Content Include="Resources\HTML\ColossusBets\ColossusBets_ko-KR.html" />

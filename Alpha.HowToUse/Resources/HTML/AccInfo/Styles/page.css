@@ -1,0 +1,137 @@
+﻿body {
+    font-size: 14px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    max-width: 750px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.list-unstyled {
+    list-style-type: none;
+}
+
+ol, ul {
+    margin: 10px 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.list {
+    counter-reset: item;
+}
+
+.list .list-item .title {
+    font-size: 16px;
+    color: #e36c0c;
+    counter-increment: item;
+    margin-top: 16px;
+}
+
+.list .list-item .title:before {
+    content: counters(item, ".") ". ";
+    margin-right: 4px;
+    color: #e36c0c;
+}
+
+figure {
+    display: table;
+    clear: both;
+    margin: auto;
+}
+
+figure img {
+    border: 1px solid #ccc;
+}
+
+figure figcaption {
+    font-size: 13px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+figcaption .figure-number {
+    margin-right: 8px;
+}
+
+.status-closed li:before {
+    content: "-";
+    margin-right: 10px;
+}
+
+.setting {
+    counter-reset: setting;
+    padding-left: 20px;
+}
+
+.setting .setting-title {
+    counter-increment: setting;
+    color: #588dd6;
+}
+
+.setting .setting-title:before {
+    content: "3." counters(setting, "3");
+    color: #588dd6;
+    margin-right: 4px;
+}
+
+.setting-notes {
+    counter-increment: section;
+}
+
+.setting-notes:before {
+    
+    content: counter(section);
+    display: inline-block;
+    color: #fff;
+    background: #588dd6;
+    padding: 0px 6px;
+    margin-right: 12px;
+    border-radius: 50%;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.text-purple, .text-orange, .text-blue, .text-grey  {
+    padding: 2px 4px;
+}
+
+.text-purple {
+    background-color: #b3a2c7; 
+}
+
+.text-orange {
+    background-color: #f79646;
+}
+
+.text-blue {
+    background-color: #86c5e4;
+}
+
+.text-grey {
+    background-color: #ccc7ba;
+}
+
+.text-red {
+    color: #b50000;
+}
+
+.text-outstanding {
+    color: #045ace;
+}
+
+.text-given-credit {
+    color: #049dad;
+}
+
+.mrg-r-20 {
+    margin-right: 30px;
+}
+
+.mrg-t-4 {
+    margin-top: 4px;
+}
