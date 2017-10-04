@@ -61,7 +61,8 @@ namespace Alpha.HowToUse
 
         public override void RenderContent(System.Web.UI.HtmlTextWriter writer)
         {            
-            if (!UserSession.Current.Site.Equals("789y", System.StringComparison.OrdinalIgnoreCase))
+            if (!UserSession.Current.Site.Equals("789y", System.StringComparison.OrdinalIgnoreCase) &&
+                !UserSession.Current.Site.Equals("y987", System.StringComparison.OrdinalIgnoreCase))
             {
                 Index_Template tpl = new Index_Template();
                 tpl.mainFrameSrc = mainSource;
