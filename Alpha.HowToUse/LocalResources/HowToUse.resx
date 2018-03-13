@@ -168,4 +168,7 @@
   <data name="SystemParlay" xml:space="preserve">
     <value>System Parlay</value>
   </data>
+  <data name="ProgressiveJackpot" xml:space="preserve">
+    <value>Progressive Jackpot Games</value>
+  </data>
 </root>
