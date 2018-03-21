@@ -168,4 +168,7 @@
   <data name="SystemParlay" xml:space="preserve">
     <value>系统Parlay</value>
   </data>
+  <data name="ProgressiveJackpot" xml:space="preserve">
+    <value>累积积宝游戏</value>
+  </data>
 </root>

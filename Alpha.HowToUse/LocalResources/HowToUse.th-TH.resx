@@ -168,4 +168,7 @@
   <data name="SystemParlay" xml:space="preserve">
     <value>ระบบของ Parlay</value>
   </data>
+  <data name="ProgressiveJackpot" xml:space="preserve">
+    <value>เกมแจ็คพอตสะสม</value>
+  </data>
 </root>
