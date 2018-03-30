@@ -196,7 +196,7 @@
             }
             else if (menuItem.Title.Equals("ProgressiveJackpot", System.StringComparison.OrdinalIgnoreCase))
             {
-                itemBlock.item_url = "Resources/HTML/OneRNGJackpot/OneRNGJackpot_" + CurrentUserSession.Language + ".html";
+                itemBlock.item_url = "Resources/HTML/ProgressiveJackpot/" + CurrentUserSession.Language + ".html";
             }
             else if (!string.IsNullOrWhiteSpace(menuItem.GetAttribute("href")))
             {
