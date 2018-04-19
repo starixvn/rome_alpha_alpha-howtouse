@@ -178,6 +178,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Progressive Jackpot Games.
+        /// </summary>
+        public static string ProgressiveJackpot {
+            get {
+                return ResourceManager.GetString("ProgressiveJackpot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Security Code FAQS.
         /// </summary>
         public static string SecurityCode {
