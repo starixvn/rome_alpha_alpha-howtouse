@@ -39,8 +39,8 @@ namespace Alpha.HowToUse
             parameter = Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(parameter);
             tpl.source = string.Format("{0}Handlers/Flash.ashx?params={1}", AppSettings.BaseUrl, parameter);
 
-            tpl.width = Request.QueryString["fw"];
-            tpl.height = Request.QueryString["fh"];
+            tpl.width = Server.HtmlEncode(Request.QueryString["fw"]);
+            tpl.height = Server.HtmlEncode(Request.QueryString["fh"]);
 
             tpl.title = GetPageTitle(folderName);
 
