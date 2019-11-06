@@ -153,14 +153,8 @@
   <data name="ViewLogFunction" xml:space="preserve">
     <value>로그인 기능 보기</value>
   </data>
-  <data name="MemberWinLimit" xml:space="preserve">
-    <value>라이브 카지노 지급한도 설정하기</value>
-  </data>
   <data name="SecurityCode" xml:space="preserve">
     <value>Security Code FAQS</value>
-  </data>
-  <data name="ColossusBets" xml:space="preserve">
-    <value>Colossus Bets</value>
   </data>
   <data name="Cricket" xml:space="preserve">
     <value>크리켓</value>

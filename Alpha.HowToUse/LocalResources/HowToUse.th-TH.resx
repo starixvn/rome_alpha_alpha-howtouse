@@ -153,14 +153,8 @@
   <data name="ViewLogFunction" xml:space="preserve">
     <value>ตรวจสอบบันทึก</value>
   </data>
-  <data name="MemberWinLimit" xml:space="preserve">
-    <value>กำหนดค่าชนะของคาสิโนเกมสด</value>
-  </data>
   <data name="SecurityCode" xml:space="preserve">
     <value>Security Code FAQS</value>
-  </data>
-  <data name="ColossusBets" xml:space="preserve">
-    <value>Colossus Bets</value>
   </data>
   <data name="Cricket" xml:space="preserve">
     <value>คริกเก็ต</value>

@@ -122,10 +122,6 @@
       <HintPath>..\packages\Fanex.GoldDeluxe.Setting.1.0.1.1\lib\net461\Fanex.GoldDeluxe.CoreSetting.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Fanex.LiveCasino.CoreSetting, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.LiveCasino.CoreSetting.Alpha.1.2.2.0\lib\net40\Fanex.LiveCasino.CoreSetting.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Fanex.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Logging.1.0.0.0\lib\net40\Fanex.Logging.dll</HintPath>
       <Private>True</Private>
@@ -164,10 +160,6 @@
     </Reference>
     <Reference Include="ILogger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ILogger.1.0.0.0\lib\net40\ILogger.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="LiveCasinoLibrary, Version=1.0.0.18, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiveCasinoLibrary.1.0.0.18\lib\net40\LiveCasinoLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
@@ -412,6 +404,18 @@
     <Content Include="Resources\Flash\WapUI\WapUI4_vi-VN.swf" />
     <Content Include="Resources\Flash\WapUI\WapUI4_zh-CN.swf" />
     <Content Include="Resources\Flash\WapUI\WapUI4_zh-TW.swf" />
+    <Content Include="Resources\HTML\Cricket\Index_en-US.html" />
+    <Content Include="Resources\HTML\Cricket\Index_ja-JP.html" />
+    <Content Include="Resources\HTML\Cricket\Index_ko-KR.html" />
+    <Content Include="Resources\HTML\Cricket\Index_th-TH.html" />
+    <Content Include="Resources\HTML\Cricket\Index_vi-VN.html" />
+    <Content Include="Resources\HTML\Cricket\Index_zh-CN.html" />
+    <Content Include="Resources\HTML\Cricket\Index_zh-TW.html" />
+    <Content Include="Resources\HTML\Cricket\Styles\Images\brace-small.png" />
+    <Content Include="Resources\HTML\Cricket\Styles\Images\Cricket-1.png" />
+    <Content Include="Resources\HTML\Cricket\Styles\Images\Cricket-2.png" />
+    <Content Include="Resources\HTML\Cricket\Styles\Images\star.png" />
+    <Content Include="Resources\HTML\Cricket\Styles\page.css" />
     <Content Include="Resources\HTML\ProgressiveJackpot\ja-JP.html" />
     <Content Include="Resources\HTML\ProgressiveJackpot\ko-KR.html" />
     <Content Include="Resources\HTML\ProgressiveJackpot\zh-CN.html" />
@@ -445,65 +449,6 @@
     <Content Include="Resources\HTML\AccInfo\Styles\Images\search-account.png" />
     <Content Include="Resources\HTML\AccInfo\Styles\Images\setting-tab.png" />
     <Content Include="Resources\HTML\AccInfo\Styles\page.css" />
-    <Content Include="Resources\HTML\ColossusBets\ColossusBets_en-US.html" />
-    <Content Include="Resources\HTML\ColossusBets\ColossusBets_ja-JP.html" />
-    <Content Include="Resources\HTML\ColossusBets\ColossusBets_ko-KR.html" />
-    <Content Include="Resources\HTML\ColossusBets\ColossusBets_th-TH.html" />
-    <Content Include="Resources\HTML\ColossusBets\ColossusBets_vi-VN.html" />
-    <Content Include="Resources\HTML\ColossusBets\ColossusBets_zh-CN.html" />
-    <Content Include="Resources\HTML\ColossusBets\ColossusBets_zh-TW.html" />
-    <Content Include="Resources\HTML\ColossusBets\Styles\Images\1.jpg" />
-    <Content Include="Resources\HTML\ColossusBets\Styles\Images\2.jpg" />
-    <Content Include="Resources\HTML\ColossusBets\Styles\Images\3.jpg" />
-    <Content Include="Resources\HTML\ColossusBets\Styles\Images\4.jpg" />
-    <Content Include="Resources\HTML\ColossusBets\Styles\Images\5.jpg" />
-    <Content Include="Resources\HTML\ColossusBets\Styles\Images\6.jpg" />
-    <Content Include="Resources\HTML\ColossusBets\Styles\page.css" />
-    <Content Include="Resources\HTML\Cricket\Index_ja-JP.html" />
-    <Content Include="Resources\HTML\Cricket\Index_ko-KR.html" />
-    <Content Include="Resources\HTML\Cricket\Index_th-TH.html" />
-    <Content Include="Resources\HTML\Cricket\Index_vi-VN.html" />
-    <Content Include="Resources\HTML\Cricket\Index_zh-CN.html" />
-    <Content Include="Resources\HTML\Cricket\Index_zh-TW.html" />
-    <Content Include="Resources\HTML\Cricket\Index_en-US.html" />
-    <Content Include="Resources\HTML\Cricket\styles\images\brace-small.png" />
-    <Content Include="Resources\HTML\Cricket\styles\images\Cricket-1.png" />
-    <Content Include="Resources\HTML\Cricket\styles\images\Cricket-2.png" />
-    <Content Include="Resources\HTML\Cricket\styles\images\star.png" />
-    <Content Include="Resources\HTML\Cricket\styles\page.css" />
-    <Content Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_en-US.aspx" />
-    <Content Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ja-JP.aspx" />
-    <Content Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ko-KR.aspx" />
-    <Content Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_th-TH.aspx" />
-    <Content Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_vi-VN.aspx" />
-    <Content Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-CN.aspx" />
-    <Content Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-TW.aspx" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\betsetting-CN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\betsetting-EN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\betsetting-KO.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\betsetting-TH.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\betsetting-TW.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\Comm-CN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\Comm-EN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\Comm-KO.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\Comm-TH.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\Comm-TW.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Agent-CN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Agent-EN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Agent-KO.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Agent-TH.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Agent-TW.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Master-CN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Master-EN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Master-KO.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Master-TH.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Master-TW.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Super-CN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Super-EN.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Super-KO.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Super-TH.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Images\PT-Super-TW.png" />
-    <Content Include="Resources\HTML\HRFixedOdds\Style\AnnouncementHRFixedOdds.css" />
     <Content Include="Resources\HTML\Images\lcAuto.png" />
     <Content Include="Resources\HTML\Images\lcAutoCN.png" />
     <Content Include="Resources\HTML\Images\lcAutoKR.png" />
@@ -577,13 +522,6 @@
     <Content Include="Resources\HTML\SystemParlay\Styles\Images\img-8.png" />
     <Content Include="Resources\HTML\SystemParlay\Styles\Images\img-9.png" />
     <Content Include="Resources\HTML\SystemParlay\Styles\page.css" />
-    <Content Include="Resources\HTML\WinLimit\WinLimit_en-US.html" />
-    <Content Include="Resources\HTML\WinLimit\WinLimit_ja-JP.html" />
-    <Content Include="Resources\HTML\WinLimit\WinLimit_ko-KR.html" />
-    <Content Include="Resources\HTML\WinLimit\WinLimit_th-TH.html" />
-    <Content Include="Resources\HTML\WinLimit\WinLimit_vi-VN.html" />
-    <Content Include="Resources\HTML\WinLimit\WinLimit_zh-CN.html" />
-    <Content Include="Resources\HTML\WinLimit\WinLimit_zh-TW.html" />
     <Content Include="Resources\Images\bgHeader.gif" />
     <Content Include="Resources\Images\bg_leftbt.jpg" />
     <Content Include="Resources\Images\bg_leftUI.jpg" />
@@ -656,55 +594,6 @@
     <Compile Include="Menu.htm.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_en-US.aspx.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_en-US.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_en-US.aspx.designer.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_en-US.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ja-JP.aspx.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_ja-JP.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ja-JP.aspx.designer.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_ja-JP.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ko-KR.aspx.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_ko-KR.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_ko-KR.aspx.designer.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_ko-KR.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_th-TH.aspx.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_th-TH.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_th-TH.aspx.designer.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_th-TH.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_vi-VN.aspx.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_vi-VN.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_vi-VN.aspx.designer.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_vi-VN.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-CN.aspx.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_zh-CN.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-CN.aspx.designer.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_zh-CN.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-TW.aspx.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_zh-TW.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resources\HTML\HRFixedOdds\AnnouncementHRFixedOdds_zh-TW.aspx.designer.cs">
-      <DependentUpon>AnnouncementHRFixedOdds_zh-TW.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Top.aspx.cs">
       <DependentUpon>Top.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -764,16 +653,29 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LocalResources\HowToUse.ja-JP.resx" />
-    <EmbeddedResource Include="LocalResources\HowToUse.ko-KR.resx" />
+    <EmbeddedResource Include="LocalResources\HowToUse.ja-JP.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalResources\HowToUse.ko-KR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="LocalResources\HowToUse.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>HowToUse.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="LocalResources\HowToUse.th-TH.resx" />
-    <EmbeddedResource Include="LocalResources\HowToUse.vi-VN.resx" />
-    <EmbeddedResource Include="LocalResources\HowToUse.zh-CN.resx" />
-    <EmbeddedResource Include="LocalResources\HowToUse.zh-TW.resx" />
+    <EmbeddedResource Include="LocalResources\HowToUse.th-TH.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalResources\HowToUse.vi-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalResources\HowToUse.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalResources\HowToUse.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

@@ -97,15 +97,6 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Colossus Bets.
-        /// </summary>
-        public static string ColossusBets {
-            get {
-                return ResourceManager.GetString("ColossusBets", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Cricket.
         /// </summary>
         public static string Cricket {
@@ -147,15 +138,6 @@ namespace Alpha.HowToUse.LocalResources {
         public static string MasterAutoPT {
             get {
                 return ResourceManager.GetString("MasterAutoPT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Configure Live Casino Win Limit.
-        /// </summary>
-        public static string MemberWinLimit {
-            get {
-                return ResourceManager.GetString("MemberWinLimit", resourceCulture);
             }
         }
         
