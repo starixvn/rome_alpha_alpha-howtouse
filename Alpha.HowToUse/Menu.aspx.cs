@@ -155,14 +155,7 @@
                         continue;
                     }
                 }
-
-                // Check Show ColossusBets
-                if (item.Description.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
-                {
-                    if (UserPermission.IsNeutral ||
-                        !UserPermission.IsShowColossusBets) continue;
-                }
-
+                
                 // Check Show OneRNGJackpot
                 if (item.Description.Equals("ProgressiveJackpot", System.StringComparison.OrdinalIgnoreCase))
                 {
@@ -186,15 +179,7 @@
             itemBlock.item_title = LocalResources.HowToUse.ResourceManager.GetString(menuItem.Title);
             itemBlock.order = string.Format("{0}{1}", parentIndex + 1, index + 1);
 
-            if (menuItem.Title.Equals("MemberWinLimit", System.StringComparison.OrdinalIgnoreCase))
-            {
-                itemBlock.item_url = string.Format("{0}/Resources/HTML/WinLimit/WinLimit_{1}.html", Request.ApplicationPath, CurrentUserSession.Language);
-            }
-            else if (menuItem.Title.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
-            {
-                itemBlock.item_url = "Resources/HTML/ColossusBets/ColossusBets_" + CurrentUserSession.Language + ".html";
-            }
-            else if (menuItem.Title.Equals("ProgressiveJackpot", System.StringComparison.OrdinalIgnoreCase))
+            if (menuItem.Title.Equals("ProgressiveJackpot", System.StringComparison.OrdinalIgnoreCase))
             {
                 itemBlock.item_url = "Resources/HTML/ProgressiveJackpot/" + CurrentUserSession.Language + ".html";
             }

@@ -153,14 +153,8 @@
   <data name="ViewLogFunction" xml:space="preserve">
     <value>View Log Function</value>
   </data>
-  <data name="MemberWinLimit" xml:space="preserve">
-    <value>Configure Live Casino Win Limit</value>
-  </data>
   <data name="SecurityCode" xml:space="preserve">
     <value>Security Code FAQS</value>
-  </data>
-  <data name="ColossusBets" xml:space="preserve">
-    <value>Colossus Bets</value>
   </data>
   <data name="Cricket" xml:space="preserve">
     <value>Cricket</value>

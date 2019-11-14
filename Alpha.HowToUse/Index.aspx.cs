@@ -33,14 +33,7 @@ namespace Alpha.HowToUse
                 var redirectUrl = Request["redirectto"];
                 if (!string.IsNullOrWhiteSpace(redirectUrl))
                 {
-                    if (redirectUrl.Equals("ColossusBets", System.StringComparison.OrdinalIgnoreCase))
-                    {
-                        mainSource = "Resources/HTML/ColossusBets/ColossusBets_" + CurrentUserSession.Language + ".html";
-                    }
-                    else
-                    {
-                        mainSource = string.Format("Resources/HTML/{0}/{1}.html", redirectUrl, CurrentUserSession.Language);
-                    }
+                    mainSource = string.Format("Resources/HTML/{0}/{1}.html", redirectUrl, CurrentUserSession.Language);
                 }
             }
             else
