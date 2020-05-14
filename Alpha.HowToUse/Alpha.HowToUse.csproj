@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -489,6 +490,7 @@
     <Content Include="Resources\HTML\Images\lcMenuKR.png" />
     <Content Include="Resources\HTML\Images\lcMenuTH.png" />
     <Content Include="Resources\HTML\Images\lcMenuTW.png" />
+    <Content Include="Resources\HTML\QRCode\en-US.html" />
     <Content Include="Resources\HTML\Resources\HtmlForm.css" />
     <Content Include="Resources\HTML\Resources\SecurityCode.css" />
     <Content Include="Resources\HTML\SecurityCode\SecurityCode_en-US.html" />

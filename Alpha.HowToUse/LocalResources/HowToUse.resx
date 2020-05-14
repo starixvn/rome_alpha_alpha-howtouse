@@ -165,4 +165,7 @@
   <data name="ProgressiveJackpot" xml:space="preserve">
     <value>Progressive Jackpot Games</value>
   </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>Create Member with QR Code</value>
+  </data>
 </root>
