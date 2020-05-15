@@ -162,4 +162,7 @@
   <data name="SystemParlay" xml:space="preserve">
     <value>시스템 팔레이</value>
   </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>Create Member with QR Code</value>
+  </data>
 </root>

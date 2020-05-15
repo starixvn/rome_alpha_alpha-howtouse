@@ -165,4 +165,7 @@
   <data name="ProgressiveJackpot" xml:space="preserve">
     <value>เกมแจ็คพอตสะสม</value>
   </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>สร้างสมาชิกด้วยรหัส QR</value>
+  </data>
 </root>
