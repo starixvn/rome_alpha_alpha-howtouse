@@ -162,4 +162,7 @@
   <data name="SystemParlay" xml:space="preserve">
     <value>System Parlay</value>
   </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>Tạo Member với mã QR</value>
+  </data>
 </root>
