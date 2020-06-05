@@ -1,6 +1,7 @@
 namespace Alpha.HowToUse
 {
     using System.Web.Security;
+    using Alpha.Web.Helpers;
     using Sunplus.Agent.Model.Entities;
 
     public partial class Index_Page : Fanex.Age.UI.TplPage
@@ -34,6 +35,14 @@ namespace Alpha.HowToUse
                 if (!string.IsNullOrWhiteSpace(redirectUrl))
                 {
                     mainSource = string.Format("Resources/HTML/{0}/{1}.html", redirectUrl, CurrentUserSession.Language);
+                }
+            }
+            else if (!string.IsNullOrWhiteSpace(Request["linktomessagesite"]))
+            {
+                var redirectUrl = Request["linktomessagesite"];
+                if (!string.IsNullOrWhiteSpace(redirectUrl))
+                {
+                    mainSource = $"{MicroSites.MessageUrl()}/StaticMessage/Guide?id={redirectUrl}";
                 }
             }
             else

@@ -168,4 +168,7 @@
   <data name="QRCode" xml:space="preserve">
     <value>สร้างสมาชิกด้วยรหัส QR</value>
   </data>
+  <data name="ADBT" xml:space="preserve">
+    <value>โอนยอดคงเหลือทั้งวัน</value>
+  </data>
 </root>

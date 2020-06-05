@@ -3,6 +3,7 @@
     using System.Text.RegularExpressions;
     using System.Web;
     using System.Web.UI;
+    using Alpha.Web.Helpers;
     using Fanex.Age.UI;
     using Models;
     using Sunplus.Agent.Model.BL.Definitions;
@@ -185,7 +186,14 @@
             }
             else if (!string.IsNullOrWhiteSpace(menuItem.GetAttribute("href")))
             {
-                itemBlock.item_url = string.Format(menuItem.GetAttribute("href"), CurrentUserSession.Language);
+                if (!string.IsNullOrWhiteSpace(menuItem.GetAttribute("linktomessagesite")) && menuItem.GetAttribute("linktomessagesite") == "true")
+                {
+                    itemBlock.item_url = $"{MicroSites.MessageUrl()}{menuItem.GetAttribute("href")}";
+                }
+                else
+                {
+                    itemBlock.item_url = string.Format(menuItem.GetAttribute("href"), CurrentUserSession.Language);
+                }
             }
             else
             {

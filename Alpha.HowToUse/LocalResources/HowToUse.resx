@@ -168,4 +168,7 @@
   <data name="QRCode" xml:space="preserve">
     <value>Create Member with QR Code</value>
   </data>
+  <data name="ADBT" xml:space="preserve">
+    <value>All Day Balance Transfer</value>
+  </data>
 </root>

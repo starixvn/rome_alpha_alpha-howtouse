@@ -70,6 +70,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Day Balance Transfer.
+        /// </summary>
+        public static string ADBT {
+            get {
+                return ResourceManager.GetString("ADBT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Agent User Guide.
         /// </summary>
         public static string AgentUserGuide {
