@@ -11,6 +11,7 @@
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" width="480" height="280" href="Resources/HTML/ProgressiveJackpot/{0}.html"></siteMapNode>
         <siteMapNode title="QRCode" description="QRCode" width="480" height="280" href="Resources/HTML/QRCode/{0}.html"></siteMapNode>
+        <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -24,6 +25,7 @@
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" width="480" height="280" href="Resources/HTML/ProgressiveJackpot/{0}.html"></siteMapNode>
         <siteMapNode title="QRCode" description="QRCode" width="480" height="280" href="Resources/HTML/QRCode/{0}.html"></siteMapNode>
+        <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -37,6 +39,7 @@
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" width="480" height="280" href="Resources/HTML/ProgressiveJackpot/{0}.html"></siteMapNode>
         <siteMapNode title="QRCode" description="QRCode" width="480" height="280" href="Resources/HTML/QRCode/{0}.html"></siteMapNode>
+        <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
     <!--/HowToUse-->

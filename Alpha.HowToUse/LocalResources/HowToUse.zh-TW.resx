@@ -168,4 +168,7 @@
   <data name="QRCode" xml:space="preserve">
     <value>以二维码创建会员</value>
   </data>
+  <data name="ADBT" xml:space="preserve">
+    <value>全天餘額轉賬</value>
+  </data>
 </root>
