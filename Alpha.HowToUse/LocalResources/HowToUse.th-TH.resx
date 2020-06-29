@@ -171,4 +171,7 @@
   <data name="ADBT" xml:space="preserve">
     <value>โอนยอดคงเหลือทั้งวัน</value>
   </data>
+  <data name="IndirectLoginAccount" xml:space="preserve">
+    <value>บัญชีเพื่อการเข้าสู่ระบบทางอ้อม</value>
+  </data>
 </root>

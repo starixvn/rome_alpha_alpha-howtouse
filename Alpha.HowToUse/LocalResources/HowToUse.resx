@@ -171,4 +171,7 @@
   <data name="ADBT" xml:space="preserve">
     <value>All Day Balance Transfer</value>
   </data>
+  <data name="IndirectLoginAccount" xml:space="preserve">
+    <value>Indirect Login Account</value>
+  </data>
 </root>

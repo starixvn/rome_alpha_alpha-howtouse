@@ -171,4 +171,7 @@
   <data name="ADBT" xml:space="preserve">
     <value>全天余额转账</value>
   </data>
+  <data name="IndirectLoginAccount" xml:space="preserve">
+    <value>非间接登录账户</value>
+  </data>
 </root>
