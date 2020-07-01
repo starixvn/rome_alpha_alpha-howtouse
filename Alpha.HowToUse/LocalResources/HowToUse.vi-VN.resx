@@ -168,4 +168,7 @@
   <data name="ADBT" xml:space="preserve">
     <value>Chuyển Khoản Tổng Số Dư</value>
   </data>
+  <data name="IndirectLoginAccount" xml:space="preserve">
+    <value>Đăng nhập tài khoản gián tiếp</value>
+  </data>
 </root>

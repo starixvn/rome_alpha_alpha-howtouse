@@ -142,6 +142,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indirect Login Account.
+        /// </summary>
+        public static string IndirectLoginAccount {
+            get {
+                return ResourceManager.GetString("IndirectLoginAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Master Auto Position Taking.
         /// </summary>
         public static string MasterAutoPT {
