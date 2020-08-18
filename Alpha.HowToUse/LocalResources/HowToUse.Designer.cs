@@ -115,6 +115,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Multiple.
+        /// </summary>
+        public static string EditMultipleDCS {
+            get {
+                return ResourceManager.GetString("EditMultipleDCS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Help.
         /// </summary>
         public static string Help {

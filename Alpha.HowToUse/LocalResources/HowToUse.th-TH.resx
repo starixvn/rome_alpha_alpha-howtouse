@@ -174,4 +174,7 @@
   <data name="IndirectLoginAccount" xml:space="preserve">
     <value>บัญชีเพื่อการเข้าสู่ระบบทางอ้อม</value>
   </data>
+  <data name="EditMultipleDCS" xml:space="preserve">
+    <value>แก้ไข หลากหลาย</value>
+  </data>
 </root>

@@ -174,4 +174,7 @@
   <data name="IndirectLoginAccount" xml:space="preserve">
     <value>非間接登入帳戶</value>
   </data>
+  <data name="EditMultipleDCS" xml:space="preserve">
+    <value>修改多重賬號</value>
+  </data>
 </root>
