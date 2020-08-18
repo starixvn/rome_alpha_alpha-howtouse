@@ -174,4 +174,7 @@
   <data name="IndirectLoginAccount" xml:space="preserve">
     <value>Indirect Login Account</value>
   </data>
+  <data name="EditMultipleDCS" xml:space="preserve">
+    <value>Edit Multiple</value>
+  </data>
 </root>

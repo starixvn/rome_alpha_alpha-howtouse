@@ -165,4 +165,7 @@
   <data name="QRCode" xml:space="preserve">
     <value>Create Member with QR Code</value>
   </data>
+  <data name="EditMultipleDCS" xml:space="preserve">
+    <value>복합 수정</value>
+  </data>
 </root>

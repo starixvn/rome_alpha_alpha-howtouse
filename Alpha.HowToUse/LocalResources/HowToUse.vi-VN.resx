@@ -171,4 +171,8 @@
   <data name="IndirectLoginAccount" xml:space="preserve">
     <value>Đăng nhập tài khoản gián tiếp</value>
   </data>
+  <data name="EditMultipleDCS" xml:space="preserve">
+    <value>Tùy chỉnh đồng loạt</value>
+    <comment>Not found</comment>
+  </data>
 </root>
