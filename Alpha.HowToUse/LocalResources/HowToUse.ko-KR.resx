@@ -168,7 +168,16 @@
   <data name="EditMultipleDCS" xml:space="preserve">
     <value>복합 수정</value>
   </data>
+  <data name="AgentList" xml:space="preserve">
+    <value>에이전트 목록</value>
+  </data>
   <data name="BonusDetail" xml:space="preserve">
     <value>Bonus Detail</value>
+  </data>
+  <data name="MasterList" xml:space="preserve">
+    <value>마스터 에이전트 목록</value>
+  </data>
+  <data name="MemberList" xml:space="preserve">
+    <value>고객 리스트</value>
   </data>
 </root>

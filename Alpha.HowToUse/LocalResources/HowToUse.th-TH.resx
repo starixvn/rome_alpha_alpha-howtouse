@@ -177,7 +177,16 @@
   <data name="EditMultipleDCS" xml:space="preserve">
     <value>แก้ไข หลากหลาย</value>
   </data>
+  <data name="AgentList" xml:space="preserve">
+    <value>รายชื่อ เอเจนต์</value>
+  </data>
   <data name="BonusDetail" xml:space="preserve">
     <value>Bonus Detail</value>
+  </data>
+  <data name="MasterList" xml:space="preserve">
+    <value>รายชื่อตัวแทนหลัก</value>
+  </data>
+  <data name="MemberList" xml:space="preserve">
+    <value>รายชื่อลูกค้า</value>
   </data>
 </root>

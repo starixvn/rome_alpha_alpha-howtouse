@@ -13,6 +13,7 @@
         <siteMapNode title="QRCode" description="QRCode" width="480" height="280" href="Resources/HTML/QRCode/{0}.html"></siteMapNode>
         <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="EditMultipleDCS" description="EditMultipleDCS" width="480" height="280" href="StaticMessage/Guide?id=135363" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="MemberList" description="MemberList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
@@ -29,6 +30,7 @@
         <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="IndirectLoginAccount" description="IndirectLoginAccount" width="480" height="280" href="StaticMessage/Guide?id=132782" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="EditMultipleDCS" description="EditMultipleDCS" width="480" height="280" href="StaticMessage/Guide?id=135363" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="AgentList" description="AgentList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
@@ -45,6 +47,7 @@
         <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="IndirectLoginAccount" description="IndirectLoginAccount" width="480" height="280" href="StaticMessage/Guide?id=132782" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="EditMultipleDCS" description="EditMultipleDCS" width="480" height="280" href="StaticMessage/Guide?id=135363" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="MasterList" description="MasterList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>

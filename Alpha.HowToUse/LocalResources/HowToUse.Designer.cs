@@ -79,6 +79,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Agent List.
+        /// </summary>
+        public static string AgentList {
+            get {
+                return ResourceManager.GetString("AgentList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Agent User Guide.
         /// </summary>
         public static string AgentUserGuide {
@@ -174,6 +183,24 @@ namespace Alpha.HowToUse.LocalResources {
         public static string MasterAutoPT {
             get {
                 return ResourceManager.GetString("MasterAutoPT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Master Agent List.
+        /// </summary>
+        public static string MasterList {
+            get {
+                return ResourceManager.GetString("MasterList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Member List.
+        /// </summary>
+        public static string MemberList {
+            get {
+                return ResourceManager.GetString("MemberList", resourceCulture);
             }
         }
         

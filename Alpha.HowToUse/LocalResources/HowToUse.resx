@@ -177,7 +177,16 @@
   <data name="EditMultipleDCS" xml:space="preserve">
     <value>Edit Multiple</value>
   </data>
+  <data name="AgentList" xml:space="preserve">
+    <value>Agent List</value>
+  </data>
   <data name="BonusDetail" xml:space="preserve">
     <value>Bonus Detail</value>
+  </data>
+  <data name="MasterList" xml:space="preserve">
+    <value>Master Agent List</value>
+  </data>
+  <data name="MemberList" xml:space="preserve">
+    <value>Member List</value>
   </data>
 </root>

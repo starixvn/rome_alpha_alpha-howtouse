@@ -168,7 +168,16 @@
   <data name="EditMultipleDCS" xml:space="preserve">
     <value>Edit Multiple</value>
   </data>
+  <data name="AgentList" xml:space="preserve">
+    <value>エージェントリスト</value>
+  </data>
   <data name="BonusDetail" xml:space="preserve">
     <value>Bonus Detail</value>
+  </data>
+  <data name="MasterList" xml:space="preserve">
+    <value>Master List</value>
+  </data>
+  <data name="MemberList" xml:space="preserve">
+    <value>お客様リスト</value>
   </data>
 </root>
