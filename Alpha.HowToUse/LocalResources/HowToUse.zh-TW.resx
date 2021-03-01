@@ -177,4 +177,7 @@
   <data name="EditMultipleDCS" xml:space="preserve">
     <value>修改多重賬號</value>
   </data>
+  <data name="BonusDetail" xml:space="preserve">
+    <value>Bonus Detail</value>
+  </data>
 </root>

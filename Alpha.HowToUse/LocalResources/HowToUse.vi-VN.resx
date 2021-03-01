@@ -175,4 +175,7 @@
     <value>Tùy chỉnh đồng loạt</value>
     <comment>Not found</comment>
   </data>
+  <data name="BonusDetail" xml:space="preserve">
+    <value>Bonus Detail</value>
+  </data>
 </root>
