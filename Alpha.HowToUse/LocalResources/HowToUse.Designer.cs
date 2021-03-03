@@ -106,6 +106,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bonus Detail.
+        /// </summary>
+        public static string BonusDetail {
+            get {
+                return ResourceManager.GetString("BonusDetail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cricket.
         /// </summary>
         public static string Cricket {

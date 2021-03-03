@@ -168,4 +168,7 @@
   <data name="EditMultipleDCS" xml:space="preserve">
     <value>복합 수정</value>
   </data>
+  <data name="BonusDetail" xml:space="preserve">
+    <value>Bonus Detail</value>
+  </data>
 </root>
