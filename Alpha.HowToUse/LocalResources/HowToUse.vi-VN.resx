@@ -175,7 +175,16 @@
     <value>Tùy chỉnh đồng loạt</value>
     <comment>Not found</comment>
   </data>
+  <data name="AgentList" xml:space="preserve">
+    <value>Danh sách Agent</value>
+  </data>
   <data name="BonusDetail" xml:space="preserve">
     <value>Bonus Detail</value>
+  </data>
+  <data name="MasterList" xml:space="preserve">
+    <value>Danh sách Master</value>
+  </data>
+  <data name="MemberList" xml:space="preserve">
+    <value>Danh sách Member</value>
   </data>
 </root>
