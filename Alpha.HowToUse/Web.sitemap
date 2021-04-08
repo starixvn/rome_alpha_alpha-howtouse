@@ -7,7 +7,7 @@
         <siteMapNode title="AccInfoFunction" description="AccInfo" width="560" height="310" href="Resources/HTML/AccInfo/AccInfo.html"></siteMapNode>
         <siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
         <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>
-        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html"></siteMapNode>
+        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html?v=0.1"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" width="480" height="280" href="Resources/HTML/ProgressiveJackpot/{0}.html"></siteMapNode>
         <siteMapNode title="QRCode" description="QRCode" width="480" height="280" href="Resources/HTML/QRCode/{0}.html"></siteMapNode>
@@ -24,7 +24,7 @@
         <siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
         <siteMapNode title="AutoPT" description="AutoPT" width="410" height="320"></siteMapNode>
         <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>
-        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html"></siteMapNode>
+        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html?v=0.1"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" width="480" height="280" href="Resources/HTML/ProgressiveJackpot/{0}.html"></siteMapNode>
         <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
@@ -41,7 +41,7 @@
         <siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
         <siteMapNode title="MasterAutoPT" description="AutoPT" width="410" height="320"></siteMapNode>
         <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>
-        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html"></siteMapNode>
+        <siteMapNode title="Cricket" description="Cricket" width="480" height="280" href="Resources/HTML/Cricket/Index_{0}.html?v=0.1"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" width="480" height="280" href="Resources/HTML/ProgressiveJackpot/{0}.html"></siteMapNode>
         <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
