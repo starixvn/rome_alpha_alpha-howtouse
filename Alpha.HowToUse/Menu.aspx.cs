@@ -1,5 +1,6 @@
 ﻿namespace Alpha.HowToUse
 {
+    using System;
     using System.Text.RegularExpressions;
     using System.Web;
     using System.Web.UI;
@@ -197,11 +198,20 @@
             }
             else
             {
-                itemBlock.item_url = string.Format(
-                    "Content.aspx?fw={0}&fh={1}&folder={2}",
-                                            menuItem.GetAttribute("width"),
-                                            menuItem.GetAttribute("height"),
-                                            menuItem.Description);
+                var pdf = menuItem.GetAttribute("pdf");
+
+                if (!string.IsNullOrWhiteSpace(pdf) && pdf.Equals("true", StringComparison.OrdinalIgnoreCase))
+                {
+                    itemBlock.item_url = string.Format("Pdf.aspx?functionName={0}", menuItem.Description);
+                }
+                else
+                {
+                    itemBlock.item_url = string.Format(
+                        "Content.aspx?fw={0}&fh={1}&folder={2}",
+                        menuItem.GetAttribute("width"),
+                        menuItem.GetAttribute("height"),
+                        menuItem.Description);
+                }
             }
         }
     }
