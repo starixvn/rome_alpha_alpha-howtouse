@@ -585,12 +585,27 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\PDF\AccInfo.Agent.en-US.pdf">
-		<DependentUpon>AccInfo.Super.en-US.pdf</DependentUpon>
-	</Content>
+      <DependentUpon>AccInfo.Super.en-US.pdf</DependentUpon>
+    </Content>
     <Content Include="Resources\PDF\AccInfo.Master.en-US.pdf">
-		<DependentUpon>AccInfo.Super.en-US.pdf</DependentUpon>
-	</Content>
+      <DependentUpon>AccInfo.Super.en-US.pdf</DependentUpon>
+    </Content>
     <Content Include="Resources\PDF\AccInfo.Super.en-US.pdf" />
+    <Content Include="Resources\PDF\Cricket.en-US.pdf" />
+    <Content Include="Resources\PDF\ProgressiveJackpot.en-US.pdf" />
+    <Content Include="Resources\PDF\QRCode.en-US.pdf" />
+    <Content Include="Resources\PDF\QRCode.th-TH.pdf">
+	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\PDF\QRCode.vi-VN.pdf">
+	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\PDF\QRCode.zh-CN.pdf">
+	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\PDF\QRCode.zh-TW.pdf">
+	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+    </Content>
     <None Include="Web.uati7.config">
       <SubType>Designer</SubType>
       <DependentUpon>Web.config</DependentUpon>

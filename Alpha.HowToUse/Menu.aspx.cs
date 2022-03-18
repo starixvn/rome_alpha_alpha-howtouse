@@ -181,11 +181,7 @@
             itemBlock.item_title = LocalResources.HowToUse.ResourceManager.GetString(menuItem.Title);
             itemBlock.order = string.Format("{0}{1}", parentIndex + 1, index + 1);
 
-            if (menuItem.Title.Equals("ProgressiveJackpot", System.StringComparison.OrdinalIgnoreCase))
-            {
-                itemBlock.item_url = "Resources/HTML/ProgressiveJackpot/" + CurrentUserSession.Language + ".html";
-            }
-            else if (!string.IsNullOrWhiteSpace(menuItem.GetAttribute("href")))
+            if (!string.IsNullOrWhiteSpace(menuItem.GetAttribute("href")))
             {
                 if (!string.IsNullOrWhiteSpace(menuItem.GetAttribute("linktomessagesite")) && menuItem.GetAttribute("linktomessagesite") == "true")
                 {
