@@ -10,7 +10,7 @@
         <siteMapNode title="Cricket" description="Cricket" pdf="true"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" pdf="true"></siteMapNode>
-        <siteMapNode title="QRCode" description="QRCode" pdf="true"></siteMapNode>
+        <siteMapNode title="QRCode" description="QRCode" width="480" height="280" href="Resources/HTML/QRCode/{0}.html"></siteMapNode>
         <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="EditMultipleDCS" description="EditMultipleDCS" width="480" height="280" href="StaticMessage/Guide?id=135363" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MemberList" description="MemberList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
