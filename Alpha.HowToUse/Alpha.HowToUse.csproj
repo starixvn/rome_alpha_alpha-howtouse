@@ -64,7 +64,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Fanex.Age.UI, Version=3.0.3.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.Age.UI.3.0.3.6-Beta02\lib\net461\Fanex.Age.UI.dll</HintPath>
+      <HintPath>..\packages\Fanex.Age.UI.3.0.3.6\lib\net461\Fanex.Age.UI.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.Caching, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Caching.2.2.1\lib\net461\Fanex.Caching.dll</HintPath>
@@ -102,7 +102,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Fanex.Razorbill.Security, Version=3.0.2.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.Razorbill.Security.3.0.2.4-Beta02\lib\net461\Fanex.Razorbill.Security.dll</HintPath>
+      <HintPath>..\packages\Fanex.Razorbill.Security.3.0.2.4\lib\net461\Fanex.Razorbill.Security.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.Security.Captcha, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Security.Captcha.1.0.1\lib\net40\Fanex.Security.Captcha.dll</HintPath>
@@ -177,11 +177,11 @@
       <HintPath>..\packages\Sunplus.Agent.Configurations.3.0.0.1\lib\net40\Sunplus.Agent.Configurations.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sunplus.Agent.Model.Base, Version=3.0.5.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sunplus.Agent.Model.Base.3.0.6-Beta02\lib\net461\Sunplus.Agent.Model.Base.dll</HintPath>
+    <Reference Include="Sunplus.Agent.Model.Base, Version=3.0.5.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sunplus.Agent.Model.Base.3.0.6.2\lib\net461\Sunplus.Agent.Model.Base.dll</HintPath>
     </Reference>
     <Reference Include="Sunplus.Agent.Model.Definitions, Version=3.0.3.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sunplus.Agent.Model.Definitions.3.0.3.5-Beta02\lib\net40\Sunplus.Agent.Model.Definitions.dll</HintPath>
+      <HintPath>..\packages\Sunplus.Agent.Model.Definitions.3.0.3.5\lib\net40\Sunplus.Agent.Model.Definitions.dll</HintPath>
     </Reference>
     <Reference Include="Sunplus.Agent.Utilities, Version=3.0.0.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sunplus.Agent.Utilities.3.0.0.4\lib\net40\Sunplus.Agent.Utilities.dll</HintPath>
@@ -555,16 +555,16 @@
     <Content Include="Resources\PDF\ProgressiveJackpot.en-US.pdf" />
     <Content Include="Resources\PDF\QRCode.en-US.pdf" />
     <Content Include="Resources\PDF\QRCode.th-TH.pdf">
-	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+      <DependentUpon>QRCode.en-US.pdf</DependentUpon>
     </Content>
     <Content Include="Resources\PDF\QRCode.vi-VN.pdf">
-	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+      <DependentUpon>QRCode.en-US.pdf</DependentUpon>
     </Content>
     <Content Include="Resources\PDF\QRCode.zh-CN.pdf">
-	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+      <DependentUpon>QRCode.en-US.pdf</DependentUpon>
     </Content>
     <Content Include="Resources\PDF\QRCode.zh-TW.pdf">
-	  <DependentUpon>QRCode.en-US.pdf</DependentUpon>
+      <DependentUpon>QRCode.en-US.pdf</DependentUpon>
     </Content>
     <None Include="Web.uati7.config">
       <SubType>Designer</SubType>
