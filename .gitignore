@@ -2,6 +2,7 @@
 /packages/*
 /PrecompiledWeb
 *.suo
+*.sh
 /Alpha.HowToUse/bin
 /Alpha.HowToUse/obj
 /Alpha.HowToUse/StyleCop.Cache
