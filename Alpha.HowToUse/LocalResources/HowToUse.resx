@@ -189,4 +189,7 @@
   <data name="MemberList" xml:space="preserve">
     <value>Member List</value>
   </data>
+  <data name="BetCreditTracking" xml:space="preserve">
+    <value>Bet Credit Tracking</value>
+  </data>
 </root>
