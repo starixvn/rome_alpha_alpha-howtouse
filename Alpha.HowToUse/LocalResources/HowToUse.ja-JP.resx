@@ -180,4 +180,7 @@
   <data name="MemberList" xml:space="preserve">
     <value>お客様リスト</value>
   </data>
+  <data name="BetCreditTracking" xml:space="preserve">
+    <value>Bet Credit Tracking</value>
+  </data>
 </root>

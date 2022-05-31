@@ -189,4 +189,7 @@
   <data name="MemberList" xml:space="preserve">
     <value>会员</value>
   </data>
+  <data name="BetCreditTracking" xml:space="preserve">
+    <value>追踪投注额度</value>
+  </data>
 </root>

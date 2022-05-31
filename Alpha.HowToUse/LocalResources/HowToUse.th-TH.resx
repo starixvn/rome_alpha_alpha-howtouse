@@ -189,4 +189,7 @@
   <data name="MemberList" xml:space="preserve">
     <value>รายชื่อลูกค้า</value>
   </data>
+  <data name="BetCreditTracking" xml:space="preserve">
+    <value>ติดตามเครดิตเดิมพัน</value>
+  </data>
 </root>
