@@ -133,6 +133,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Chatbot.
+        /// </summary>
+        public static string Chatbot {
+            get {
+                return ResourceManager.GetString("Chatbot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cricket.
         /// </summary>
         public static string Cricket {
