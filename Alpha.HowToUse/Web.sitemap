@@ -16,6 +16,7 @@
         <siteMapNode title="MemberList" description="MemberList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
+		<siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -34,6 +35,7 @@
         <siteMapNode title="AgentList" description="AgentList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
+		  <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -52,6 +54,7 @@
         <siteMapNode title="MasterList" description="MasterList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
+		<siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
     <!--/HowToUse-->

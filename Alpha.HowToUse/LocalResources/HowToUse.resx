@@ -192,4 +192,7 @@
   <data name="BetCreditTracking" xml:space="preserve">
     <value>Bet Credit Tracking</value>
   </data>
+  <data name="Chatbot" xml:space="preserve">
+    <value>Chatbot</value>
+  </data>
 </root>
