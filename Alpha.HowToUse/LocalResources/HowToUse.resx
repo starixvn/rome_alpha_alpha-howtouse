@@ -195,4 +195,7 @@
   <data name="Chatbot" xml:space="preserve">
     <value>Chatbot</value>
   </data>
+  <data name="MyWatchlist" xml:space="preserve">
+    <value>My Watchlist</value>
+  </data>
 </root>
