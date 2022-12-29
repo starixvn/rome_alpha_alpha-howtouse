@@ -1,5 +1,6 @@
 namespace Alpha.HowToUse
 {
+    using System.Configuration;
     using System.Web.Security;
     using Alpha.Web.Helpers;
     using Sunplus.Agent.Model.Entities;
@@ -62,9 +63,10 @@ namespace Alpha.HowToUse
         }
 
         public override void RenderContent(System.Web.UI.HtmlTextWriter writer)
-        {            
-            if (!UserSession.Current.Site.Equals("789y", System.StringComparison.OrdinalIgnoreCase) &&
-                !UserSession.Current.Site.Equals("y987", System.StringComparison.OrdinalIgnoreCase))
+        {
+            var siteLabel789y = ConfigurationManager.AppSettings["SiteLabel789y"];
+            var siteLabel = ConfigurationManager.AppSettings["SiteLabel"];
+            if (!siteLabel.Equals(siteLabel789y))
             {
                 Index_Template tpl = new Index_Template();
                 tpl.mainFrameSrc = mainSource;
