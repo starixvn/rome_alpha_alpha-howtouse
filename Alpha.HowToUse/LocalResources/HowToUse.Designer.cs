@@ -19,7 +19,7 @@ namespace Alpha.HowToUse.LocalResources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class HowToUse {
@@ -219,6 +219,15 @@ namespace Alpha.HowToUse.LocalResources {
         public static string MemberList {
             get {
                 return ResourceManager.GetString("MemberList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Thresholds.
+        /// </summary>
+        public static string MyThresholds {
+            get {
+                return ResourceManager.GetString("MyThresholds", resourceCulture);
             }
         }
         
