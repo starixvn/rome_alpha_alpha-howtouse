@@ -193,4 +193,7 @@
   <data name="MyWatchlist" xml:space="preserve">
     <value>Danh Sách Theo Dõi</value>
   </data>
+  <data name="MyThresholds" xml:space="preserve">
+    <value>Mức Thắng Thua</value>
+  </data>
 </root>
