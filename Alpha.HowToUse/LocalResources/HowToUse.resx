@@ -201,4 +201,7 @@
   <data name="MyThresholds" xml:space="preserve">
     <value>My Thresholds</value>
   </data>
+  <data name="CreateMultipleAccounts" xml:space="preserve">
+    <value>Create Multiple Accounts</value>
+  </data>
 </root>
