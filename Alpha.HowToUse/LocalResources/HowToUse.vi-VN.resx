@@ -196,4 +196,7 @@
   <data name="MyThresholds" xml:space="preserve">
     <value>Mức Thắng Thua</value>
   </data>
+  <data name="CreateMultipleAccounts" xml:space="preserve">
+    <value>Tạo Đồng Loạt Tài Khoản</value>
+  </data>
 </root>

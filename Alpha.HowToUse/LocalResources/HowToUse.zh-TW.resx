@@ -198,4 +198,7 @@
   <data name="MyThresholds" xml:space="preserve">
     <value>我的限額</value>
   </data>
+  <data name="CreateMultipleAccounts" xml:space="preserve">
+    <value>同時建立多組帳戶</value>
+  </data>
 </root>
