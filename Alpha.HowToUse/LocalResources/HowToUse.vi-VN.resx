@@ -199,4 +199,7 @@
   <data name="CreateMultipleAccounts" xml:space="preserve">
     <value>Tạo Đồng Loạt Tài Khoản</value>
   </data>
+  <data name="ProblemAccountList" xml:space="preserve">
+    <value>Danh Sách Tài Khoản Có Vấn Đề</value>
+  </data>
 </root>
