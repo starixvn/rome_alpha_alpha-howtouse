@@ -201,4 +201,7 @@
   <data name="CreateMultipleAccounts" xml:space="preserve">
     <value>สร้างหลายบัญชี</value>
   </data>
+  <data name="ProblemAccountList" xml:space="preserve">
+    <value>รายการบัญชีที่มีปัญหา</value>
+  </data>
 </root>

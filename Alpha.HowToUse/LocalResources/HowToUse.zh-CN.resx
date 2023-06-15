@@ -201,4 +201,7 @@
   <data name="CreateMultipleAccounts" xml:space="preserve">
     <value>同时建立多组账号</value>
   </data>
+  <data name="ProblemAccountList" xml:space="preserve">
+    <value>问题账号列表</value>
+  </data>
 </root>
