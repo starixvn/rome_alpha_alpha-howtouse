@@ -16,10 +16,11 @@
         <siteMapNode title="MemberList" description="MemberList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
-		    <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MyWatchlist" description="MyWatchlist" width="480" height="280" href="StaticMessage/Guide?id=179067" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="CreateMultipleAccounts" description="CreateMultipleAccounts" width="480" height="280" href="StaticMessage/Guide?id=184098" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="ProblemAccountList" description="ProblemAccountList" width="480" height="280" href="StaticMessage/Guide?id=127446" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="AutoTransfer" description="AutoTransfer" width="480" height="280" href="StaticMessage/Guide?id=184099" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -38,10 +39,11 @@
         <siteMapNode title="AgentList" description="AgentList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
-		    <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MyThresholds" description="MyThresholds" width="480" height="280" href="StaticMessage/Guide?id=179067" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="CreateMultipleAccounts" description="CreateMultipleAccounts" width="480" height="280" href="StaticMessage/Guide?id=184098" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="ProblemAccountList" description="ProblemAccountList" width="480" height="280" href="StaticMessage/Guide?id=127446" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="AutoTransfer" description="AutoTransfer" width="480" height="280" href="StaticMessage/Guide?id=184099" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
 
@@ -60,10 +62,11 @@
         <siteMapNode title="MasterList" description="MasterList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
         <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
-		    <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MyThresholds" description="MyThresholds" width="480" height="280" href="StaticMessage/Guide?id=179067" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="CreateMultipleAccounts" description="CreateMultipleAccounts" width="480" height="280" href="StaticMessage/Guide?id=184098" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="ProblemAccountList" description="ProblemAccountList" width="480" height="280" href="StaticMessage/Guide?id=127446" linktomessagesite="true"></siteMapNode>
+        <siteMapNode title="AutoTransfer" description="AutoTransfer" width="480" height="280" href="StaticMessage/Guide?id=184099" linktomessagesite="true"></siteMapNode>
       </siteMapNode>
     </siteMapNode>
     <!--/HowToUse-->
