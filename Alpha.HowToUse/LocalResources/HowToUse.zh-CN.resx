@@ -204,4 +204,7 @@
   <data name="ProblemAccountList" xml:space="preserve">
     <value>问题账号列表</value>
   </data>
+  <data name="AutoTransfer" xml:space="preserve">
+    <value>自动转账</value>
+  </data>
 </root>

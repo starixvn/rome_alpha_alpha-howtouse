@@ -207,4 +207,7 @@
   <data name="ProblemAccountList" xml:space="preserve">
     <value>Problem Account List</value>
   </data>
+  <data name="AutoTransfer" xml:space="preserve">
+    <value>Auto Transfer</value>
+  </data>
 </root>

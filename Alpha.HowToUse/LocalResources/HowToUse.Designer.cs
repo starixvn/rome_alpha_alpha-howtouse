@@ -115,6 +115,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Auto Transfer.
+        /// </summary>
+        public static string AutoTransfer {
+            get {
+                return ResourceManager.GetString("AutoTransfer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bet Credit Tracking.
         /// </summary>
         public static string BetCreditTracking {
