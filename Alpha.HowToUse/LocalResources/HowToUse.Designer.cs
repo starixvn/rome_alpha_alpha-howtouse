@@ -214,6 +214,15 @@ namespace Alpha.HowToUse.LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Last Bets.
+        /// </summary>
+        public static string LastBets {
+            get {
+                return ResourceManager.GetString("LastBets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Master Auto Position Taking.
         /// </summary>
         public static string MasterAutoPT {

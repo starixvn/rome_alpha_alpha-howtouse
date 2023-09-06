@@ -210,4 +210,7 @@
   <data name="AutoTransfer" xml:space="preserve">
     <value>Auto Transfer</value>
   </data>
+  <data name="LastBets" xml:space="preserve">
+    <value>Last Bets</value>
+  </data>
 </root>
