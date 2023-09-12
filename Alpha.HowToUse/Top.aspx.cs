@@ -1,7 +1,7 @@
 namespace Alpha.HowToUse
 {
+    using AlphaPlus.User.Models;
     using System.Web.UI;
-    using Sunplus.Agent.Model.Entities;
 
     public partial class Top_Page : Fanex.Age.UI.TplPage
     {    

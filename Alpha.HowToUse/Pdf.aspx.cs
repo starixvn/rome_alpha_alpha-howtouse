@@ -1,11 +1,11 @@
 ﻿namespace Alpha.HowToUse
 {
+    using AlphaPlus.User.Models;
     using System;
     using System.IO;
     using System.Linq;
     using System.Net;
     using System.Text;
-    using Sunplus.Agent.Model.Entities;
 
     public partial class Pdf : System.Web.UI.Page
     {

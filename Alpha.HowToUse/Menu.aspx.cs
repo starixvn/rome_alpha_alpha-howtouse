@@ -1,15 +1,14 @@
 ﻿namespace Alpha.HowToUse
 {
+    using Alpha.Web.Helpers;
+    using AlphaPlus.Configurations;
+    using AlphaPlus.User.Models;
+    using Fanex.Age.UI;
+    using Models;
     using System;
     using System.Text.RegularExpressions;
     using System.Web;
     using System.Web.UI;
-    using Alpha.Web.Helpers;
-    using Fanex.Age.UI;
-    using Models;
-    using Sunplus.Agent.Model.BL.Definitions;
-    using Sunplus.Agent.Model.Entities;
-    using Sunplus.Agent.Model.Entities.Permission;
 
     public partial class Menu_Page : TplPage
     {
@@ -31,7 +30,7 @@
         {
             Menu_Template tpl = new Menu_Template();
 
-            if (CurrentUserSession.IsSuper || UserPermission.IsNeutral)
+            if (UserSession.Current.IsSuper || AppSettings.IsSiteLabel789y)
             {
                 tpl.AgUI = null;
             }
@@ -42,7 +41,7 @@
 
         protected void RenderMenu(ref Menu_Template tpl)
         {
-            int roleId = CurrentUserSession.RoleId;
+            int roleId = UserSession.Current.RoleId;
             SiteMapNode rootNode = SiteMap.RootNode;
             SiteMapNode contextNode = null;
 
@@ -113,50 +112,6 @@
             for (int j = 0; j < itemCount; j++)
             {
                 SiteMapNode item = subMenu.ChildNodes[j];
-
-                // Agent, Master(DisableAutoM) don't have AutoPT
-                if (item.Description.Equals("AutoPT", System.StringComparison.OrdinalIgnoreCase))
-                {
-                    if (CurrentUserSession.IsAgent || (CurrentUserSession.IsMaster && AppSettings.DisabledAutoMaster))
-                    {
-                        continue;
-                    }
-                }
-
-                // Check Show View Log
-                if (item.Description.Equals("ViewLog", System.StringComparison.OrdinalIgnoreCase))
-                {
-                    if (CurrentUserSession.IsSubAcc)
-                    {
-                        PageAccess pageAccess = CurrentUserSession.SubPageAccess;
-                        if (!(pageAccess.CreateAccount || pageAccess.UpdateAccount))
-                        {
-                            continue;
-                        }
-                    }
-
-                    if (!AppSettings.ShowViewLog)
-                    {
-                        continue;
-                    }
-                }
-
-                // Check Show Casino
-                if (item.Description.Equals("CasinoGuide", System.StringComparison.OrdinalIgnoreCase) && UserPermission.IsNeutral)
-                {
-                    continue;
-                }
-
-                // Check Show NumberGame
-                if (item.Description.Equals("NumberGame", System.StringComparison.OrdinalIgnoreCase))
-                {
-                    if (UserPermission.IsNeutral ||
-                        !UserPermission.IsShowNumberGame ||
-                        CurrentUserSession.IsNumberGameDisabled)
-                    {
-                        continue;
-                    }
-                }
                 
                 // Check Show OneRNGJackpot
                 if (item.Description.Equals("ProgressiveJackpot", System.StringComparison.OrdinalIgnoreCase))

@@ -1,16 +1,23 @@
 ﻿namespace Alpha.UserGuide
 {
+    using Alpha.HowToUse.Helpers;
+    using Alpha.Web.Helpers;
+    using AlphaPlus.Configurations;
+    using AlphaPlus.User.Models;
     using System;
     using System.Web;
     using System.Web.Security;
-    using Alpha.Web.Helpers;
-    using Sunplus.Agent.Model.Entities;
+    using TplNetCore;
     using Web;
 
     public class MvcApplication : HttpApplication
     {
         protected void Application_Start()
         {
+            AlphaPlus.Configurations.ConfigurationManager.Init(new ConfigurationHelper());
+            TplSettings.UrlVersion = AppSettings.JsVersion;
+            TplSettings.Init(new TplSettingHelper());
+            UserSession.Init(new HttpContextHelper());
             ShareSession.Init();
         }
 
