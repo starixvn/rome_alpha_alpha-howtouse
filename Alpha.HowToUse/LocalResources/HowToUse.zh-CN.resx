@@ -207,4 +207,7 @@
   <data name="AutoTransfer" xml:space="preserve">
     <value>自动转账</value>
   </data>
+  <data name="LastBets" xml:space="preserve">
+    <value>最后投注</value>
+  </data>
 </root>

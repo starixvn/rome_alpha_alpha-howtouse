@@ -202,4 +202,7 @@
   <data name="ProblemAccountList" xml:space="preserve">
     <value>Danh Sách Tài Khoản Có Vấn Đề</value>
   </data>
+  <data name="LastBets" xml:space="preserve">
+    <value>Cược Gần Nhất</value>
+  </data>
 </root>
