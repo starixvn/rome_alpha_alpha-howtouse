@@ -556,18 +556,14 @@
     <Content Include="Resources\PDF\QRCode.zh-TW.pdf">
       <DependentUpon>QRCode.en-US.pdf</DependentUpon>
     </Content>
-    <None Include="Web.uati7.config">
+    <Content Include="Web.uati7.config">
       <SubType>Designer</SubType>
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
     <None Include="Web.backupMNL.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.backupMNL2.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.backupMNLExNap.config">
-      <SubType>Designer</SubType>
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.backupMNLNap.config">
@@ -636,10 +632,6 @@
     <Content Include="Handlers\Flash.ashx" />
     <Content Include="SecurityCode.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <None Include="Web.backupMNLExNap2.config">
-      <SubType>Designer</SubType>
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
     <None Include="Web.backupMNLNap2.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -649,34 +641,27 @@
     <None Include="Web.local.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="Web.napexternal.config">
-      <SubType>Designer</SubType>
+    <Content Include="Web.napinternal.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.napexternali7.config">
+    </Content>
+    <Content Include="Web.napinternali7.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.napinternal.config">
+    </Content>
+    <Content Include="Web.proi1.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.napinternali7.config">
+    </Content>
+    <Content Include="Web.proi7.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.proi1.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.proi7.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
     <None Include="Web.sit.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="Web.uati1.config">
+    <Content Include="Web.uati1.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LocalResources\HowToUse.ja-JP.resx">
