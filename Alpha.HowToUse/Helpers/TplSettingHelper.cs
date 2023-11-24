@@ -9,6 +9,8 @@ namespace Alpha.HowToUse.Helpers
 
         public string ApplicationPath => HttpContext.Current.Request.ApplicationPath;
 
+        public string ApplyAppPathModifier(string virtualPath) => HttpContext.Current.Response.ApplyAppPathModifier(virtualPath);
+
         public T GetSession<T>(string key)
         {
             return (T)HttpContext.Current.Session[key];
