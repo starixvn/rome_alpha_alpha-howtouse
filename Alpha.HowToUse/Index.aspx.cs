@@ -1,9 +1,9 @@
 namespace Alpha.HowToUse
 {
+    using Alpha.Web.Helpers;
+    using AlphaPlus.User.Models;
     using System.Configuration;
     using System.Web.Security;
-    using Alpha.Web.Helpers;
-    using Sunplus.Agent.Model.Entities;
 
     public partial class Index_Page : Fanex.Age.UI.TplPage
     {

@@ -5,8 +5,6 @@
     <siteMapNode title="AgentHowToUsePro">
       <siteMapNode title="ProductsFeatures" expand="true">
         <siteMapNode title="AccInfoFunction" description="AccInfo" pdf="true"></siteMapNode>
-        <!--<siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
-        <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>-->
         <siteMapNode title="Cricket" description="Cricket" pdf="true"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" pdf="true"></siteMapNode>
@@ -14,7 +12,6 @@
         <siteMapNode title="ADBT" description="ADBT" width="480" height="280" href="StaticMessage/Guide?id=132994" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="EditMultipleDCS" description="EditMultipleDCS" width="480" height="280" href="StaticMessage/Guide?id=135363" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MemberList" description="MemberList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
-        <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MyWatchlist" description="MyWatchlist" width="480" height="280" href="StaticMessage/Guide?id=179067" linktomessagesite="true"></siteMapNode>
@@ -28,9 +25,6 @@
     <siteMapNode title="MasterHowToUsePro">
       <siteMapNode title="ProductsFeatures" expand="true">
         <siteMapNode title="AccInfoFunction" description="AccInfo" pdf="true"></siteMapNode>
-        <!--<siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
-        <siteMapNode title="AutoPT" description="AutoPT" width="410" height="320"></siteMapNode>
-        <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>-->
         <siteMapNode title="Cricket" description="Cricket" pdf="true"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" pdf="true"></siteMapNode>
@@ -38,7 +32,6 @@
         <siteMapNode title="IndirectLoginAccount" description="IndirectLoginAccount" width="480" height="280" href="StaticMessage/Guide?id=132782" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="EditMultipleDCS" description="EditMultipleDCS" width="480" height="280" href="StaticMessage/Guide?id=135363" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="AgentList" description="AgentList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
-        <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MyThresholds" description="MyThresholds" width="480" height="280" href="StaticMessage/Guide?id=179067" linktomessagesite="true"></siteMapNode>
@@ -50,10 +43,7 @@
 
     <siteMapNode title="SuperHowToUsePro">
       <siteMapNode title="ProductsFeatures" expand="true">
-        <siteMapNode title="AccInfoFunction" description="AccInfo" pdf="true"></siteMapNode>
-        <!--<siteMapNode title="ViewLogFunction" description="ViewLog" width="593" height="334"></siteMapNode>
-        <siteMapNode title="MasterAutoPT" description="AutoPT" width="410" height="320"></siteMapNode>
-        <siteMapNode title="NumberGame" description="NumberGame" width="480" height="280"></siteMapNode>-->
+        <siteMapNode title="AccInfoFunction" description="AccInfo" pdf="true"></siteMapNode>      
         <siteMapNode title="Cricket" description="Cricket" pdf="true"></siteMapNode>
         <siteMapNode title="SystemParlay" description="SystemParlay" width="480" height="280" href="Resources/HTML/SystemParlay/{0}.html"></siteMapNode>
         <siteMapNode title="ProgressiveJackpot" description="ProgressiveJackpot" pdf="true"></siteMapNode>
@@ -61,7 +51,6 @@
         <siteMapNode title="IndirectLoginAccount" description="IndirectLoginAccount" width="480" height="280" href="StaticMessage/Guide?id=132782" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="EditMultipleDCS" description="EditMultipleDCS" width="480" height="280" href="StaticMessage/Guide?id=135363" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MasterList" description="MasterList" width="480" height="280" href="StaticMessage/Guide?id=137130" linktomessagesite="true"></siteMapNode>
-        <!--<siteMapNode title="BonusDetail" description="BonusDetail" width="480" height="280" href="StaticMessage/Guide?id=147430" linktomessagesite="true"></siteMapNode>-->
         <siteMapNode title="BetCreditTracking" description="BetCreditTracking" width="480" height="280" href="StaticMessage/Guide?id=167296" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="Chatbot" description="Chatbot" width="480" height="280" href="StaticMessage/Guide?id=167819" linktomessagesite="true"></siteMapNode>
         <siteMapNode title="MyThresholds" description="MyThresholds" width="480" height="280" href="StaticMessage/Guide?id=179067" linktomessagesite="true"></siteMapNode>
