@@ -531,9 +531,9 @@
     <Content Include="Resources\toppanel.css" />
     <Content Include="Top.aspx" />
     <Content Include="Top.htm" />
-    <None Include="Web.dr.config">
+    <Content Include="Web.dr.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
     </Content>
