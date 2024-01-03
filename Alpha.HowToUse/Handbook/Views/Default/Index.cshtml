@@ -1,0 +1,40 @@
+﻿@using Alpha.HowToUse.Handbook.Models
+@using Alpha.HowToUse.Handbook.ViewModels
+@model IndexViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angency Handbook</title>
+</head>
+<body>
+    This is Handbook Page!
+    <div>All Categories</div>
+    @foreach (var c in Model.Categories)
+    {
+        @RenderCategory(c)
+    }
+</body>
+</html>
+
+@helper RenderCategory(CategoryModel category, int level = 1)
+{
+    var padding = string.Join("", Enumerable.Repeat("&nbsp;", level * 4));
+
+    if (category.Categories == null || !category.Categories.Any())
+    {
+        <div>@Html.Raw(padding + category.ShortName)</div>
+        return;
+    }
+
+    <div>@Html.Raw(padding + "Group: " + category.ShortName)</div>
+    foreach (var c in category.Categories)
+    {
+        @RenderCategory(c, level + 1)
+    }
+}

@@ -563,6 +563,13 @@
       <SubType>Designer</SubType>
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Handbook\Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Handbook\Views\Default\Index.cshtml" />
+    <Content Include="Handbook\Views\Glossary\Index.cshtml" />
+    <Content Include="Handbook\Views\Article\Search.cshtml" />
+    <Content Include="Handbook\Views\Article\GetBySlug.cshtml" />
     <None Include="Web.backupMNL.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -588,6 +595,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handbook\Controllers\ArticleController.cs" />
+    <Compile Include="Handbook\Controllers\GlossaryController.cs" />
+    <Compile Include="Handbook\Handlers\ArticleHandler.cs" />
+    <Compile Include="Handbook\Handlers\GlossaryHandler.cs" />
+    <Compile Include="Handbook\Helpers\AppSettingsHelpers.cs" />
+    <Compile Include="Handbook\GlobalExtension.cs" />
+    <Compile Include="Handbook\Controllers\DefaultController.cs" />
+    <Compile Include="Handbook\Handlers\APIHandler.cs" />
+    <Compile Include="Handbook\Handlers\CategoryHandler.cs" />
+    <Compile Include="Handbook\Models\GlossaryModel.cs" />
+    <Compile Include="Handbook\Models\CategoryModel.cs" />
+    <Compile Include="Handbook\Models\ArticleModel.cs" />
+    <Compile Include="Handbook\Models\MarketModel.cs" />
+    <Compile Include="Handbook\RouteConfig.cs" />
+    <Compile Include="Handbook\ViewModels\SearchArticleViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\GlossaryViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\IndexViewModel.cs" />
     <Compile Include="Helpers\TplSettingHelper.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
