@@ -1,0 +1,19 @@
+﻿[
+    {
+        "outputFileName": "Handbook/Styles/bundles/site-handbook/common.css",
+        "inputFiles": [
+            "Handbook/Styles/base/reset.css",
+            "Handbook/Styles/base/fonts/iconhandbook/style.css",
+            "Handbook/Styles/base/fonts/roboto/roboto.css",
+            "Handbook/Styles/base/scaffolding.css",
+            "Handbook/Styles/base/utilities.css",
+            "Handbook/Styles/pages/page-handbook.css"
+        ]
+    },
+    {
+        "outputFileName": "Handbook/Scripts/bundles/default.js",
+        "inputFiles": [
+            "Handbook/Scripts/default.js"
+        ]
+    }
+]

@@ -10,8 +10,342 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Angency Handbook</title>
+    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/site-handbook/common.css" />
 </head>
 <body>
-    <div>Article</div>
+    <header class="header">
+        <h1 class="logo"><a href="#" class="hover"><img src="~/Handbook/Styles/images/logo.svg" alt="Handbook" /></a></h1>
+        <div class="search">
+            <input type="text" name="name" value="" placeholder="Search" />
+            <button class="btn-search hover">
+                <span class="icon-search"></span>
+            </button>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="aside">
+            <div class="menu">
+                <div class="user">
+                    <div class="avatar">
+                        <img src="~/Handbook/Styles/images/avatar.png" alt="avatar" />
+                    </div>
+
+                </div>
+                <ul class="list-menu">
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon-home"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon-bookmark"></span>
+                            Bookmark
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon-glossary"></span>
+                            Glossary
+                        </a>
+                    </li>
+                </ul>
+                <div class="language ">
+                    <span>English</span>
+                    <span class="icon-right"></span>
+                    <ul class="dropdown-language">
+                        <li><a href="#">繁體中文</a></li>
+                        <li><a href="#">简体中文</a></li>
+                        <li><a href="#">ภาษาไทย</a></li>
+                        <li><a href="#">Tiếng Việt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="category">
+                <h2 class="title-category">All Categories</h2>
+                <ul class="list-item-cat">
+                    <li>
+                        <div class="item-cat open">
+                            <span class="icon-right"></span>
+                            <a class="text" href="#"><span class="icon-folder"></span>Account</a>
+                            <span class="count">2</span>
+                        </div>
+                        <ul class="list-item-cat">
+                            <li>
+                                <div class="item-cat ">
+                                    <span class="icon-right"></span>
+                                    <a class="text" href="#"><span class="icon-folder"></span>Action Log</a>
+                                </div>
+                                <ul class="list-item-article">
+                                    <li>
+                                        <div class="item-cat">
+                                            <a class="text" href="#"><span class="icon-article"></span>Action Log</a>
+                                            <span class="icon-bookmark"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-cat">
+                                            <a class="text" href="#">
+                                                <span class="icon-article"></span>
+                                                Action Log - Mobile
+
+                                            </a>
+                                            <span class="icon-bookmark"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-cat">
+                                            <a class="text" href="#"><span class="icon-article"></span>Action Log - Classic</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="item-cat">
+                                    <span class="icon-right"></span>
+                                    <a class="text" href="#"><span class="icon-folder"></span>Other</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="item-cat">
+                            <span class="icon-right"></span>
+                            <a class="text" href="#"><span class="icon-folder"></span>Risk Management</a>
+                            <span class="count">12</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-cat">
+                            <span class="icon-right"></span>
+                            <a class="text" href="#"><span class="icon-folder"></span>Notifications</a>
+                            <span class="count">2</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-cat">
+                            <span class="icon-right"></span>
+                            <a class="text" href="#"><span class="icon-folder"></span>Total Bet</a>
+                            <span class="count">23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-cat">
+                            <span class="icon-right"></span>
+                            <a class="text" href="#"><span class="icon-folder"></span>Member Mgmt</a>
+                            <span class="count">7</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-cat">
+                            <span class="icon-right"></span>
+                            <a class="text" href="#"><span class="icon-folder"></span>Report</a>
+                            <span class="count">2</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-cat">
+                            <span class="icon-right"></span>
+                            <a class="text" href="#"><span class="icon-folder"></span>Transfer</a>
+                            <span class="count">9</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Group Categories</a></li>
+                <li><span>Action Log</span></li>
+            </ul>
+
+            <div class="main-article" id="main-article">
+                <div class="detail-article" id="detail-article">
+                    <h2 class="title-page">Action Log</h2>
+                    <div class="top-info">
+                        <div class="item-info">
+                            <span class="icon-calendar"></span>
+                            Thu, Jul 13, 2023
+                        </div>
+                        <div class="item-info item-info-folder">
+                            <span class="icon-folder"></span>
+                            Action Log
+                        </div>
+                    </div>
+                    <h3>1. Action Type</h3>
+                    <p>
+                        Select an action type to view the logs<br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="~/Handbook/Styles/images/content.png" alt="general info" />
+                    <ul>
+                        <li>
+                            <strong>Lorem ipsum:</strong> dolor sit amet, consectetur adipiscing elit
+                            <ul>
+                                <li>
+                                    <strong>Lorem ipsum:</strong> dolor sit amet, consectetur adipiscing elit
+                                    <ul>
+                                        <li><strong>Lorem ipsum:</strong> dolor sit amet, consectetur adipiscing elit</li>
+                                        <li><strong>Sed do eiusmod tempor:</strong> incididunt ut labore et dolore magna aliqua.</li>
+                                        <li><strong>Ut enim ad:</strong> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                        <li><strong>Duis aute irure:</strong> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                                        <li><strong>Excepteur sint:</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Sed do eiusmod tempor:</strong> incididunt ut labore et dolore magna aliqua.</li>
+                                <li><strong>Ut enim ad:</strong> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><strong>Duis aute irure:</strong> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                                <li><strong>Excepteur sint:</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Sed do eiusmod tempor:</strong> incididunt ut labore et dolore magna aliqua.</li>
+                        <li><strong>Ut enim ad:</strong> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li><strong>Duis aute irure:</strong> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                        <li><strong>Excepteur sint:</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                    </ul>
+                    <ol>
+                        <li>
+                            <strong>Lorem ipsum:</strong> dolor sit amet, consectetur adipiscing elit
+                            <ol>
+                                <li>
+                                    <strong>Lorem ipsum:</strong> dolor sit amet, consectetur adipiscing elit
+                                    <ol>
+                                        <li><strong>Lorem ipsum:</strong> dolor sit amet, consectetur adipiscing elit</li>
+                                        <li><strong>Sed do eiusmod tempor:</strong> incididunt ut labore et dolore magna aliqua.</li>
+                                        <li><strong>Ut enim ad:</strong> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                        <li><strong>Duis aute irure:</strong> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                                        <li><strong>Excepteur sint:</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                    </ol>
+                                </li>
+                                <li><strong>Sed do eiusmod tempor:</strong> incididunt ut labore et dolore magna aliqua.</li>
+                                <li><strong>Ut enim ad:</strong> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><strong>Duis aute irure:</strong> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                                <li><strong>Excepteur sint:</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                            </ol>
+                        </li>
+                        <li><strong>Sed do eiusmod tempor:</strong> incididunt ut labore et dolore magna aliqua.</li>
+                        <li><strong>Ut enim ad:</strong> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li><strong>Duis aute irure:</strong> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                        <li><strong>Excepteur sint:</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                    </ol>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Remark Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>POS</td>
+                                <td>Agent's Position Taking</td>
+                            </tr>
+                            <tr>
+                                <td>COM</td>
+                                <td>Agent's Commision</td>
+                            </tr>
+                            <tr>
+                                <td>Bal</td>
+                                <td>Agent's Balance</td>
+                            </tr>
+                            <tr>
+                                <td>Trac</td>
+                                <td>Agent's transfer with upline(proceeded by upline)</td>
+                            </tr>
+                            <tr>
+                                <td>Traa</td>
+                                <td>Agent's transfer with members(proceeded by agent)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>2. Filter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="helpful">
+                    Did you find this articles helpful?<span class="btn-action btn-action-yes ">Yes</span><span class="btn-action btn-action-no">No</span>
+                </div>
+                <div class="rating">
+                    <div class="list-star">
+                        <input type="radio" name="rating" id="star5" value="5" />
+                        <label class="rate-star" for="star5">
+                            <span class="icon-star"></span>
+                        </label>
+                        <input type="radio" name="rating" id="star4" value="4" />
+                        <label class="rate-star" for="star4">
+                            <span class="icon-star"></span>
+                        </label>
+                        <input type="radio" name="rating" id="star3" value="3" />
+                        <label class="rate-star" for="star3">
+                            <span class="icon-star"></span>
+                        </label>
+                        <input type="radio" name="rating" id="star2" value="2" />
+                        <label class="rate-star" for="star2">
+                            <span class="icon-star"></span>
+                        </label>
+                        <input type="radio" name="rating" id="star1" value="1" />
+                        <label class="rate-star" for="star1">
+                            <span class="icon-star"></span>
+                        </label>
+                    </div>
+                    <p>You’ve Already Voted</p>
+
+                </div>
+                <div class="comment">
+                    <h2 class="title-category">Comment <span>(0)</span></h2>
+                    <textarea class="text-comment" placeholder="Comment..."></textarea>
+                    <div>
+                        <button class="btn-send">Send</button>
+                    </div>
+                </div>
+                <div class="related-article">
+                    <h2 class="title-category">Related Articles</h2>
+                    <a href="#" class="item-article-short">
+                        <span class="icon-article"></span>
+                        <span class="info">
+                            <span class="title">Action Log - Mobile</span>
+                            <span class="time">Published on Mon, Feb 7, 2022</span>
+                        </span>
+                    </a>
+                    <a href="#" class="item-article-short">
+                        <span class="icon-article"></span>
+                        <span class="info">
+                            <span class="title">Action Log</span>
+                            <span class="time">Published on Mon, Feb 7, 2022</span>
+                        </span>
+                    </a>
+                    <a href="#" class="item-article-short">
+                        <span class="icon-article"></span>
+                        <span class="info">
+                            <span class="title">Action Log - pc</span>
+                            <span class="time">Published on Mon, Feb 7, 2022</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-content">
+            <div class="inner">
+                <h2 class="title-category">Contents</h2>
+                <ul class="list-content">
+                    <li><a href="#">1. Action Type</a></li>
+                    <li>
+                        <a class="active" href="#">2. Filter</a>
+                        <ul>
+                            <li><a href="#">a. Member Username</a></li>
+                            <li><a href="#">b. Date Range</a></li>
+                            <li><a href="#">c. Created By</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="#">3. Columns Definition - What do the columns mean?</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <div id="list-anchor"></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
