@@ -835,12 +835,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Handbook\Consts\LanguageConsts.cs" />
+    <Compile Include="Handbook\Controllers\ImageController.cs" />
     <Compile Include="Handbook\Controllers\CategoryController.cs" />
     <Compile Include="Handbook\Controllers\ArticleController.cs" />
     <Compile Include="Handbook\Controllers\LanguageController.cs" />
     <Compile Include="Handbook\Controllers\HomeController.cs" />
     <Compile Include="Handbook\Controllers\GlossaryController.cs" />
     <Compile Include="Handbook\Criteria\SelectProfilePictureCriteria.cs" />
+    <Compile Include="Handbook\Handlers\ImageHandler.cs" />
     <Compile Include="Handbook\Handlers\ArticleHandler.cs" />
     <Compile Include="Handbook\Handlers\GlossaryHandler.cs" />
     <Compile Include="Handbook\Handlers\LanguageHandler.cs" />

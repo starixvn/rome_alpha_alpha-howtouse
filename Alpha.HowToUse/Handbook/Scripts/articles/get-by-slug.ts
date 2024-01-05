@@ -8,11 +8,9 @@ class ArticleGetBySlug {
 
     init = () => {
         this.makeFloatingContentBox();
-        this.registerEvents();
+        // this.correctImageUrls();
     };
 
-    registerEvents = () => {
-    };
 
     makeFloatingContentBox = () => {
         var headlings = this.$(".article-content h1, .article-content h2, .article-content h3");
@@ -21,18 +19,46 @@ class ArticleGetBySlug {
         }
 
         var html = '<div class="floating-box"><ul>';
+        var hs = ['h1', 'h2', 'h3'];
+
         headlings.each((i, e) => {
             var $e = this.$(e);
             var t = $e.html();
             var newH = this.$('<div>' + t + '</div>');
             newH.find('a').remove();
-            html += '<li><a href="#' + $e.find('a').attr('id') + '">' + newH.html() + '</a></li>';
+
+            hs.forEach(h => {
+                if ($e.is(h)) {
+                    html += '<li><' + h + '><a href="#' + $e.find('a').attr('id') + '">' +
+                        newH.html() +
+                        '</a></' + h + '></li>';
+                    return;
+                }
+            })
         });
 
         html += '</ul></div>';
 
         this.$('.main-article').append(html);
-    }
+    };
+
+    correctImageUrls = () => {
+        var imgs = this.$(".article-content img");
+        var rootUrl = this.$("#RootPath").val();
+
+        imgs.each((i, e) => {
+            var $e = this.$(e);
+            var s = $e.attr('src');
+
+            var regex = '/api/images/get/';
+            var start = s.indexOf(regex);
+            if (start === -1) {
+                return;
+            }
+            var name = s.substring(start + regex.length);
+            $e.attr('src', rootUrl + "Image/Get?name=" + name);
+        });
+    };
 };
 
 $(function () {

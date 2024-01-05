@@ -27,6 +27,12 @@ namespace Alpha.HowToUse.Handbook.Handlers
                 "/" + userSession.RoleId +
                 "/k" + keyword;
             var result = apiHandler.Get<IEnumerable<ArticleModel>>(url);
+
+            foreach (var a in result)
+            {
+                a.CorrectImageUrls();
+            }
+
             return result;
         }
 
@@ -38,6 +44,11 @@ namespace Alpha.HowToUse.Handbook.Handlers
                 "/" + AppSettingsHelper.SiteLabel +
                 "/" + userSession.RoleId;
             var result = apiHandler.Get<ArticleModel>(url);
+            if (result != null)
+            {
+                result.CorrectImageUrls();
+            }
+
             return result;
         }
 

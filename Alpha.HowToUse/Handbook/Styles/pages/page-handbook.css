@@ -589,6 +589,9 @@
 .item-cat {
   cursor: pointer; }
 
+.hidden {
+  display: none !important; }
+
 .box-suggestion {
   position: absolute;
   top: calc(100% + 2px);

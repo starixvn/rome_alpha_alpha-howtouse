@@ -26,7 +26,7 @@ namespace Alpha.HowToUse.Handbook.Handlers
             return default(T);
         }
 
-        private string Get(string url)
+        public string Get(string url)
         {
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
