@@ -159,4 +159,7 @@ We would, as always, value your feedback and suggestions to help us improve our 
   <data name="NoRecords" xml:space="preserve">
     <value>There are no records to display.</value>
   </data>
+  <data name="PublishedOn" xml:space="preserve">
+    <value>Published on</value>
+  </data>
 </root>

@@ -11,6 +11,10 @@ using Fanex.Data.SqlServer;
 using Alpha.HowToUse.Handbook.Configurations;
 using Alpha.HowToUse.Handbook.Services;
 using Fanex.Data.Repository;
+using AlphaPlus.Logging;
+using AlphaPlus.Logging.Web;
+using Fanex.Logging.Extensions.Database;
+using Alpha.Web.Helpers;
 
 namespace Alpha.HowToUse.Handbook
 {
@@ -26,11 +30,16 @@ namespace Alpha.HowToUse.Handbook
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             AntiForgeryConfig.SuppressXFrameOptionsHeader = true;
 
+            AlphaPlus.Configurations.ConfigurationManager.Init(new ConfigurationHelper());
+            LoggingConfig.ExceptionHandler = new ExceptionHandlerAdapter();
+            var sensitivteInfo = new[] { "password", "seccode", "securitycode" };
+            LoggingConfig.Init(sensitivteInfo, DatabaseInfoGetters.GetDbExceptionInfo);
+
             RegisterDIs();
 
             DbSettingProviderManager
                 .StartNewSession()
-                .WithSqlServer(resourcePath: AppSettingsHelper.StoreProcedurePath)
+                .WithSqlServer(resourcePath: Alpha.HowToUse.Handbook.Configurations.AppSettingsHelper.StoreProcedurePath)
                 .Run();
         }
 

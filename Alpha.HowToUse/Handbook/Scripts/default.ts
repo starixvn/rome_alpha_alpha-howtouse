@@ -1,18 +1,29 @@
-﻿class DefaultPage {
+﻿/// <reference path="auto-suggestion.ts" />
+
+class DefaultPage {
     $: JQueryStatic;
     topWindow: any;
+    autoSuggestion: AutoSuggestion;
 
     enterKeyCode = 13;
     currentUrlCookieName = 'DFFKDHFJKLDHFJDH2';
     recheckInIntervalMiliseconds = 30000;
 
-    constructor($: JQueryStatic, topWindow: any) {
+    constructor($: JQueryStatic, topWindow: any, autoSuggestion: AutoSuggestion) {
         this.$ = $;
         this.topWindow = topWindow;
+        this.autoSuggestion = autoSuggestion;
     }
 
     init = () => {
         this.registerEvents();
+
+        this.autoSuggestion.init({
+            elmSearch: this.$('#txt-search'),
+            boxSuggestion: this.$('.box-suggestion'),
+            suggestUrl: this.$("#RootPath").val() + "Article/Suggest",
+            selectedSuggestion: this.selectedSuggestion
+        });
 
         var currentUrl = this.getCurrentUrl();
         if (currentUrl) {
@@ -25,7 +36,10 @@
             var keycode = (ev.keyCode ? ev.keyCode : ev.which);
             if (keycode === this.enterKeyCode) {
                 this.searchArticle();
+                return;
             }
+
+            this.autoSuggestion.suggest();
         });
 
         this.$(".language-container").click(this.showHideLanguage);
@@ -36,7 +50,7 @@
             self.changeLanguage(s);
         });
 
-        this.$(".item-cat > .icon-right").click(function () {
+        this.$(".item-cat").click(function () {
             var $this = self.$(this);
             if ($this.closest('li').find('>.item-cat').hasClass('open')) {
                 $this.closest('li').find('>.item-cat').removeClass('open');
@@ -56,8 +70,7 @@
 
     searchArticle = () => {
         var keyword = this.$('#txt-search').val();
-        var language = this.$('#Language').val();
-        this.$("#ifr-main").attr("src", "./Article/Search?keyword=" + keyword + "&language=" + language);
+        this.$("#ifr-main").attr("src", "./Article/Search?keyword=" + keyword);
     };
 
     showHideLanguage = () => {
@@ -119,9 +132,15 @@
             }
         });
     };
+
+    selectedSuggestion = (id) => {
+        var url = this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
+        this.$("#ifr-main").attr("src", url);
+    };
 };
 
 $(function () {
-    const page = new DefaultPage($, window.top);
+    const autoSuggestion = new AutoSuggestion($);
+    const page = new DefaultPage($, window.top, autoSuggestion);
     page.init();
 });

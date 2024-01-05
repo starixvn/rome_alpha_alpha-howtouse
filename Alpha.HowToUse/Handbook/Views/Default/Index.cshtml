@@ -11,7 +11,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@LanguageResources.AngencyHandbook</title>
-    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/site-handbook/common.css" />
+    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/common.css" />
 </head>
 <body data-lang="@Model.Language">
     <header class="header">
@@ -22,6 +22,9 @@
         </h1>
         <div class="search">
             <input id="txt-search" type="text" name="name" value="" placeholder="@LanguageResources.Search" />
+            <div class="box-suggestion hidden">
+                <ul></ul>
+            </div>
             <button class="btn-search hover">
                 <span class="icon-search"></span>
             </button>
@@ -81,12 +84,13 @@
         </div>
     </main>
 
-    @Html.Hidden("Language", Model.Language)
     @Html.Hidden("OnUserId", Model.OnUserId)
     @Html.Hidden("OldMainRootPath", Model.OldMainRootPath)
+    @Html.Hidden("RootPath", Url.Content("~"))
+    @Html.Hidden("NoRecords", LanguageResources.NoRecords)
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
     @StaticResources.AssetScripts.Render("/bundles/site-handbook/common")
-    <script src="~/Handbook/Scripts/default.js" type="text/javascript"></script>
+    <script src="~/Handbook/Scripts/bundles/default.js" type="text/javascript"></script>
 </body>
 </html>
 
@@ -137,7 +141,7 @@
 {
     <li>
         <div class="item-cat">
-            <a class="text" target="main" href="~/Article/GetBySlug?slug=@a.Slug&language=@Model.Locale">
+            <a class="text" target="main" href="~/Article/GetBySlug?slug=@a.Slug">
                 <span class="icon-article"></span>@a.Title
             </a>
         </div>

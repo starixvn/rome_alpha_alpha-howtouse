@@ -584,5 +584,13 @@
   min-width: 840px;
   padding: 0 20px; }
 
-.item-cat .icon-right {
+.item-cat {
   cursor: pointer; }
+
+.hidden {
+  display: none !important; }
+
+.box-suggestion li {
+  cursor: pointer; }
+  .box-suggestion li:hover {
+    background-color: #e3e3e3; }

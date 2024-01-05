@@ -1,0 +1,8 @@
+﻿namespace Alpha.HowToUse.Handbook.Models
+{
+    public class SuggestionModel
+    {
+        public string Id { get; set; }
+        public string Value { get; set; }
+    }
+}

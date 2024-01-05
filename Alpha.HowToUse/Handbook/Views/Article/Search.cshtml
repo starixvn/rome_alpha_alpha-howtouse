@@ -10,7 +10,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@LanguageResources.AngencyHandbook</title>
-    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/site-handbook/common.css" />
+    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/common.css" />
 </head>
 <body>
     <h2 class="title-page">@LanguageResources.Search</h2>
@@ -28,7 +28,7 @@
                     <div class="item-article">
                         <div class="info-article">
                             <div class="left-title">
-                                <a href="~/Article/GetBySlug?slug=@a.Slug&language=@Model.Locale">
+                                <a href="~/Article/GetBySlug?slug=@a.Slug">
                                     <span class="icon-article"></span>
                                     @a.Title
                                 </a>
@@ -36,14 +36,14 @@
                             <div class="right-info">
                                 <div class="item-info">
                                     <span class="icon-calendar"></span>
-                                    @a.PublishedAtStr
+                                    @LanguageResources.PublishedOn @a.PublishedAtStr
                                 </div>
                             </div>
                         </div>
                         <div>
                             @Html.Raw(a.Summary)
                         </div>
-                        <a href="~/Article/GetBySlug?slug=@a.Slug&language=@Model.Locale" class="read-more">@LanguageResources.ReadMore</a>
+                        <a href="~/Article/GetBySlug?slug=@a.Slug" class="read-more">@LanguageResources.ReadMore</a>
                     </div>
                 }
             </div>

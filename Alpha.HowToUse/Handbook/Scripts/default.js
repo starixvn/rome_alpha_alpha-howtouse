@@ -1,11 +1,18 @@
+/// <reference path="auto-suggestion.ts" />
 var DefaultPage = /** @class */ (function () {
-    function DefaultPage($, topWindow) {
+    function DefaultPage($, topWindow, autoSuggestion) {
         var _this = this;
         this.enterKeyCode = 13;
         this.currentUrlCookieName = 'DFFKDHFJKLDHFJDH2';
         this.recheckInIntervalMiliseconds = 30000;
         this.init = function () {
             _this.registerEvents();
+            _this.autoSuggestion.init({
+                elmSearch: _this.$('#txt-search'),
+                boxSuggestion: _this.$('.box-suggestion'),
+                suggestUrl: _this.$("#RootPath").val() + "Article/Suggest",
+                selectedSuggestion: _this.selectedSuggestion
+            });
             var currentUrl = _this.getCurrentUrl();
             if (currentUrl) {
                 _this.$("#ifr-main").attr("src", currentUrl);
@@ -17,7 +24,9 @@ var DefaultPage = /** @class */ (function () {
                 var keycode = (ev.keyCode ? ev.keyCode : ev.which);
                 if (keycode === _this.enterKeyCode) {
                     _this.searchArticle();
+                    return;
                 }
+                _this.autoSuggestion.suggest();
             });
             _this.$(".language-container").click(_this.showHideLanguage);
             var self = _this;
@@ -25,7 +34,7 @@ var DefaultPage = /** @class */ (function () {
                 var s = self.$(this).attr('data-val');
                 self.changeLanguage(s);
             });
-            _this.$(".item-cat > .icon-right").click(function () {
+            _this.$(".item-cat").click(function () {
                 var $this = self.$(this);
                 if ($this.closest('li').find('>.item-cat').hasClass('open')) {
                     $this.closest('li').find('>.item-cat').removeClass('open');
@@ -41,8 +50,7 @@ var DefaultPage = /** @class */ (function () {
         };
         this.searchArticle = function () {
             var keyword = _this.$('#txt-search').val();
-            var language = _this.$('#Language').val();
-            _this.$("#ifr-main").attr("src", "./Article/Search?keyword=" + keyword + "&language=" + language);
+            _this.$("#ifr-main").attr("src", "./Article/Search?keyword=" + keyword);
         };
         this.showHideLanguage = function () {
             var ddl = _this.$(".dropdown-language");
@@ -100,14 +108,20 @@ var DefaultPage = /** @class */ (function () {
                 }
             });
         };
+        this.selectedSuggestion = function (id) {
+            var url = _this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
+            _this.$("#ifr-main").attr("src", url);
+        };
         this.$ = $;
         this.topWindow = topWindow;
+        this.autoSuggestion = autoSuggestion;
     }
     return DefaultPage;
 }());
 ;
 $(function () {
-    var page = new DefaultPage($, window.top);
+    var autoSuggestion = new AutoSuggestion($);
+    var page = new DefaultPage($, window.top, autoSuggestion);
     page.init();
 });
 //# sourceMappingURL=default.js.map

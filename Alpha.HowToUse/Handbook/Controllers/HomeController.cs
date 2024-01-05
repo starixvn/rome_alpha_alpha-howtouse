@@ -17,11 +17,7 @@ namespace Alpha.HowToUse.Handbook.Controllers
         public ActionResult Index()
         {
             var langKey = userSession.LangKey.ToLowerInvariant();
-            var viewModel = new HomeViewModel
-            {
-                Language = langKey
-            };
-
+            var viewModel = new HomeViewModel();
             return View("~/Handbook/Views/Home/Index.cshtml", viewModel);
         }
     }

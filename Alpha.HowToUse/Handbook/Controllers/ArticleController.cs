@@ -19,13 +19,13 @@ namespace Alpha.HowToUse.Handbook.Controllers
             articleHandler = new ArticleHandler(userSession);
         }
 
-        public ActionResult Search(string keyword, string language)
+        public ActionResult Search(string keyword)
         {
             var langKey = userSession.LangKey.ToLowerInvariant();
             var viewModel = new SearchArticleViewModel
             {
                 Language = langKey,
-                Articles = articleHandler.Search(keyword, language) ?? Enumerable.Empty<ArticleModel>()
+                Articles = articleHandler.Search(keyword) ?? Enumerable.Empty<ArticleModel>()
             };
 
             return View("~/Handbook/Views/Article/Search.cshtml", viewModel);
@@ -33,8 +33,15 @@ namespace Alpha.HowToUse.Handbook.Controllers
 
         public ActionResult GetBySlug(string slug, string language)
         {
-            var viewModel = articleHandler.GetBySlug(slug, language);
+            var viewModel = articleHandler.GetBySlug(slug);
             return View("~/Handbook/Views/Article/GetBySlug.cshtml", viewModel);
+        }
+
+        public JsonResult Suggest(string keyword)
+        {
+            var langKey = userSession.LangKey.ToLowerInvariant();
+            var result = articleHandler.Suggest(keyword);
+            return Json(result, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -4,6 +4,10 @@
     "inputFile": "Handbook/Styles/pages/page-handbook.scss"
   },
   {
+    "outputFile": "Handbook/Styles/pages/page-home.css",
+    "inputFile": "Handbook/Styles/pages/page-home.scss"
+  },
+  {
     "outputFile": "Handbook/Styles/base/utilities.css",
     "inputFile": "Handbook/Styles/base/utilities.scss"
   },
@@ -18,5 +22,9 @@
   {
     "outputFile": "Handbook/Styles/base/scaffolding.css",
     "inputFile": "Handbook/Styles/base/scaffolding.scss"
+  },
+  {
+    "outputFile": "Handbook/Styles/pages/artiles/get-by-slug.css",
+    "inputFile": "Handbook/Styles/pages/artiles/get-by-slug.scss"
   }
 ]

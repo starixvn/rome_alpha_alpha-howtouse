@@ -155,6 +155,15 @@ namespace Alpha.HowToUse.Handbook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Published on.
+        /// </summary>
+        public static string PublishedOn {
+            get {
+                return ResourceManager.GetString("PublishedOn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Read more.
         /// </summary>
         public static string ReadMore {

@@ -1,13 +1,25 @@
-﻿class HomePage {
+﻿/// <reference path="auto-suggestion.ts" />
+
+class HomePage {
     $: JQueryStatic;
+    autoSuggestion: AutoSuggestion;
+
     enterKeyCode = 13;
 
-    constructor($: JQueryStatic) {
+    constructor($: JQueryStatic, autoSuggestion: AutoSuggestion) {
         this.$ = $;
+        this.autoSuggestion = autoSuggestion;
     }
 
     init = () => {
         this.registerEvents();
+
+        this.autoSuggestion.init({
+            elmSearch: this.$('#txt-search'),
+            boxSuggestion: this.$('.box-suggestion'),
+            suggestUrl: this.$("#RootPath").val() + "Article/Suggest",
+            selectedSuggestion: this.selectedSuggestion
+        });
     };
 
     registerEvents = () => {
@@ -16,18 +28,26 @@
             var keycode = (ev.keyCode ? ev.keyCode : ev.which);
             if (keycode === this.enterKeyCode) {
                 this.searchArticle();
+                return;
             }
+
+            this.autoSuggestion.suggest();
         });
     };
 
     searchArticle = () => {
         var keyword = this.$('#txt-search').val();
-        var language = this.$('#Language').val();
-        location.href = this.$("#RootPath").val() + "/Article/Search?keyword=" + keyword + "&language=" + language;
+        location.href = this.$("#RootPath").val() + "Article/Search?keyword=" + keyword;
+    };
+
+    selectedSuggestion = (id) => {
+        location.href = this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
     };
 };
 
 $(function () {
-    const page = new HomePage($);
+    const autoSuggestion = new AutoSuggestion($);
+
+    const page = new HomePage($, autoSuggestion);
     page.init();
 });

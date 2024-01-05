@@ -18,10 +18,11 @@ namespace Alpha.HowToUse.Handbook.Handlers
             apiHandler = new APIHandler();
         }
 
-        public IEnumerable<ArticleModel> Search(string keyword, string language)
+        public IEnumerable<ArticleModel> Search(string keyword)
         {
+            var langKey = userSession.LangKey.ToLowerInvariant();
             var url = contentAPIUrl + "/api/articles/search" +
-                "/" + LanguageConsts.Locales[language] +
+                "/" + LanguageConsts.Locales[langKey] +
                 "/" + AppSettingsHelper.SiteLabel +
                 "/" + userSession.RoleId +
                 "/k" + keyword;
@@ -29,13 +30,26 @@ namespace Alpha.HowToUse.Handbook.Handlers
             return result;
         }
 
-        public ArticleModel GetBySlug(string slug, string language)
+        public ArticleModel GetBySlug(string slug)
         {
+            var langKey = userSession.LangKey.ToLowerInvariant();
             var url = contentAPIUrl + "/api/articles/get/" + slug +
-                "/" + language +
+                "/" + LanguageConsts.Locales[langKey] +
                 "/" + AppSettingsHelper.SiteLabel +
                 "/" + userSession.RoleId;
             var result = apiHandler.Get<ArticleModel>(url);
+            return result;
+        }
+
+        public IEnumerable<SuggestionModel> Suggest(string keyword)
+        {
+            var langKey = userSession.LangKey.ToLowerInvariant();
+            var url = contentAPIUrl + "/api/articles/suggest" +
+                "/" + LanguageConsts.Locales[langKey] +
+                "/" + AppSettingsHelper.SiteLabel +
+                "/" + userSession.RoleId +
+                "/" + keyword;
+            var result = apiHandler.Get<IEnumerable<SuggestionModel>>(url);
             return result;
         }
     }

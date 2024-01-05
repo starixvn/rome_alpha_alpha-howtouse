@@ -1,6 +1,9 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using Alpha.HowToUse.Handbook.Configurations;
+using Fanex.Logging.Extensions.Web;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -10,9 +13,17 @@ namespace Alpha.HowToUse.Handbook.Handlers
     {
         public T Get<T>(string url)
         {
-            var content = Get(url);
+            try
+            {
+                var content = Get(url);
+                return DeserializeObject<T>(content);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.Handle(e);
+            }
 
-            return DeserializeObject<T>(content);
+            return default(T);
         }
 
         private string Get(string url)
@@ -25,7 +36,6 @@ namespace Alpha.HowToUse.Handbook.Handlers
             {
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
-                //  client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AppSettingsHelper.ContentAPIToken);
                 var response = client.GetAsync(url).GetAwaiter().GetResult();
                 var content = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 

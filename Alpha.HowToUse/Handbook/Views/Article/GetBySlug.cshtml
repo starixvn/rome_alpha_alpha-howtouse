@@ -10,24 +10,38 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@LanguageResources.AngencyHandbook</title>
-    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/site-handbook/common.css" />
+    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/common.css" />
+    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/articles/get-by-slug.css" />
 </head>
 <body>
-    <div class="main-article" id="main-article">
-        <div class="detail-article" id="detail-article">
-            <h2 class="title-page">@Model.Title</h2>
-            <div class="top-info">
-                <div class="item-info">
-                    <span class="icon-calendar"></span>
-                    @Model.PublishedAtStr
+    @if (string.IsNullOrWhiteSpace(Model.Slug))
+    {
+        @LanguageResources.NoRecords
+    }
+    else
+    {
+        <div class="main-article" id="main-article">
+            <div class="detail-article" id="detail-article">
+                <h2 class="title-page">@Model.Title</h2>
+                <div class="top-info">
+                    <div class="item-info">
+                        <span class="icon-calendar"></span>
+                        @LanguageResources.PublishedOn @Model.PublishedAtStr
+                    </div>
+                    <div class="item-info item-info-folder">
+                        <a href="@Url.Content("~/Category/GetBySlug?slug=" + Model.Categories.First().Slug)">
+                            <span class="icon-folder"></span>
+                            @Model.Categories.First().ShortName
+                        </a>
+                    </div>
                 </div>
-                <div class="item-info item-info-folder">
-                    <span class="icon-folder"></span>
-                    @Model.Title
+                <div class="article-content">
+                    @Html.Raw(Model.Content)
                 </div>
             </div>
-            @Html.Raw(Model.Content)
         </div>
-    </div>
+    }
+    @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
+    <script src="~/Handbook/Scripts/bundles/articles/get-by-slug.js" type="text/javascript"></script>
 </body>
 </html>
