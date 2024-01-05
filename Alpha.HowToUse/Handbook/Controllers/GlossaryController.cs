@@ -1,23 +1,29 @@
 ﻿using System.Web.Mvc;
 using Alpha.HowToUse.Handbook.Handlers;
 using Alpha.HowToUse.Handbook.ViewModels;
+using Alpha.Web;
+using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class GlossaryController : Controller
+    public class GlossaryController : BaseController
     {
+        private readonly IUserSession userSession;
         public GlossaryHandler glossaryHandler;
 
-        public GlossaryController()
+        public GlossaryController(IUserSession userSession)
         {
-            glossaryHandler = new GlossaryHandler();
+            this.userSession = userSession;
+            glossaryHandler = new GlossaryHandler(userSession);
         }
 
-        public ActionResult Index()
+        public ActionResult Index(string group)
         {
+            var langKey = userSession.LangKey.ToLowerInvariant();
             var viewModel = new GlossaryViewModel
             {
-                Glossaries = glossaryHandler.GetAll()
+                Group = group,
+                Glossaries = glossaryHandler.Search(group)
             };
 
             return View("~/Handbook/Views/Glossary/Index.cshtml", viewModel);

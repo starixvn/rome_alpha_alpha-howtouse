@@ -1,63 +1,44 @@
 ﻿using System.Collections.Generic;
 using Alpha.HowToUse.Handbook.Configurations;
+using Alpha.HowToUse.Handbook.Consts;
 using Alpha.HowToUse.Handbook.Models;
+using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Handlers
 {
     public class CategoryHandler
     {
         public APIHandler apiHandler;
-        private string contentAPIUrl = AppSettingsHelpers.ContentAPIUrl;
+        private readonly IUserSession userSession;
+        private string contentAPIUrl = AppSettingsHelper.ContentAPIUrl;
 
-        public CategoryHandler()
+        public CategoryHandler(IUserSession userSession)
         {
             apiHandler = new APIHandler();
+            this.userSession = userSession;
         }
 
         public IEnumerable<CategoryModel> GetAll()
         {
-            var url = contentAPIUrl + "/api/categories/latest/all";
+            var url = contentAPIUrl + "/api/categories/latest/all" +
+                "/" + LanguageConsts.Locales[userSession.LangKey.ToLowerInvariant()] +
+                "/" + AppSettingsHelper.SiteLabel +
+                "/" + userSession.RoleId;
             var categories = apiHandler.Get<IEnumerable<CategoryModel>>(url);
-            var result = new List<CategoryModel> {
-                new CategoryModel
-                {
-                    ShortName="Reports",
-                    Slug="reports"
-                },
-                new CategoryModel
-                {
-                    ShortName="Transfer",
-                    Slug="transfer",
-                    Categories = new List<CategoryModel>
-                    {
-                         new CategoryModel
-                         {
-                            ShortName="Transfer Condition",
-                            Slug="transfer-condition"
-                         },
-                         new CategoryModel
-                         {
-                            ShortName="Auto Transfer",
-                            Slug="auto-transfer",
-                            Categories = new List<CategoryModel>
-                            {
-                                 new CategoryModel
-                                 {
-                                    ShortName="Auto Transfer Guide",
-                                    Slug="auto-transfer-guide"
-                                 },
-                                 new CategoryModel
-                                 {
-                                    ShortName="Auto Transfer Schedule",
-                                    Slug="auto-transfer-schedule"
-                                 }
-                            }
-                         }
-                    }
-                }
-            };
 
-            return result;
+            return categories;
+        }
+
+        public CategoryModel GetBySlug(string slug)
+        {
+            var url = contentAPIUrl + "/api/categories/latest" +
+                "/" + slug +
+                "/" + LanguageConsts.Locales[userSession.LangKey.ToLowerInvariant()] +
+                "/" + AppSettingsHelper.SiteLabel +
+                "/" + userSession.RoleId;
+            var category = apiHandler.Get<CategoryModel>(url);
+
+            return category;
         }
     }
 }

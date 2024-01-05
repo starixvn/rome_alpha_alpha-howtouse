@@ -1,0 +1,26 @@
+﻿@using Alpha.HowToUse.Handbook.Models;
+
+@{
+    Layout = null;
+}
+@model CategoryModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@LanguageResources.AngencyHandbook</title>
+    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/site-handbook/common.css" />
+</head>
+<body>
+    @foreach (var c in Model.Categories)
+    {
+        @c.Name
+    }
+
+    @foreach (var a in Model.Articles)
+    {
+        @a.Title
+    }
+</body>
+</html>

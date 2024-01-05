@@ -1,27 +1,49 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
+using Alpha.HowToUse.Handbook.Consts;
 using Alpha.HowToUse.Handbook.Handlers;
+using Alpha.HowToUse.Handbook.Models;
+using Alpha.HowToUse.Handbook.Services;
 using Alpha.HowToUse.Handbook.ViewModels;
+using Alpha.Web;
 using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class DefaultController : Controller
+    public class DefaultController : BaseController
     {
-        public CategoryHandler categoryHandler;
         private readonly IUserSession userSession;
+        public readonly IProfileService profileService;
+        public readonly CategoryHandler categoryHandler;
 
-        public DefaultController(IUserSession userSession)
+        public DefaultController(
+            IUserSession userSession,
+            IProfileService profileService)
         {
-            categoryHandler = new CategoryHandler();
             this.userSession = userSession;
+            this.profileService = profileService;
+            categoryHandler = new CategoryHandler(userSession);
         }
 
         public ActionResult Index()
         {
+            var profilePicture = profileService.GetProfilePicture(userSession.CustId);
+            var briefProfile = new BriefProfileViewModel
+            {
+                IsDefaultAvatar = string.IsNullOrEmpty(profilePicture.ImageBase64String),
+                EmbedImage = profilePicture.ImageBase64String
+            };
+
+            var langKey = userSession.LangKey.ToLowerInvariant();
+            var locale = LanguageConsts.Locales[langKey];
+            var categories = categoryHandler.GetAll();
+
             var viewModel = new IndexViewModel
             {
-                Language = userSession.LangKey.ToLowerInvariant(),
-                Categories = categoryHandler.GetAll()
+                Language = langKey,
+                OnUserId = userSession.OnUserId,
+                BriefProfile = briefProfile,
+                Categories = categories ?? Enumerable.Empty<CategoryModel>()
             };
 
             return View("~/Handbook/Views/Default/Index.cshtml", viewModel);

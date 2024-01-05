@@ -61,6 +61,9 @@
     <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Fanex.Age.UI, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Age.UI.4.0.0\lib\net461\Fanex.Age.UI.dll</HintPath>
     </Reference>
@@ -72,6 +75,15 @@
     </Reference>
     <Reference Include="Fanex.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Common.1.1.0.1\lib\net40\Fanex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Data, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Data.4.2.2\lib\net461\Fanex.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Data.Repository, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Data.Repository.4.2.2\lib\net461\Fanex.Data.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Data.SqlServer, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Data.SqlServer.4.2.2\lib\net461\Fanex.Data.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.Logging, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Logging.2.0.0\lib\net461\Fanex.Logging.dll</HintPath>
@@ -153,6 +165,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Security" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
       <Private>True</Private>
@@ -179,6 +192,7 @@
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -230,9 +244,24 @@
     <Content Include="Content.htm" />
     <Content Include="Footer.html" />
     <Content Include="Global.asax" />
+    <Content Include="Handbook\App_Data\SPNames\INTERNAL.MNL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\INTERNAL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\LOCAL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\MNL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\PRO\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\SIT\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\UAT\DBAGE.bodb_AGE.xml" />
     <Content Include="Handbook\Scripts\bundles\default.js" />
     <Content Include="Handbook\Scripts\bundles\default.min.js">
       <DependentUpon>default.js</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Scripts\bundles\glossary.js" />
+    <Content Include="Handbook\Scripts\bundles\glossary.min.js">
+      <DependentUpon>glossary.js</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Scripts\bundles\home.js" />
+    <Content Include="Handbook\Scripts\bundles\home.min.js">
+      <DependentUpon>home.js</DependentUpon>
     </Content>
     <Content Include="Handbook\Styles\base\fonts\iconhandbook\demo-files\demo.css" />
     <Content Include="Handbook\Styles\base\fonts\iconhandbook\demo-files\demo.js" />
@@ -278,6 +307,7 @@
     <Content Include="Handbook\Styles\images\avatar.png" />
     <Content Include="Handbook\Styles\images\bg-search.png" />
     <Content Include="Handbook\Styles\images\content.png" />
+    <Content Include="Handbook\Styles\images\icon_user_default.png" />
     <Content Include="Handbook\Styles\images\logo.svg" />
     <Content Include="Handbook\Styles\pages\page-handbook.css">
       <DependentUpon>page-handbook.scss</DependentUpon>
@@ -709,6 +739,9 @@
     <Content Include="typings\globals\moment\typings.json" />
     <Content Include="typings\globals\storejs\typings.json" />
     <Content Include="typings\globals\toastr\typings.json" />
+    <Content Include="Handbook\Views\Default\BriefProfile.cshtml" />
+    <Content Include="Handbook\Views\Home\Index.cshtml" />
+    <Content Include="Handbook\Views\Category\GetBySlug.cshtml" />
     <None Include="Web.backupMNL.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -734,11 +767,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handbook\Consts\LanguageConsts.cs" />
+    <Compile Include="Handbook\Controllers\CategoryController.cs" />
     <Compile Include="Handbook\Controllers\ArticleController.cs" />
+    <Compile Include="Handbook\Controllers\LanguageController.cs" />
+    <Compile Include="Handbook\Controllers\HomeController.cs" />
     <Compile Include="Handbook\Controllers\GlossaryController.cs" />
+    <Compile Include="Handbook\Criteria\SelectProfilePictureCriteria.cs" />
     <Compile Include="Handbook\Handlers\ArticleHandler.cs" />
     <Compile Include="Handbook\Handlers\GlossaryHandler.cs" />
-    <Compile Include="Handbook\Helpers\AppSettingsHelpers.cs" />
+    <Compile Include="Handbook\Handlers\LanguageHandler.cs" />
+    <Compile Include="Handbook\Helpers\AppSettingsHelper.cs" />
     <Compile Include="Handbook\GlobalExtension.cs" />
     <Compile Include="Handbook\Controllers\DefaultController.cs" />
     <Compile Include="Handbook\Handlers\APIHandler.cs" />
@@ -747,12 +786,16 @@
     <Compile Include="Handbook\Models\CategoryModel.cs" />
     <Compile Include="Handbook\Models\ArticleModel.cs" />
     <Compile Include="Handbook\Models\MarketModel.cs" />
+    <Compile Include="Handbook\Models\ProfilePictureModel.cs" />
     <Compile Include="Handbook\Resources\LanguageResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LanguageResources.resx</DependentUpon>
     </Compile>
     <Compile Include="Handbook\RouteConfig.cs" />
+    <Compile Include="Handbook\Services\IProfileService.cs" />
+    <Compile Include="Handbook\ViewModels\BriefProfileViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\HomeViewModel.cs" />
     <Compile Include="Handbook\ViewModels\SearchArticleViewModel.cs" />
     <Compile Include="Handbook\ViewModels\GlossaryViewModel.cs" />
     <Compile Include="Handbook\ViewModels\IndexViewModel.cs" />
@@ -843,6 +886,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>LanguageResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.th-TH.resx" />
     <EmbeddedResource Include="Handbook\Resources\LanguageResources.vi-VN.resx" />
     <EmbeddedResource Include="Handbook\Resources\LanguageResources.zh-CN.resx" />
     <EmbeddedResource Include="Handbook\Resources\LanguageResources.zh-TW.resx" />
@@ -871,6 +915,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Handbook\Scripts\home.ts" />
+    <TypeScriptCompile Include="Handbook\Scripts\glossary.ts" />
     <TypeScriptCompile Include="Handbook\Scripts\default.ts" />
     <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\hammerjs\index.d.ts" />

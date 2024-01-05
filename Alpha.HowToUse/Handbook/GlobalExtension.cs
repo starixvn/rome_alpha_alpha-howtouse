@@ -2,11 +2,15 @@
 using System.Web.Helpers;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Alpha.Web.Helpers;
 using AlphaPlus.User.Models;
+using Fanex.Data;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.Web.Mvc;
+using Fanex.Data.SqlServer;
+using Alpha.HowToUse.Handbook.Configurations;
+using Alpha.HowToUse.Handbook.Services;
+using Fanex.Data.Repository;
 
 namespace Alpha.HowToUse.Handbook
 {
@@ -23,6 +27,11 @@ namespace Alpha.HowToUse.Handbook
             AntiForgeryConfig.SuppressXFrameOptionsHeader = true;
 
             RegisterDIs();
+
+            DbSettingProviderManager
+                .StartNewSession()
+                .WithSqlServer(resourcePath: AppSettingsHelper.StoreProcedurePath)
+                .Run();
         }
 
         private static void RegisterDIs()
@@ -30,8 +39,10 @@ namespace Alpha.HowToUse.Handbook
             var container = new Container();
             container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
 
-            UserSession.Init(new HttpContextHelper());
+            UserSession.Init(new Alpha.Web.Helpers.HttpContextHelper());
             container.RegisterPerWebRequest<IUserSession, UserSessionExt>();
+            container.RegisterPerWebRequest<IDynamicRepository, DynamicRepository>();
+            container.RegisterPerWebRequest<IProfileService, ProfileService>();
 
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
             container.Verify();

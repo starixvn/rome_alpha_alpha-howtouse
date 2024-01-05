@@ -7,8 +7,9 @@ namespace Alpha.HowToUse.Handbook.Models
         public string Name { get; set; }
         public string Slug { get; set; }
         public string ShortName { get; set; }
-        public CategoryModel CategoryParent { get; set; }
+        public IEnumerable<CategoryModel> CategoriesParent { get; set; }
         public IEnumerable<CategoryModel> Categories { get; set; }
         public IEnumerable<MarketModel> Markets { get; set; }
+        public IEnumerable<ArticleModel> Articles { get; set; }
     }
 }

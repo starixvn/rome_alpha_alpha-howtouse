@@ -15,5 +15,17 @@
         "inputFiles": [
             "Handbook/Scripts/default.js"
         ]
+    },
+    {
+        "outputFileName": "Handbook/Scripts/bundles/home.js",
+        "inputFiles": [
+            "Handbook/Scripts/home.js"
+        ]
+    },
+    {
+        "outputFileName": "Handbook/Scripts/bundles/glossary.js",
+        "inputFiles": [
+            "Handbook/Scripts/glossary.js"
+        ]
     }
 ]

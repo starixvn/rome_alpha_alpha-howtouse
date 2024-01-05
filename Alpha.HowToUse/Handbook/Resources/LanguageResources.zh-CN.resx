@@ -120,4 +120,16 @@
   <data name="Handbook" xml:space="preserve">
     <value>Handbook</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>序言</value>
+  </data>
+  <data name="HomePage_Content" xml:space="preserve">
+    <value>欢迎来到我们的代理端,
+&lt;br /&gt;
+在此, 您会发现一个充满资讯的世界, 帮助您熟悉我们的系统包括WAP代理服务的所有功能。这本手册仍在进行中，并将持续的新增内容以加强我们的产品及给予更好的服务。因此, 有些部分可能过时及需要实时的更新。
+&lt;br /&gt;
+欲探索此手册, 您可点击左边的菜单栏, 每项功能的运作也将被详细描述。您可联络上线, 以获取使用新功能的附加说明。
+&lt;br /&gt;
+一如既往, 我们非常重视您的反馈及建议, 从而改进我们的服务。</value>
+  </data>
 </root>

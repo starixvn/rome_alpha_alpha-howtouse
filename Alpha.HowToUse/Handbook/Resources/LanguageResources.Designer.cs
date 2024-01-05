@@ -61,6 +61,15 @@ namespace Alpha.HowToUse.Handbook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Categories.
+        /// </summary>
+        public static string AllCategories {
+            get {
+                return ResourceManager.GetString("AllCategories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Angency Handbook.
         /// </summary>
         public static string AngencyHandbook {
@@ -70,11 +79,87 @@ namespace Alpha.HowToUse.Handbook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bookmark.
+        /// </summary>
+        public static string Bookmark {
+            get {
+                return ResourceManager.GetString("Bookmark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Glossary.
+        /// </summary>
+        public static string Glossary {
+            get {
+                return ResourceManager.GetString("Glossary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Handbook.
         /// </summary>
         public static string Handbook {
             get {
                 return ResourceManager.GetString("Handbook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home {
+            get {
+                return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to our Agency System,
+        ///&lt;br /&gt;
+        ///Here, you’ll find a world of information to help you get familiar with all functionalities in our system including the Agent Wap version. This manual is a work in progress and will continue to be updated since we&apos;ll keep on enhancing our products and services. As a result, some sections might become obsolete and require updating.
+        ///&lt;br /&gt;
+        ///To explore this handbook, please go through all functions in the left menu and each function will be described in detail on how it w [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string HomePage_Content {
+            get {
+                return ResourceManager.GetString("HomePage_Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How can we help you?.
+        /// </summary>
+        public static string HomePage_Title {
+            get {
+                return ResourceManager.GetString("HomePage_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Introduction.
+        /// </summary>
+        public static string Introduction {
+            get {
+                return ResourceManager.GetString("Introduction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are no records to display..
+        /// </summary>
+        public static string NoRecords {
+            get {
+                return ResourceManager.GetString("NoRecords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Read more.
+        /// </summary>
+        public static string ReadMore {
+            get {
+                return ResourceManager.GetString("ReadMore", resourceCulture);
             }
         }
         

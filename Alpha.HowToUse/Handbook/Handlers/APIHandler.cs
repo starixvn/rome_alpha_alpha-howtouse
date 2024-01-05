@@ -1,5 +1,4 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
@@ -11,17 +10,9 @@ namespace Alpha.HowToUse.Handbook.Handlers
     {
         public T Get<T>(string url)
         {
-            try
-            {
-                var content = Get(url);
+            var content = Get(url);
 
-                return DeserializeObject<T>(content);
-            }
-            catch (Exception e)
-            {
-            }
-
-            return default(T);
+            return DeserializeObject<T>(content);
         }
 
         private string Get(string url)
@@ -34,6 +25,7 @@ namespace Alpha.HowToUse.Handbook.Handlers
             {
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
+                //  client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AppSettingsHelper.ContentAPIToken);
                 var response = client.GetAsync(url).GetAwaiter().GetResult();
                 var content = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
