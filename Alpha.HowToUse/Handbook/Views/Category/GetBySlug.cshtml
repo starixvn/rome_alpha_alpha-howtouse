@@ -13,14 +13,28 @@
     <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/site-handbook/common.css" />
 </head>
 <body>
-    @foreach (var c in Model.Categories)
-    {
-        @c.Name
-    }
+    <div class="block-item">
+        @foreach (var c in Model.Categories)
+        {
 
-    @foreach (var a in Model.Articles)
-    {
-        @a.Title
-    }
+            <a href="#" class="item-folder">
+                <span class="icon-folder-open"></span>
+                <span class="title-cat">@c.Name</span>
+            </a>
+        }
+    </div>
+    <div class="block-item">
+        @foreach (var a in Model.Articles)
+        {
+            <a href="#" class="item-article-short">
+                <span class="icon-article"></span>
+                <span class="info">
+                    <span class="title">@a.Title</span>
+                    <span class="time">Published on Mon, Feb 7, 2022</span>
+                </span>
+            </a>
+
+        }
+    </div>
 </body>
 </html>
