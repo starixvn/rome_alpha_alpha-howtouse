@@ -14,6 +14,7 @@
   border-radius: 5px;
   width: 400px;
   display: flex;
+  position: relative;
 
   input {
     border: none;
@@ -350,6 +351,7 @@
   display: flex;
   padding: 0 0 0 4px;
   border-radius: 5px;
+  width: 100%;
 
   &:hover {
     background: #F4F5FA;
@@ -880,17 +882,25 @@
   cursor: pointer;
 }
 
-.hidden {
-  display: none !important;
-}
-
 
 .box-suggestion {
-  li {
-    cursor: pointer;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    background: #ffffff;
 
-    &:hover {
-      background-color: #e3e3e3;
+    li {
+        cursor: pointer;
+        padding: 4px 5px;
+
+        + li {
+            border-top: 1px solid #e6e6e6;
+        }
+
+        &:hover {
+            background-color: #dddddd;
+        }
     }
-  }
 }

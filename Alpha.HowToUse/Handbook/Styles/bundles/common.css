@@ -894,6 +894,9 @@ a, a:focus, a:active, a:target, a:hover {
 .relative {
   position: relative; }
 
+.hidden {
+  display: none !important; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -908,7 +911,8 @@ a, a:focus, a:active, a:target, a:hover {
   background: #ffffff;
   border-radius: 5px;
   width: 400px;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .search input {
     border: none;
     background: transparent;
@@ -1146,7 +1150,8 @@ a, a:focus, a:active, a:target, a:hover {
 .item-article-short {
   display: flex;
   padding: 0 0 0 4px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 100%; }
   .item-article-short:hover {
     background: #F4F5FA; }
   .item-article-short + .main-item {
@@ -1486,7 +1491,17 @@ a, a:focus, a:active, a:target, a:hover {
 .hidden {
   display: none !important; }
 
-.box-suggestion li {
-  cursor: pointer; }
-  .box-suggestion li:hover {
-    background-color: #e3e3e3; }
+.box-suggestion {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  background: #ffffff; }
+  .box-suggestion li {
+    cursor: pointer;
+    padding: 4px 5px; }
+    .box-suggestion li + li {
+      border-top: 1px solid #e6e6e6; }
+    .box-suggestion li:hover {
+      background-color: #dddddd; }

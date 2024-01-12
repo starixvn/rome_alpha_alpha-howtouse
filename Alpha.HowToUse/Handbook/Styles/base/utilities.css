@@ -35,3 +35,6 @@ a, a:focus, a:active, a:target, a:hover {
 
 .relative {
   position: relative; }
+
+.hidden {
+  display: none !important; }
