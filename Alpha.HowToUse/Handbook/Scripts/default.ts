@@ -26,7 +26,9 @@ class DefaultPage {
         });
 
         var currentUrl = this.getCurrentUrl();
-        if (currentUrl) {
+        if (currentUrl &&
+            currentUrl.indexOf("/SignOut.ashx") === -1 &&
+            currentUrl.indexOf("/SignOut2.ashx") === -1) {
             this.$("#ifr-main").attr("src", currentUrl);
         }
     };

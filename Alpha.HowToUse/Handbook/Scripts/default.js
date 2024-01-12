@@ -14,7 +14,9 @@ var DefaultPage = /** @class */ (function () {
                 selectedSuggestion: _this.selectedSuggestion
             });
             var currentUrl = _this.getCurrentUrl();
-            if (currentUrl) {
+            if (currentUrl &&
+                currentUrl.indexOf("/SignOut.ashx") === -1 &&
+                currentUrl.indexOf("/SignOut2.ashx") === -1) {
                 _this.$("#ifr-main").attr("src", currentUrl);
             }
         };
