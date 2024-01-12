@@ -14,27 +14,34 @@
     <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/common.css" />
 </head>
 <body>
-    <div class="block-item">
-        @foreach (var c in category.Categories)
-        {
+    <div class="container">
+        <div class="left-container"></div> <!-- keep this this to prevent break layout -->
+        <div class="center-container">
+            <div class="block-item">
+                @foreach (var c in category.Categories)
+                {
 
-            <a href="@Url.Content("~/Category/GetBySlug?slug=" + c.Slug)" class="item-folder">
-                <span class="icon-folder-open"></span>
-                <span class="title-cat">@c.Name</span>
-            </a>
-        }
+                    <a href="@Url.Content("~/Category/GetBySlug?slug=" + c.Slug)" class="item-folder">
+                        <span class="icon-folder-open"></span>
+                        <span class="title-cat">@c.Name</span>
+                    </a>
+                }
+            </div>
+            <div class="block-item">
+                @foreach (var a in category.Articles)
+                {
+                    <a href="@Url.Content("~/Article/GetBySlug?slug=" + a.Slug)" class="item-article-short">
+                        <span class="icon-article"></span>
+                        <span class="info">
+                            <span class="title">@a.Title</span>
+                            <span class="time">@LanguageResources.PublishedOn @a.PublishedAtStr</span>
+                        </span>
+                    </a>
+                }
+            </div>
+        </div>
+        <div class="right-container"></div>
     </div>
-    <div class="block-item">
-        @foreach (var a in category.Articles)
-        {
-            <a href="@Url.Content("~/Article/GetBySlug?slug=" + a.Slug)" class="item-article-short">
-                <span class="icon-article"></span>
-                <span class="info">
-                    <span class="title">@a.Title</span>
-                    <span class="time">@LanguageResources.PublishedOn @a.PublishedAtStr</span>
-                </span>
-            </a>
-        }
-    </div>
+    
 </body>
 </html>

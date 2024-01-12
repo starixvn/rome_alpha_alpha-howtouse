@@ -14,27 +14,34 @@
     <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/common.css" />
 </head>
 <body>
-    <h2 class="title-page">@LanguageResources.Glossary</h2>
-    @if (glossaries.Any())
-    {
-        foreach (var g in glossaries)
-        {
-            <div>
-                @Html.Raw(g.Content)
+    <div class="container">
+        <div class="left-container"></div> <!-- keep this this to prevent break layout -->
+        <div class="center-container">
+            <h2 class="title-page">@LanguageResources.Glossary</h2>
+            @if (glossaries.Any())
+            {
+                foreach (var g in glossaries)
+                {
+                    <div>
+                        @Html.Raw(g.Content)
+                    </div>
+                }
+            }
+            else
+            {
+                <p>There are no records to display.</p>
+            }
+            <div class="list-glossary">
+                <a data-val="" @(string.IsNullOrWhiteSpace(Model.Group) ? "class=active" : "") href="#">All</a>
+                @foreach (var a in alpha)
+                {
+                    <a data-val="@a" @(string.Equals(Model.Group, a.ToString()) ? "class=active" : "") href="#">@a</a>
+                }
             </div>
-        }
-    }
-    else
-    {
-        <p>There are no records to display.</p>
-    }
-    <div class="list-glossary">
-        <a data-val="" @(string.IsNullOrWhiteSpace(Model.Group) ? "class=active" : "") href="#">All</a>
-        @foreach (var a in alpha)
-        {
-            <a data-val="@a" @(string.Equals(Model.Group, a.ToString()) ? "class=active" : "") href="#">@a</a>
-        }
+        </div>
+        <div class="right-container"></div>
     </div>
+    
 
     @Html.Hidden("RootPath", Url.Content("~"))
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
