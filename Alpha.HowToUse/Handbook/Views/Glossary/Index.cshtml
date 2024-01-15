@@ -23,13 +23,16 @@
                 foreach (var g in glossaries)
                 {
                     <div>
+                        @g.Name
+                    </div>
+                    <div>
                         @Html.Raw(g.Content)
                     </div>
                 }
             }
             else
             {
-                <p>There are no records to display.</p>
+                <p>@LanguageResources.NoRecords</p>
             }
             <div class="list-glossary">
                 <a data-val="" @(string.IsNullOrWhiteSpace(Model.Group) ? "class=active" : "") href="#">All</a>
@@ -41,7 +44,7 @@
         </div>
         <div class="right-container"></div>
     </div>
-    
+
 
     @Html.Hidden("RootPath", Url.Content("~"))
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
