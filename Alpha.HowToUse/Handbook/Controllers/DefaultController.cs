@@ -48,5 +48,30 @@ namespace Alpha.HowToUse.Handbook.Controllers
 
             return View("~/Handbook/Views/Default/Index.cshtml", viewModel);
         }
+
+        public ActionResult GetBySlug(string slug)
+        {
+            var profilePicture = profileService.GetProfilePicture(userSession.CustId);
+            var briefProfile = new BriefProfileViewModel
+            {
+                IsDefaultAvatar = string.IsNullOrEmpty(profilePicture.ImageBase64String),
+                EmbedImage = profilePicture.ImageBase64String
+            };
+
+            var langKey = userSession.LangKey.ToLowerInvariant();
+            var locale = LanguageConsts.Locales[langKey];
+            var categories = categoryHandler.GetAll();
+
+            var viewModel = new GetBySlugViewModel
+            {
+                Language = langKey,
+                OnUserId = userSession.OnUserId,
+                BriefProfile = briefProfile,
+                Categories = categories ?? Enumerable.Empty<CategoryModel>(),
+                Slug = slug
+            };
+
+            return View("~/Handbook/Views/Default/GetBySlug.cshtml", viewModel);
+        }
     }
 }

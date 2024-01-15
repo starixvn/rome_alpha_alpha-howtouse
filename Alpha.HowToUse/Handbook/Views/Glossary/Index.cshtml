@@ -1,9 +1,10 @@
-﻿@using Alpha.HowToUse.Handbook.ViewModels;
+﻿@using Alpha.HowToUse.Handbook.Models;
+@using Alpha.HowToUse.Handbook.ViewModels;
 @model GlossaryViewModel
 @{
     Layout = null;
     char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
-    var glossaries = Model.Glossaries;
+    var glossaries = Model.Glossaries ?? new List<GlossaryModel>();
 }
 
 <!DOCTYPE html>

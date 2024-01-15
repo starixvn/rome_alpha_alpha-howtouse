@@ -15,7 +15,7 @@ namespace Alpha.HowToUse.Handbook.Models
         public IEnumerable<CategoryModel> Categories { get; set; }
 
         public DateTime? PublishedAt { get; set; }
-        public string PublishedAtStr => PublishedAt?.ToString("ddd, MMM dd, yyyyy") ?? string.Empty;
+        public string PublishedAtStr => PublishedAt?.ToString("ddd, MMM dd, yyyy") ?? string.Empty;
 
         public void CorrectImageUrls()
         {

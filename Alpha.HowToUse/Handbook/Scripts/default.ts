@@ -26,11 +26,9 @@ class DefaultPage {
         });
 
         var currentUrl = this.getCurrentUrl();
-        if (currentUrl &&
-            currentUrl.indexOf("/SignOut.ashx") === -1 &&
-            currentUrl.indexOf("/SignOut2.ashx") === -1) {
-            this.$("#ifr-main").attr("src", currentUrl);
-        }
+        var mainSrc = currentUrl && currentUrl.indexOf("_Authorization/SignIn.aspx") === -1
+            ? currentUrl : "Home";
+        this.$("#ifr-main").attr("src", mainSrc);
     };
     registerEvents = () => {
         this.$('.btn-search').click(() => this.searchArticle());

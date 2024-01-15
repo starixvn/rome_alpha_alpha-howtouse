@@ -809,6 +809,8 @@
     <Content Include="Handbook\Views\Category\GetBySlug.cshtml" />
     <Content Include="Handbook\Styles\pages\page-home.scss" />
     <Content Include="Handbook\Styles\pages\artiles\get-by-slug.scss" />
+    <Content Include="Handbook\Views\Home\Blank.cshtml" />
+    <Content Include="Handbook\Views\Default\GetBySlug.cshtml" />
     <None Include="Web.backupMNL.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -867,6 +869,7 @@
     <Compile Include="Handbook\ViewModels\BriefProfileViewModel.cs" />
     <Compile Include="Handbook\ViewModels\CategoryViewModel.cs" />
     <Compile Include="Handbook\ViewModels\HomeViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\GetBySlugViewModel.cs" />
     <Compile Include="Handbook\ViewModels\SearchArticleViewModel.cs" />
     <Compile Include="Handbook\ViewModels\GlossaryViewModel.cs" />
     <Compile Include="Handbook\ViewModels\IndexViewModel.cs" />

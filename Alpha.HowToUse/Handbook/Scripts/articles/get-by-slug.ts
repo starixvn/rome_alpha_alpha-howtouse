@@ -18,7 +18,7 @@ class ArticleGetBySlug {
             return;
         }
 
-        var html = '<div class="floating-box"><ul>';
+        var html = '<ul class="list-content">';
         var hs = ['h1', 'h2', 'h3'];
 
         headlings.each((i, e) => {
@@ -37,9 +37,9 @@ class ArticleGetBySlug {
             })
         });
 
-        html += '</ul></div>';
+        html += '</ul>';
 
-        this.$('.main-article').append(html);
+        this.$('#float-content').append(html);
     };
 
     correctImageUrls = () => {

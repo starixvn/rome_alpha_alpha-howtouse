@@ -10,7 +10,7 @@ var ArticleGetBySlug = /** @class */ (function () {
             if (headlings.length === 0) {
                 return;
             }
-            var html = '<div class="floating-box"><ul>';
+            var html = '<ul class="list-content">';
             var hs = ['h1', 'h2', 'h3'];
             headlings.each(function (i, e) {
                 var $e = _this.$(e);
@@ -26,8 +26,8 @@ var ArticleGetBySlug = /** @class */ (function () {
                     }
                 });
             });
-            html += '</ul></div>';
-            _this.$('.main-article').append(html);
+            html += '</ul>';
+            _this.$('#float-content').append(html);
         };
         this.correctImageUrls = function () {
             var imgs = _this.$(".article-content img");

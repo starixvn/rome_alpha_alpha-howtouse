@@ -607,6 +607,9 @@
         margin-bottom: 13px;
 
         .item-info {
+            a{
+                display: inline-flex;
+            }
             + .item-info {
                 margin-left: 4px;
 
@@ -815,7 +818,7 @@
 
 // right stick menu
 .list-content {
-    padding: 12px 0 0 12px;
+    padding: 12px 0 0 24px;
 
     li {
         + li {
@@ -828,7 +831,7 @@
             text-indent: -15px;
             padding-left: 15px;
 
-            &.active {
+            &.active, &:hover {
                 font-weight: bold;
                 color: #345164;
                 position: relative;
@@ -841,17 +844,6 @@
                     width: 3px;
                     height: calc(100% + 12px);
                     background-color: #345164;
-                }
-            }
-        }
-
-        ul {
-            padding: 8px 0 0 12px;
-            margin-bottom: -4px;
-
-            li {
-                + li {
-                    margin-top: 8px;
                 }
             }
         }

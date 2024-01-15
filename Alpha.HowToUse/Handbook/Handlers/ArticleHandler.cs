@@ -28,9 +28,12 @@ namespace Alpha.HowToUse.Handbook.Handlers
                 "/k" + keyword;
             var result = apiHandler.Get<IEnumerable<ArticleModel>>(url);
 
-            foreach (var a in result)
+            if (result != null)
             {
-                a.CorrectImageUrls();
+                foreach (var a in result)
+                {
+                    a.CorrectImageUrls();
+                }
             }
 
             return result;

@@ -20,5 +20,10 @@ namespace Alpha.HowToUse.Handbook.Controllers
             var viewModel = new HomeViewModel();
             return View("~/Handbook/Views/Home/Index.cshtml", viewModel);
         }
+
+        public ActionResult Blank()
+        {
+            return View("~/Handbook/Views/Home/Blank.cshtml");
+        }
     }
 }

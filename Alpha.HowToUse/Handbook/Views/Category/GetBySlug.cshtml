@@ -4,7 +4,7 @@
 
 @{
     Layout = null;
-    var category = Model.Category;
+    var category = Model.Category ?? new Alpha.HowToUse.Handbook.Models.CategoryModel();
 }
 <!DOCTYPE html>
 <html>
@@ -42,6 +42,6 @@
         </div>
         <div class="right-container"></div>
     </div>
-    
+
 </body>
 </html>

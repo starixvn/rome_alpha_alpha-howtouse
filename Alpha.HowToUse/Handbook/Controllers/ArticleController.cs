@@ -31,7 +31,7 @@ namespace Alpha.HowToUse.Handbook.Controllers
             return View("~/Handbook/Views/Article/Search.cshtml", viewModel);
         }
 
-        public ActionResult GetBySlug(string slug, string language)
+        public ActionResult GetBySlug(string slug)
         {
             var viewModel = articleHandler.GetBySlug(slug);
             return View("~/Handbook/Views/Article/GetBySlug.cshtml", viewModel);

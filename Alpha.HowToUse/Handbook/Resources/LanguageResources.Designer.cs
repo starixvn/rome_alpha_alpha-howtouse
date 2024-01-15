@@ -70,7 +70,7 @@ namespace Alpha.HowToUse.Handbook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Angency Handbook.
+        ///   Looks up a localized string similar to Agency Handbook.
         /// </summary>
         public static string AngencyHandbook {
             get {
@@ -84,6 +84,15 @@ namespace Alpha.HowToUse.Handbook.Resources {
         public static string Bookmark {
             get {
                 return ResourceManager.GetString("Bookmark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contents.
+        /// </summary>
+        public static string Contents {
+            get {
+                return ResourceManager.GetString("Contents", resourceCulture);
             }
         }
         

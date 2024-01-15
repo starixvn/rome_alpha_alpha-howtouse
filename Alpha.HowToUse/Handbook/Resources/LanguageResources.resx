@@ -121,7 +121,7 @@
     <value>Handbook</value>
   </data>
   <data name="AngencyHandbook" xml:space="preserve">
-    <value>Angency Handbook</value>
+    <value>Agency Handbook</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
@@ -161,5 +161,8 @@ We would, as always, value your feedback and suggestions to help us improve our 
   </data>
   <data name="PublishedOn" xml:space="preserve">
     <value>Published on</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
   </data>
 </root>

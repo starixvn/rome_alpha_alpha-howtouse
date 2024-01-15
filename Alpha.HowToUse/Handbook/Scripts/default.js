@@ -14,11 +14,9 @@ var DefaultPage = /** @class */ (function () {
                 selectedSuggestion: _this.selectedSuggestion
             });
             var currentUrl = _this.getCurrentUrl();
-            if (currentUrl &&
-                currentUrl.indexOf("/SignOut.ashx") === -1 &&
-                currentUrl.indexOf("/SignOut2.ashx") === -1) {
-                _this.$("#ifr-main").attr("src", currentUrl);
-            }
+            var mainSrc = currentUrl && currentUrl.indexOf("_Authorization/SignIn.aspx") === -1
+                ? currentUrl : "Home";
+            _this.$("#ifr-main").attr("src", mainSrc);
         };
         this.registerEvents = function () {
             _this.$('.btn-search').click(function () { return _this.searchArticle(); });

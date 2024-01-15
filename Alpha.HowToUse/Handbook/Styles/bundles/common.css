@@ -1317,6 +1317,8 @@ a, a:focus, a:active, a:target, a:hover {
     align-items: center;
     padding: 0 8px;
     margin-bottom: 13px; }
+    .detail-article .top-info .item-info a {
+      display: inline-flex; }
     .detail-article .top-info .item-info + .item-info {
       margin-left: 4px; }
       .detail-article .top-info .item-info + .item-info:before {
@@ -1442,7 +1444,7 @@ a, a:focus, a:active, a:target, a:hover {
   margin-bottom: 4px; }
 
 .list-content {
-  padding: 12px 0 0 12px; }
+  padding: 12px 0 0 24px; }
   .list-content li + li {
     margin-top: 16px; }
   .list-content li a {
@@ -1450,11 +1452,11 @@ a, a:focus, a:active, a:target, a:hover {
     display: inline-block;
     text-indent: -15px;
     padding-left: 15px; }
-    .list-content li a.active {
+    .list-content li a.active, .list-content li a:hover {
       font-weight: bold;
       color: #345164;
       position: relative; }
-      .list-content li a.active:before {
+      .list-content li a.active:before, .list-content li a:hover:before {
         position: absolute;
         content: "";
         top: -7px;
@@ -1462,11 +1464,6 @@ a, a:focus, a:active, a:target, a:hover {
         width: 3px;
         height: calc(100% + 12px);
         background-color: #345164; }
-  .list-content li ul {
-    padding: 8px 0 0 12px;
-    margin-bottom: -4px; }
-    .list-content li ul li + li {
-      margin-top: 8px; }
 
 .list-glossary {
   display: flex;
