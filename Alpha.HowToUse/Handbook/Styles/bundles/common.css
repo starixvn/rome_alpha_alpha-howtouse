@@ -950,13 +950,9 @@ a, a:focus, a:active, a:target, a:hover {
   justify-content: space-between; }
 
 .center-container {
+  max-width: 840px;
   padding: 0 20px;
-  display: flex;
-  justify-content: space-between; }
-
-.center-container {
-  width: 840px;
-  padding: 0 20px; }
+  flex: 1; }
 
 #ifr-main {
   flex: 1; }
