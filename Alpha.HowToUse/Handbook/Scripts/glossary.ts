@@ -19,7 +19,7 @@
     };
 
     viewGlossary = (s) => {
-        var url = this.$("#RootPath").val() + 'Glossary/Index?group=' + s;
+        var url = this.$("#RootPath").val() + 'Glossary/Index?group=' + encodeURIComponent(s);
 
         if (this.topWindow.setUrl) {
             this.topWindow.setUrl(url);

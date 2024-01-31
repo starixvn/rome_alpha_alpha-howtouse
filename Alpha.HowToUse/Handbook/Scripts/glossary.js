@@ -12,7 +12,7 @@ var GlossaryPage = /** @class */ (function () {
             });
         };
         this.viewGlossary = function (s) {
-            var url = _this.$("#RootPath").val() + 'Glossary/Index?group=' + s;
+            var url = _this.$("#RootPath").val() + 'Glossary/Index?group=' + encodeURIComponent(s);
             if (_this.topWindow.setUrl) {
                 _this.topWindow.setUrl(url);
                 return;

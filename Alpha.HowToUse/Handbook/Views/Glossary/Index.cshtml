@@ -26,39 +26,53 @@
                     <a data-val="@a" @(string.Equals(Model.Group, a.ToString()) ? "class=active" : "") href="#">@a</a>
                 }
             </div>
-            <div class="list-group-glossary">
 
-                @foreach (var a in alpha)
-                {
-                    <div class="characters">@(a).</div>
-                    var gs = glossaries.Where(g => g.Title.ToLowerInvariant().StartsWith(a.ToString().ToLowerInvariant()));
-
-                    if (gs.Any())
+            @if (string.IsNullOrWhiteSpace(Model.Group) && !glossaries.Any())
+            {
+                <p>@LanguageResources.NoRecords</p>
+            }
+            else
+            {
+                <div class="list-group-glossary">
+                    @foreach (var a in alpha)
                     {
-                        foreach (var g in gs)
-                        {
 
-                            <div class="group-glossary">
-                                <div class="group-glossary-title">
-                                    @g.Name
+                        var s = a.ToString();
+                        if (!string.IsNullOrWhiteSpace(Model.Group) &&
+                            !string.Equals(Model.Group, s, StringComparison.OrdinalIgnoreCase))
+                        {
+                            continue;
+                        }
+
+                        var gs = glossaries.Where(g => string.Equals(g.Group, s, StringComparison.OrdinalIgnoreCase));
+
+                        if (gs.Any())
+                        {
+                            <div class="characters">@(s).</div>
+                            foreach (var g in gs)
+                            {
+
+                                <div class="group-glossary">
+                                    <div class="group-glossary-title">
+                                        @g.Name
+                                    </div>
+                                    <div>
+                                        @Html.Raw(g.Content)
+                                    </div>
                                 </div>
-                                <div>
-                                    @Html.Raw(g.Content)
-                                </div>
-                            </div>
+                            }
+                        }
+                        else if (!string.IsNullOrWhiteSpace(Model.Group))
+                        {
+                            <p>@LanguageResources.NoRecords</p>
                         }
                     }
-                    else
-                    {
-                        <p>@LanguageResources.NoRecords</p>
-                    }
-                }
+                </div>
+            }
 
-            </div>
-
-        <div class="right-container"></div>
+            <div class="right-container"></div>
+        </div>
     </div>
-
 
     @Html.Hidden("RootPath", Url.Content("~"))
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
