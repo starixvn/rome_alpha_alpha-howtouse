@@ -3,7 +3,7 @@
 @model GlossaryViewModel
 @{
     Layout = null;
-    char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+    char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".ToCharArray();
     var glossaries = Model.Glossaries ?? new List<GlossaryModel>();
 }
 
@@ -19,22 +19,6 @@
         <div class="left-container"></div> <!-- keep this this to prevent break layout -->
         <div class="center-container">
             <h2 class="title-page">@LanguageResources.Glossary</h2>
-            @if (glossaries.Any())
-            {
-                foreach (var g in glossaries)
-                {
-                    <div>
-                        @g.Name
-                    </div>
-                    <div>
-                        @Html.Raw(g.Content)
-                    </div>
-                }
-            }
-            else
-            {
-                <p>@LanguageResources.NoRecords</p>
-            }
             <div class="list-glossary">
                 <a data-val="" @(string.IsNullOrWhiteSpace(Model.Group) ? "class=active" : "") href="#">All</a>
                 @foreach (var a in alpha)
@@ -42,7 +26,36 @@
                     <a data-val="@a" @(string.Equals(Model.Group, a.ToString()) ? "class=active" : "") href="#">@a</a>
                 }
             </div>
-        </div>
+            <div class="list-group-glossary">
+
+                @foreach (var a in alpha)
+                {
+                    <div class="characters">@(a).</div>
+                    var gs = glossaries.Where(g => g.Title.ToLowerInvariant().StartsWith(a.ToString().ToLowerInvariant()));
+
+                    if (gs.Any())
+                    {
+                        foreach (var g in gs)
+                        {
+
+                            <div class="group-glossary">
+                                <div class="group-glossary-title">
+                                    @g.Name
+                                </div>
+                                <div>
+                                    @Html.Raw(g.Content)
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>@LanguageResources.NoRecords</p>
+                    }
+                }
+
+            </div>
+
         <div class="right-container"></div>
     </div>
 

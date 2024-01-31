@@ -854,7 +854,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 6px 30px 16px;
+    padding: 6px 30px 13px;
 
     a {
         margin: 0 5px 8px;
@@ -876,7 +876,46 @@
         }
     }
 }
+.list-group-glossary {
+    .group-glossary {
+        &:nth-child(even) {
+            background: #F4F5FA;
+        }
+    }
+}
+.group-glossary {
+    margin-bottom: 3px;
+    border-radius: 5px;
+    padding: 12px;
 
+    .group-glossary-title {
+        font-size: 16px;
+        line-height: 28px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin-bottom: 0;
+
+        + p {
+        }
+    }
+
+    ul {
+        padding: 0 0 0 20px;
+    }
+}
+.characters {
+    font-weight: 700;
+    font-size: 48px;
+    color: #2B5D7E;
+    line-height: 1;
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
 .item-cat {
     cursor: pointer;
 }
