@@ -11,7 +11,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@LanguageResources.AngencyHandbook</title>
-    <link type="text/css" rel="stylesheet" href="~/Handbook/Styles/bundles/common.css" />
+    @StaticResources.RenderStyles("~/Handbook/Styles/bundles/common")
 </head>
 <body data-lang="@Model.Language">
     <header class="header">
@@ -88,7 +88,7 @@
     @Html.Hidden("NoRecords", LanguageResources.NoRecords)
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
     @StaticResources.AssetScripts.Render("/bundles/site-handbook/common")
-    <script src="~/Handbook/Scripts/bundles/default.js" type="text/javascript"></script>
+    @StaticResources.RenderScripts("~/Handbook/Scripts/bundles/default")
 </body>
 </html>
 

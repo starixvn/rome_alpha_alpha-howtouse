@@ -4,7 +4,7 @@ namespace Alpha.HowToUse.Handbook.Models
 {
     public class GlossaryModel
     {
-        char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".ToCharArray();
+        char[] alpha = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
 
         public string Name { get; set; }
         public string Content { get; set; }
