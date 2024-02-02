@@ -35,6 +35,9 @@
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 12px; }
+  .detail-article .article-content a {
+    text-decoration: underline;
+    color: #3873E9 !important; }
   .detail-article .article-content img {
     width: auto !important;
     height: auto !important;
@@ -51,10 +54,11 @@
       line-height: 26px; }
       .detail-article .article-content ul li + li, .detail-article .article-content ol li + li {
         margin-top: 6px; }
-  .detail-article .article-content ul li {
+  .detail-article .article-content ul li p, .detail-article .article-content ul li div {
+    position: relative;
     padding-left: 17px;
-    position: relative; }
-    .detail-article .article-content ul li:before {
+    margin: 0; }
+    .detail-article .article-content ul li p:before, .detail-article .article-content ul li div:before {
       font-family: 'Iconalpha' !important;
       speak: never;
       font-style: normal;
@@ -69,14 +73,16 @@
       position: absolute;
       top: 8px;
       left: 0; }
-    .detail-article .article-content ul li li:before {
-      content: "\e90d";
-      top: 7px;
-      left: -1px; }
-    .detail-article .article-content ul li li li:before {
-      content: "\e90e";
-      top: 7px;
-      left: -2px; }
+  .detail-article .article-content ul li ul {
+    padding-left: 17px; }
+  .detail-article .article-content ul li li p:before, .detail-article .article-content ul li li div:before {
+    content: "\e90d";
+    top: 7px;
+    left: -1px; }
+  .detail-article .article-content ul li li li p:before, .detail-article .article-content ul li li li div:before {
+    content: "\e90e";
+    top: 7px;
+    left: -2px; }
   .detail-article .article-content ol {
     counter-reset: item;
     line-height: 16px;
@@ -90,11 +96,15 @@
   .detail-article .article-content table {
     border-collapse: collapse;
     border: 1px solid #d1d1d1;
-    margin: 0 auto 15px; }
+    margin: 0 auto 15px;
+    font-size: 15px; }
+    .detail-article .article-content table thead th, .detail-article .article-content table thead td {
+      background-color: #BCCBDC;
+      color: #333333;
+      height: 36px; }
     .detail-article .article-content table th, .detail-article .article-content table td {
       border-collapse: collapse;
       border: 1px solid #d1d1d1;
       padding: 5px;
-      vertical-align: middle; }
-    .detail-article .article-content table tbody tr:nth-child(odd) {
-      background: #efefef; }
+      vertical-align: middle;
+      height: 32px; }

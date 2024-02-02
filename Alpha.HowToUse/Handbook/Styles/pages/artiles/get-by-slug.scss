@@ -61,6 +61,11 @@
             margin-bottom: 12px;
         }
 
+        a {
+            text-decoration: underline;
+            color: #3873E9!important;
+        }
+
         img {
             width: auto !important;
             height: auto !important;
@@ -88,40 +93,50 @@
         }
 
         ul {
-
             li {
-                padding-left: 17px;
-                position: relative;
+                p, div {
+                    position: relative;
+                    padding-left: 17px;
+                    margin: 0;
 
-                &:before {
-                    font-family: 'Iconalpha' !important;
-                    speak: never;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-variant: normal;
-                    text-transform: none;
-                    line-height: 1;
-                    -webkit-font-smoothing: antialiased;
-                    content: "\e90c";
-                    font-size: 12px;
-                    color: #333;
-                    position: absolute;
-                    top: 8px;
-                    left: 0;
+                    &:before {
+                        font-family: 'Iconalpha' !important;
+                        speak: never;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        content: "\e90c";
+                        font-size: 12px;
+                        color: #333;
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                    }
+                }
+
+                ul {
+                    padding-left: 17px;
                 }
 
                 li {
-                    &:before {
-                        content: "\e90d";
-                        top: 7px;
-                        left: -1px;
+                    p, div {
+                        &:before {
+                            content: "\e90d";
+                            top: 7px;
+                            left: -1px;
+                        }
                     }
 
                     li {
-                        &:before {
-                            content: "\e90e";
-                            top: 7px;
-                            left: -2px;
+                        p, div {
+                            &:before {
+                                content: "\e90e";
+                                top: 7px;
+                                left: -2px;
+                            }
                         }
                     }
                 }
@@ -150,20 +165,22 @@
             border-collapse: collapse;
             border: 1px solid #d1d1d1;
             margin: 0 auto 15px;
+            font-size: 15px;
+
+            thead {
+                th, td {
+                    background-color: #BCCBDC;
+                    color: #333333;
+                    height: 36px;
+                }
+            }
 
             th, td {
                 border-collapse: collapse;
                 border: 1px solid #d1d1d1;
                 padding: 5px;
                 vertical-align: middle;
-            }
-
-            tbody {
-                tr {
-                    &:nth-child(odd) {
-                        background: #efefef;
-                    }
-                }
+                height: 32px
             }
         }
     }
