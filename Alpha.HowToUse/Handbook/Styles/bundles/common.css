@@ -425,11 +425,11 @@ mark,
 
 @font-face {
   font-family: 'Iconalpha';
-  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?8bttat');
-  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?8bttat#iefix') format('embedded-opentype'),
-    url('../base/fonts/iconhandbook/fonts/Iconalpha.ttf?8bttat') format('truetype'),
-    url('../base/fonts/iconhandbook/fonts/Iconalpha.woff?8bttat') format('woff'),
-    url('../base/fonts/iconhandbook/fonts/Iconalpha.svg?8bttat#Iconalpha') format('svg');
+  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?1qpbqu');
+  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?1qpbqu#iefix') format('embedded-opentype'),
+    url('../base/fonts/iconhandbook/fonts/Iconalpha.ttf?1qpbqu') format('truetype'),
+    url('../base/fonts/iconhandbook/fonts/Iconalpha.woff?1qpbqu') format('woff'),
+    url('../base/fonts/iconhandbook/fonts/Iconalpha.svg?1qpbqu#Iconalpha') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -450,6 +450,15 @@ mark,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bullet1:before {
+  content: "\e90c";
+}
+.icon-bullet2:before {
+  content: "\e90d";
+}
+.icon-bullet3:before {
+  content: "\e90e";
+}
 .icon-folder-open:before {
   content: "\e90b";
   color: #fec34f;
@@ -913,6 +922,8 @@ a, a:focus, a:active, a:target, a:hover {
   width: 400px;
   display: flex;
   position: relative; }
+  .search:focus {
+    box-shadow: inset 0px 0px 0px 1px #39A4FF; }
   .search input {
     border: none;
     background: transparent;
@@ -1306,65 +1317,6 @@ a, a:focus, a:active, a:target, a:hover {
 .container {
   padding-bottom: 30px; }
 
-.detail-article {
-  border-bottom: 1px solid #D1D1D1;
-  margin-bottom: 12px; }
-  .detail-article .top-info {
-    background: #EDF2F7;
-    border-radius: 3px;
-    display: flex;
-    height: 28px;
-    align-items: center;
-    padding: 0 8px;
-    margin-bottom: 13px; }
-    .detail-article .top-info .item-info a {
-      display: inline-flex; }
-    .detail-article .top-info .item-info + .item-info {
-      margin-left: 4px; }
-      .detail-article .top-info .item-info + .item-info:before {
-        display: none; }
-  .detail-article h3 {
-    font-weight: 700; }
-  .detail-article h3, .detail-article p {
-    font-size: 14px;
-    line-height: 16px; }
-  .detail-article img {
-    width: auto;
-    display: block;
-    margin: 1px auto 13px;
-    max-width: 100%; }
-  .detail-article ul {
-    list-style: disc;
-    padding: 0 0 0 22px;
-    line-height: 16px;
-    margin-bottom: 12px; }
-    .detail-article ul ul {
-      margin-bottom: 0;
-      list-style-type: circle; }
-      .detail-article ul ul ul {
-        list-style-type: square; }
-  .detail-article ol {
-    counter-reset: item;
-    line-height: 16px;
-    margin-bottom: 12px; }
-    .detail-article ol li:before {
-      content: counters(item, ".") ". ";
-      counter-increment: item; }
-    .detail-article ol ol {
-      padding: 0 0 0 22px;
-      margin-bottom: 0; }
-  .detail-article table {
-    border-collapse: collapse;
-    border: 1px solid #d1d1d1;
-    margin: 0 auto 15px; }
-    .detail-article table th, .detail-article table td {
-      border-collapse: collapse;
-      border: 1px solid #d1d1d1;
-      padding: 5px;
-      vertical-align: middle; }
-    .detail-article table tbody tr:nth-child(odd) {
-      background: #efefef; }
-
 .helpful {
   text-align: center;
   font-size: 12px;
@@ -1522,15 +1474,33 @@ a, a:focus, a:active, a:target, a:hover {
 
 .box-suggestion {
   position: absolute;
-  top: calc(100% + 2px);
+  top: calc(100% + 3px);
   left: 0;
   width: 100%;
-  border: 1px solid #e6e6e6;
-  background: #ffffff; }
+  background: #ffffff;
+  padding: 12px 0;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 6px; }
   .box-suggestion li {
     cursor: pointer;
-    padding: 4px 5px; }
+    padding: 8px 5px 5px 41px;
+    position: relative; }
+    .box-suggestion li:before {
+      font-family: 'Iconalpha' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      content: "\e901";
+      font-size: 20px;
+      color: #A4A4A4;
+      position: absolute;
+      top: 7px;
+      left: 13px; }
     .box-suggestion li + li {
-      border-top: 1px solid #e6e6e6; }
+      margin-top: 8px; }
     .box-suggestion li:hover {
-      background-color: #dddddd; }
+      background-color: #EDEDED; }
