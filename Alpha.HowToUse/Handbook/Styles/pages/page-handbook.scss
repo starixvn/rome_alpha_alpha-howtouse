@@ -733,10 +733,8 @@
 
         a {
             line-height: 16px;
-            display: inline-block;
-            text-indent: -15px;
-            padding-left: 15px;
-
+            display: inline-block;            
+            font-weight: 500!important; 
             &.active, &:hover {
                 font-weight: bold;
                 color: #345164;
