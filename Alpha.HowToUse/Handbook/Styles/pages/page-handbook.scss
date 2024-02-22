@@ -202,6 +202,8 @@
     width: 249px;
     border-right: 1px solid var(--color4);
     padding-top: 4px;
+    height: calc(100vh - 64px);
+    overflow: auto;
 }
 
 .title-category {
