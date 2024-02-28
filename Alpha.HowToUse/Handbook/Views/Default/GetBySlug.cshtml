@@ -86,6 +86,7 @@
     @Html.Hidden("OldMainRootPath", Model.OldMainRootPath)
     @Html.Hidden("RootPath", Url.Content("~"))
     @Html.Hidden("NoRecords", LanguageResources.NoRecords)
+    @Html.Hidden("SetCurrentURL", 0)
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
     @StaticResources.AssetScripts.Render("/bundles/site-handbook/common")
     @StaticResources.RenderScripts("~/Handbook/Scripts/bundles/default")

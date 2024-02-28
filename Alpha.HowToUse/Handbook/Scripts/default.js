@@ -13,10 +13,13 @@ var DefaultPage = /** @class */ (function () {
                 suggestUrl: _this.$("#RootPath").val() + "Article/Suggest",
                 selectedSuggestion: _this.selectedSuggestion
             });
-            var currentUrl = _this.getCurrentUrl();
-            var mainSrc = currentUrl && currentUrl.indexOf("_Authorization/SignIn.aspx") === -1
-                ? currentUrl : "Home";
-            _this.$("#ifr-main").attr("src", mainSrc);
+            var setCurrentURL = _this.$("#SetCurrentURL").val() === '1';
+            if (setCurrentURL) {
+                var currentUrl = _this.getCurrentUrl();
+                var mainSrc = currentUrl && currentUrl.indexOf("_Authorization/SignIn.aspx") === -1
+                    ? currentUrl : "Home";
+                _this.$("#ifr-main").attr("src", mainSrc);
+            }
         };
         this.registerEvents = function () {
             _this.$('.btn-search').click(function () { return _this.searchArticle(); });
@@ -51,7 +54,7 @@ var DefaultPage = /** @class */ (function () {
         };
         this.searchArticle = function () {
             var keyword = _this.$('#txt-search').val();
-            _this.$("#ifr-main").attr("src", "./Article/Search?keyword=" + keyword);
+            _this.$("#ifr-main").attr("src", _this.$("#RootPath").val() + "Article/Search?keyword=" + keyword);
         };
         this.showHideLanguage = function () {
             var ddl = _this.$(".dropdown-language");

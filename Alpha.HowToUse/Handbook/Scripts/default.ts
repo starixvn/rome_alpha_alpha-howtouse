@@ -25,10 +25,13 @@ class DefaultPage {
             selectedSuggestion: this.selectedSuggestion
         });
 
-        var currentUrl = this.getCurrentUrl();
-        var mainSrc = currentUrl && currentUrl.indexOf("_Authorization/SignIn.aspx") === -1
-            ? currentUrl : "Home";
-        this.$("#ifr-main").attr("src", mainSrc);
+        var setCurrentURL = this.$("#SetCurrentURL").val() === '1';
+        if (setCurrentURL) {
+            var currentUrl = this.getCurrentUrl();
+            var mainSrc = currentUrl && currentUrl.indexOf("_Authorization/SignIn.aspx") === -1
+                ? currentUrl : "Home";
+            this.$("#ifr-main").attr("src", mainSrc);
+        }
     };
     registerEvents = () => {
         this.$('.btn-search').click(() => this.searchArticle());
@@ -71,7 +74,7 @@ class DefaultPage {
 
     searchArticle = () => {
         var keyword = this.$('#txt-search').val();
-        this.$("#ifr-main").attr("src", "./Article/Search?keyword=" + keyword);
+        this.$("#ifr-main").attr("src", this.$("#RootPath").val() + "Article/Search?keyword=" + keyword);
     };
 
     showHideLanguage = () => {

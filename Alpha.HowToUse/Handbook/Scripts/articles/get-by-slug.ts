@@ -8,9 +8,13 @@ class ArticleGetBySlug {
 
     init = () => {
         this.makeFloatingContentBox();
-        // this.correctImageUrls();
+        this.registerZoomImageEvents();
+        this.$('.zoomed-img-container').click(() => {
+            var container = this.$('.zoomed-img-container');
+            container.addClass('hidden');
+            container.empty();
+        });;
     };
-
 
     makeFloatingContentBox = () => {
         var headlings = this.$(".article-content h1, .article-content h2, .article-content h3");
@@ -42,21 +46,36 @@ class ArticleGetBySlug {
         this.$('#float-content').append(html);
     };
 
-    correctImageUrls = () => {
-        var imgs = this.$(".article-content img");
-        var rootUrl = this.$("#RootPath").val();
+    registerZoomImageEvents = () => {
+        var self = this;
+        this.$('img').click(function (e) {
+            var container = self.$('.zoomed-img-container');
+            container.empty();
 
-        imgs.each((i, e) => {
-            var $e = this.$(e);
-            var s = $e.attr('src');
+            var $this = self.$(this);
+            var c = $this.clone();
+            var w = c.width() * 2;
+            var h = c.height() * 2;
+            var mw = self.$('body').width();
 
-            var regex = '/api/images/get/';
-            var start = s.indexOf(regex);
-            if (start === -1) {
-                return;
-            }
-            var name = s.substring(start + regex.length);
-            $e.attr('src', rootUrl + "Image/Get?name=" + name);
+            c.css({
+                width: 'unset',
+                height: 'unset',
+                top: 0,
+                'max-width': '100%',
+                'max-height': self.$('body').height(),
+                'margin-top': self.$(window).scrollTop()
+            });
+
+            container.css({
+                width: mw + 'px',
+                height: (self.$('.container').height() + 30) + 'px',
+            });
+
+            container.append(c);
+            container.removeClass('hidden');
+            e.preventDefault();
+            return false;
         });
     };
 };
