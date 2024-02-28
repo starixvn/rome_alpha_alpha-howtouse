@@ -39,9 +39,8 @@
     text-decoration: underline;
     color: #3873E9 !important; }
   .detail-article .article-content img {
-    width: auto !important;
+    max-width: 100% !important;
     height: auto !important;
-    max-width: 100%;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.15) 0 4px 8px;
     border: 1px solid #BCBCBC; }

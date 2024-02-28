@@ -39,8 +39,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="article-content">                           
-                            @Html.Raw(Model.Content)                            
+                        <div class="article-content">
+                            @Html.Raw(Model.Content)
                         </div>
 
                     </div>
@@ -49,7 +49,10 @@
         </div>
         <div class="right-container">
             <div class="inner">
-                <h2 class="title-category">@LanguageResources.Contents</h2>
+                @if (Model != null && !string.IsNullOrWhiteSpace(Model.Slug))
+                {
+                    <h2 class="title-category">@LanguageResources.Contents</h2>
+                }
                 <div id="float-content">
                 </div>
             </div>

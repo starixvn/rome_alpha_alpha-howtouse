@@ -37,7 +37,7 @@ namespace Alpha.HowToUse.Handbook.Handlers
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AppSettingsHelper.ContentAPIToken);
-                var response = client.GetAsync(EncodeURIComponent(url)).GetAwaiter().GetResult();
+                var response = client.GetAsync(EncodeURL(url)).GetAwaiter().GetResult();
                 var content = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
                 return content;
@@ -56,7 +56,7 @@ namespace Alpha.HowToUse.Handbook.Handlers
             return result;
         }
 
-        private static string EncodeURIComponent(string url)
+        public static string EncodeURL(string url)
         {
             var result = url.Replace("#", "%23");
             return result;
