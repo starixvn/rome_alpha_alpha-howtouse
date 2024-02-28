@@ -493,6 +493,10 @@
   padding: 12px 0 0 24px; }
   .list-content li + li {
     margin-top: 16px; }
+  .list-content li h2 {
+    padding-left: 12px; }
+  .list-content li h3 {
+    padding-left: 24px; }
   .list-content li a {
     line-height: 16px;
     display: inline-block;

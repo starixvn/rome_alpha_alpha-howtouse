@@ -733,10 +733,19 @@
             margin-top: 16px;
         }
 
+        h2 {
+            padding-left: 12px;
+        }
+
+        h3 {
+            padding-left: 24px;
+        }
+
         a {
             line-height: 16px;
-            display: inline-block;            
-            font-weight: 500!important; 
+            display: inline-block;
+            font-weight: 500 !important;
+
             &.active, &:hover {
                 font-weight: bold;
                 color: #345164;
