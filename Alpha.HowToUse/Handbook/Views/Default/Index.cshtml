@@ -83,6 +83,8 @@
     </main>
 
     @Html.Hidden("OnUserId", Model.OnUserId)
+    @Html.Hidden("CustId", Model.CustId)
+    @Html.Hidden("UserId", Model.UserId)
     @Html.Hidden("OldMainRootPath", Model.OldMainRootPath)
     @Html.Hidden("RootPath", Url.Content("~"))
     @Html.Hidden("NoRecords", LanguageResources.NoRecords)

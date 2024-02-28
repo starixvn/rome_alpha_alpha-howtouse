@@ -18,5 +18,8 @@ namespace Alpha.HowToUse.Handbook.ViewModels
         public BriefProfileViewModel BriefProfile { get; set; }
 
         public IEnumerable<CategoryModel> Categories { get; set; }
+
+        public int CustId { get; set; }
+        public int UserId { get; set; }
     }
 }

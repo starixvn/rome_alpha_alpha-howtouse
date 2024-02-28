@@ -1,6 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using Alpha.HowToUse.Handbook.Consts;
 using Alpha.HowToUse.Handbook.Handlers;
+using Alpha.HowToUse.Handbook.Models;
 using Alpha.HowToUse.Handbook.ViewModels;
 using Alpha.Web;
 using AlphaPlus.User.Models;
@@ -22,10 +24,13 @@ namespace Alpha.HowToUse.Handbook.Controllers
         {
             var langKey = userSession.LangKey.ToLowerInvariant();
             var locale = LanguageConsts.Locales[langKey];
+            var category = handler.GetBySlug(slug) ?? new CategoryModel();
+            category.Articles = category.Articles.OrderBy(a => a.Order);
+
             var viewModel = new CategoryViewModel
             {
                 Language = locale,
-                Category = handler.GetBySlug(slug)
+                Category = category
             };
 
             return View("~/Handbook/Views/Category/GetBySlug.cshtml", viewModel);

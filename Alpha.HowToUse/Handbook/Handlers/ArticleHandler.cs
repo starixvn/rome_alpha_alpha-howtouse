@@ -25,6 +25,7 @@ namespace Alpha.HowToUse.Handbook.Handlers
                 "/" + LanguageConsts.Locales[langKey] +
                 "/" + AppSettingsHelper.SiteLabel +
                 "/" + userSession.RoleId +
+                "/" + AppSettingsHelper.ContentAPIEnvironment +
                 "/k" + keyword;
             var result = apiHandler.Get<IEnumerable<ArticleModel>>(url);
 
@@ -45,7 +46,8 @@ namespace Alpha.HowToUse.Handbook.Handlers
             var url = contentAPIUrl + "/api/articles/get/" + slug +
                 "/" + LanguageConsts.Locales[langKey] +
                 "/" + AppSettingsHelper.SiteLabel +
-                "/" + userSession.RoleId;
+                "/" + userSession.RoleId +
+                "/" + AppSettingsHelper.ContentAPIEnvironment;
             var result = apiHandler.Get<ArticleModel>(url);
             if (result != null)
             {
@@ -62,6 +64,7 @@ namespace Alpha.HowToUse.Handbook.Handlers
                 "/" + LanguageConsts.Locales[langKey] +
                 "/" + AppSettingsHelper.SiteLabel +
                 "/" + userSession.RoleId +
+                "/" + AppSettingsHelper.ContentAPIEnvironment +
                 "/" + keyword;
             var result = apiHandler.Get<IEnumerable<SuggestionModel>>(url);
             return result;

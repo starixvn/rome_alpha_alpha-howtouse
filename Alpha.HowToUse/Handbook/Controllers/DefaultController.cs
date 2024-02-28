@@ -37,13 +37,23 @@ namespace Alpha.HowToUse.Handbook.Controllers
             var langKey = userSession.LangKey.ToLowerInvariant();
             var locale = LanguageConsts.Locales[langKey];
             var categories = categoryHandler.GetAll() ?? Enumerable.Empty<CategoryModel>();
+            foreach (var c in categories)
+            {
+                if (c.Articles != null)
+                {
+                    c.Articles = c.Articles.OrderBy(a => a.Order);
+                }
+            }
 
             var viewModel = new IndexViewModel
             {
                 Language = langKey,
                 OnUserId = userSession.OnUserId,
                 BriefProfile = briefProfile,
-                Categories = categories.OrderBy(c => c.Order)
+                Categories = categories.OrderBy(c => c.Order),
+
+                UserId = userSession.UserId,
+                CustId = userSession.CustId
             };
 
             return View("~/Handbook/Views/Default/Index.cshtml", viewModel);

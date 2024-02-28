@@ -4,6 +4,7 @@ namespace Alpha.HowToUse.Handbook.Configurations
 {
     public static class AppSettingsHelper
     {
+        public static string ContentAPIEnvironment => ConfigurationManager.AppSettings["ContentAPI:Environment"];
         public static string ContentAPIUrl => ConfigurationManager.AppSettings["ContentAPIUrl"];
         public static string ContentAPIToken => ConfigurationManager.AppSettings["ContentAPIToken"];
 

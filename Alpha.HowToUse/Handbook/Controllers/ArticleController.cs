@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using Alpha.HowToUse.Handbook.Handlers;
 using Alpha.HowToUse.Handbook.Models;
@@ -24,10 +25,12 @@ namespace Alpha.HowToUse.Handbook.Controllers
         public ActionResult Search(string keyword)
         {
             var langKey = userSession.LangKey.ToLowerInvariant();
+            var article = articleHandler.Search(keyword) ?? Enumerable.Empty<ArticleModel>();
+
             var viewModel = new SearchArticleViewModel
             {
                 Language = langKey,
-                Articles = articleHandler.Search(keyword) ?? Enumerable.Empty<ArticleModel>()
+                Articles = article.OrderBy(a => a.Title)
             };
 
             return View("~/Handbook/Views/Article/Search.cshtml", viewModel);
@@ -43,8 +46,8 @@ namespace Alpha.HowToUse.Handbook.Controllers
         public JsonResult Suggest(string keyword)
         {
             var langKey = userSession.LangKey.ToLowerInvariant();
-            var result = articleHandler.Suggest(keyword)?.Take(SuggestedLimit);
-            return Json(result, JsonRequestBehavior.AllowGet);
+            var result = articleHandler.Suggest(keyword)?.Take(SuggestedLimit) ?? new List<SuggestionModel>();
+            return Json(result.OrderBy(r => r.Value), JsonRequestBehavior.AllowGet);
         }
     }
 }

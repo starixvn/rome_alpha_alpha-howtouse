@@ -65,6 +65,7 @@ class DefaultPage {
             self.cacheCurrentUrl();
         });
 
+        this.reCheckin();
         setTimeout(() => { this.reCheckin(); }, this.recheckInIntervalMiliseconds);
     };
 
@@ -121,7 +122,8 @@ class DefaultPage {
                     var errMsg = result.errMsg;
 
                     if (errCode !== 0) {
-                        self.topWindow.location.reload(true);
+                        //self.topWindow.location.reload(true);
+                        self.topWindow.location = self.$("#OldMainRootPath").val() + "/_Authorization/SignIn.aspx";
                     }
                 }
                 catch (e) {

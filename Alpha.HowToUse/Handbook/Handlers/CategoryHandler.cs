@@ -23,7 +23,8 @@ namespace Alpha.HowToUse.Handbook.Handlers
             var url = contentAPIUrl + "/api/categories/latest/all" +
                 "/" + LanguageConsts.Locales[userSession.LangKey.ToLowerInvariant()] +
                 "/" + AppSettingsHelper.SiteLabel +
-                "/" + userSession.RoleId;
+                "/" + userSession.RoleId +
+                "/" + AppSettingsHelper.ContentAPIEnvironment;
             var categories = apiHandler.Get<IEnumerable<CategoryModel>>(url);
 
             return categories;
@@ -35,7 +36,8 @@ namespace Alpha.HowToUse.Handbook.Handlers
                 "/" + slug +
                 "/" + LanguageConsts.Locales[userSession.LangKey.ToLowerInvariant()] +
                 "/" + AppSettingsHelper.SiteLabel +
-                "/" + userSession.RoleId;
+                "/" + userSession.RoleId +
+                "/" + AppSettingsHelper.ContentAPIEnvironment;
             var category = apiHandler.Get<CategoryModel>(url);
 
             return category;

@@ -46,6 +46,7 @@ var DefaultPage = /** @class */ (function () {
             _this.$("#ifr-main").on('load', function () {
                 self.cacheCurrentUrl();
             });
+            _this.reCheckin();
             setTimeout(function () { _this.reCheckin(); }, _this.recheckInIntervalMiliseconds);
         };
         this.searchArticle = function () {
@@ -97,7 +98,8 @@ var DefaultPage = /** @class */ (function () {
                         var errCode = result.errCode;
                         var errMsg = result.errMsg;
                         if (errCode !== 0) {
-                            self.topWindow.location.reload(true);
+                            //self.topWindow.location.reload(true);
+                            self.topWindow.location = self.$("#OldMainRootPath").val() + "/_Authorization/SignIn.aspx";
                         }
                     }
                     catch (e) {

@@ -26,7 +26,7 @@
 
         void Application_AcquireRequestState(object sender, EventArgs e)
         {
-            if (UserSession.Current.IsProtectedMode || UserSession.Current.CustId == 0)
+            if (UserSession.Current.IsProtectedMode || UserSession.Current.UserId <= 0)
             {
                 TerminateSessionAndSignOut();
             }
