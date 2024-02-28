@@ -20,18 +20,20 @@
     <div class="container">
         <div class="left-container"></div> <!-- keep this this to prevent break layout -->
         <div class="center-container">
-            <h2 class="title-page">@LanguageResources.Glossary</h2>
-            <div class="list-glossary">
-                @foreach (var a in alpha)
-                {
-                    var s = a.ToString();
-                    if (groups.ContainsKey(s))
+            <div class="sticky-glossary">
+                <h2 class="title-page">@LanguageResources.Glossary</h2>
+                <div class="list-glossary">
+                    @foreach (var a in alpha)
                     {
-                        <a data-val="@a"
-                           @(string.Equals(Model.Group, s) ? "class=active" : "")
-                           href="#ref-group-@a">@a</a>
+                        var s = a.ToString();
+                        if (groups.ContainsKey(s))
+                        {
+                            <a data-val="@a"
+                               @(string.Equals(Model.Group, s) ? "class=active" : "")
+                               href="#ref-group-@a">@a</a>
+                        }
                     }
-                }
+                </div>
             </div>
 
             @if (isGetAll && !glossaries.Any())
@@ -60,7 +62,7 @@
                         {
                             var gs = groups[s];
 
-                            <div id="ref-group-@a" class="characters">@(s).</div>
+                            <div class="characters">@(s).<span id="ref-group-@a" class="anchor-glossary"></span></div>
                             foreach (var g in gs)
                             {
                                 <div class="group-glossary">
@@ -81,12 +83,13 @@
                 </div>
             }
 
-
         </div>
         <div class="right-container"></div>
     </div>
+    <a class="icon-back-to-top" href="#" id="back-to-top"></a>
 
     @Html.Hidden("RootPath", Url.Content("~"))
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
+    
 </body>
 </html>

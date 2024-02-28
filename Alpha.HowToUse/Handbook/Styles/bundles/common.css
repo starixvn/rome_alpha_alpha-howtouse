@@ -425,11 +425,11 @@ mark,
 
 @font-face {
   font-family: 'Iconalpha';
-  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?1qpbqu');
-  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?1qpbqu#iefix') format('embedded-opentype'),
-    url('../base/fonts/iconhandbook/fonts/Iconalpha.ttf?1qpbqu') format('truetype'),
-    url('../base/fonts/iconhandbook/fonts/Iconalpha.woff?1qpbqu') format('woff'),
-    url('../base/fonts/iconhandbook/fonts/Iconalpha.svg?1qpbqu#Iconalpha') format('svg');
+  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?dz3vyc');
+  src:  url('../base/fonts/iconhandbook/fonts/Iconalpha.eot?dz3vyc#iefix') format('embedded-opentype'),
+    url('../base/fonts/iconhandbook/fonts/Iconalpha.ttf?dz3vyc') format('truetype'),
+    url('../base/fonts/iconhandbook/fonts/Iconalpha.woff?dz3vyc') format('woff'),
+    url('../base/fonts/iconhandbook/fonts/Iconalpha.svg?dz3vyc#Iconalpha') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -450,6 +450,10 @@ mark,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-back-to-top:before {
+  content: "\e90f";
+  color: #2b5d7e;
+}
 .icon-bullet1:before {
   content: "\e90c";
 }
@@ -1405,6 +1409,10 @@ a, a:focus, a:active, a:target, a:hover {
     padding-left: 12px; }
   .list-content li h3 {
     padding-left: 24px; }
+  .list-content li h4 {
+    padding-left: 36px; }
+  .list-content li h5 {
+    padding-left: 48px; }
   .list-content li a {
     line-height: 16px;
     display: inline-block;
@@ -1422,11 +1430,21 @@ a, a:focus, a:active, a:target, a:hover {
         height: calc(100% + 12px);
         background-color: #345164; }
 
+.sticky-glossary {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding-bottom: 13px; }
+
+.anchor-glossary {
+  position: relative;
+  top: -104px; }
+
 .list-glossary {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 6px 30px 13px; }
+  padding: 6px 30px 0; }
   .list-glossary a {
     margin: 0 5px 8px;
     display: inline-block;
@@ -1510,3 +1528,17 @@ a, a:focus, a:active, a:target, a:hover {
       margin-top: 8px; }
     .box-suggestion li:hover {
       background-color: #EDEDED; }
+
+.icon-back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  font-size: 24px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(222, 233, 239, 0.5);
+  border-radius: 50px;
+  cursor: pointer; }
