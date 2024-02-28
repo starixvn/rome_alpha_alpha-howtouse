@@ -132,4 +132,10 @@
 &lt;br /&gt;
 一如既往, 我们非常重视您的反馈及建议, 从而改进我们的服务。</value>
   </data>
+  <data name="Home" xml:space="preserve">
+    <value>主</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜寻</value>
+  </data>
 </root>

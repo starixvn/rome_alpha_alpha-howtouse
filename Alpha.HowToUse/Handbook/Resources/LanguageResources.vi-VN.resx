@@ -120,4 +120,10 @@
   <data name="Handbook" xml:space="preserve">
     <value>Handbook</value>
   </data>
+  <data name="Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
 </root>

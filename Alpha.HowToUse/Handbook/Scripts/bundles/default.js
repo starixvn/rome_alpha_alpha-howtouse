@@ -4,6 +4,13 @@ var AutoSuggestion = /** @class */ (function () {
         this.minSearchLength = 2;
         this.init = function (options) {
             _this.options = options;
+            _this.$(window).click(function () { _this.options.boxSuggestion.addClass('hidden'); });
+            var iframe = _this.$('#ifr-main');
+            iframe.on('load', function () {
+                var f = iframe[0];
+                var iframeWindow = f.contentWindow || f.contentDocument;
+                _this.$(iframeWindow.document).on('click touchend', function () { _this.options.boxSuggestion.addClass('hidden'); });
+            });
         };
         this.suggest = function () {
             var keyword = _this.options.elmSearch.val();
@@ -35,7 +42,14 @@ var AutoSuggestion = /** @class */ (function () {
                     }
                     _this.options.boxSuggestion.removeClass('hidden');
                 },
-                complete: function (jqXHR, textStatus) { }
+                error: function () {
+                    var ul = _this.options.boxSuggestion.find(">ul");
+                    ul.empty();
+                    ul.append('<li>' + _this.$("#NoRecords").val() + '</li>');
+                    _this.options.boxSuggestion.removeClass('hidden');
+                },
+                complete: function (jqXHR, textStatus) {
+                }
             });
         };
         this.selectedSuggestion = function (elm) {

@@ -129,4 +129,10 @@
 &lt;br /&gt;
 ทางเรายินดีรับฟังความคิดเห็นและข้อเสนอแนะที่มีคุณค่าจากคุณ เพื่อเป็นแนวทางการปรับปรุงการให้บริการที่ดียิ่งขึ้น</value>
   </data>
+  <data name="Home" xml:space="preserve">
+    <value>ทีมเหย้า</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>ค้นหา</value>
+  </data>
 </root>

@@ -12,6 +12,7 @@ namespace Alpha.HowToUse.Handbook.Controllers
     {
         public ArticleHandler articleHandler;
         private readonly IUserSession userSession;
+        private const int SuggestedLimit = 10;
 
         public ArticleController(IUserSession userSession)
         {
@@ -19,6 +20,7 @@ namespace Alpha.HowToUse.Handbook.Controllers
             articleHandler = new ArticleHandler(userSession);
         }
 
+        [HttpGet, ValidateInput(false)]
         public ActionResult Search(string keyword)
         {
             var langKey = userSession.LangKey.ToLowerInvariant();
@@ -37,10 +39,11 @@ namespace Alpha.HowToUse.Handbook.Controllers
             return View("~/Handbook/Views/Article/GetBySlug.cshtml", viewModel);
         }
 
+        [HttpGet, ValidateInput(false)]
         public JsonResult Suggest(string keyword)
         {
             var langKey = userSession.LangKey.ToLowerInvariant();
-            var result = articleHandler.Suggest(keyword);
+            var result = articleHandler.Suggest(keyword)?.Take(SuggestedLimit);
             return Json(result, JsonRequestBehavior.AllowGet);
         }
     }

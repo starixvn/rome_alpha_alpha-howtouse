@@ -9,6 +9,15 @@
 
     init = (options) => {
         this.options = options;
+
+        this.$(window).click(() => { this.options.boxSuggestion.addClass('hidden'); });
+
+        var iframe = this.$('#ifr-main');
+        iframe.on('load', () => {
+            var f = iframe[0] as any;
+            var iframeWindow = f.contentWindow || f.contentDocument;
+            this.$(iframeWindow.document).on('click touchend', () => { this.options.boxSuggestion.addClass('hidden'); });
+        });
     };
 
     suggest = () => {
@@ -46,7 +55,14 @@
 
                 this.options.boxSuggestion.removeClass('hidden');
             },
-            complete: function (jqXHR, textStatus) { }
+            error: () => {
+                var ul = this.options.boxSuggestion.find(">ul");
+                ul.empty();
+                ul.append('<li>' + this.$("#NoRecords").val() + '</li>');
+                this.options.boxSuggestion.removeClass('hidden');
+            },
+            complete: function (jqXHR, textStatus) {
+            }
         });
     };
 
