@@ -46,6 +46,11 @@ var DefaultPage = /** @class */ (function () {
                 $this.closest('.list-item-cat').find('>.item-cat').removeClass('open');
                 $this.closest('li').find('>.item-cat').addClass('open');
             });
+            _this.$(".item-slug").click(function () {
+                self.$(".item-cat.active").removeClass('active');
+                var $this = self.$(this);
+                $this.parents('.item-cat').addClass('active');
+            });
             _this.$("#ifr-main").on('load', function () {
                 self.cacheCurrentUrl();
             });

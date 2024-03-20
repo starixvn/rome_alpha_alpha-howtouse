@@ -12,6 +12,7 @@ class ArticleGetBySlug {
         this.$('.zoomed-img-container').click(() => {
             var container = this.$('.zoomed-img-container');
             container.addClass('hidden');
+            container.removeClass('show');
             container.empty();
         });;
     };
@@ -60,8 +61,7 @@ class ArticleGetBySlug {
 
             c.css({
                 width: 'unset',
-                height: 'unset',
-                top: 0,
+                height: 'unset',                
                 'max-width': '100%',
                 'max-height': self.$('body').height(),
                 'margin-top': self.$(window).scrollTop()
@@ -74,6 +74,10 @@ class ArticleGetBySlug {
 
             container.append(c);
             container.removeClass('hidden');
+            setTimeout(function () {
+                container.addClass('show');
+            }, 100);
+            
             e.preventDefault();
             return false;
         });

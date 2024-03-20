@@ -7,6 +7,7 @@ var ArticleGetBySlug = /** @class */ (function () {
             _this.$('.zoomed-img-container').click(function () {
                 var container = _this.$('.zoomed-img-container');
                 container.addClass('hidden');
+                container.removeClass('show');
                 container.empty();
             });
             ;
@@ -48,7 +49,6 @@ var ArticleGetBySlug = /** @class */ (function () {
                 c.css({
                     width: 'unset',
                     height: 'unset',
-                    top: 0,
                     'max-width': '100%',
                     'max-height': self.$('body').height(),
                     'margin-top': self.$(window).scrollTop()
@@ -59,6 +59,9 @@ var ArticleGetBySlug = /** @class */ (function () {
                 });
                 container.append(c);
                 container.removeClass('hidden');
+                setTimeout(function () {
+                    container.addClass('show');
+                }, 100);
                 e.preventDefault();
                 return false;
             });

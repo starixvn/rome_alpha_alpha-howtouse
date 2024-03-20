@@ -64,6 +64,12 @@ class DefaultPage {
             $this.closest('li').find('>.item-cat').addClass('open');
         });
 
+        this.$(".item-slug").click(function () {
+            self.$(".item-cat.active").removeClass('active');
+            var $this = self.$(this);
+            $this.parents('.item-cat').addClass('active');                 
+        });
+
         this.$("#ifr-main").on('load', () => {
             self.cacheCurrentUrl();
         });

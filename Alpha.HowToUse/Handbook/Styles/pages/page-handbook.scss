@@ -242,17 +242,7 @@
         padding: 4px 0 4px 48px;
 
         &:hover {
-            a {
-                color: #2B5D7E;
-            }
-
-            .icon-article {
-                &:before {
-                    color: #2B5D7E;
-                }
-            }
-
-            color: #2B5D7E;
+            
         }
     }
 }
@@ -264,8 +254,20 @@
     padding: 4px 0 4px 12px;
     cursor: pointer;
 
-    &:hover {
-        background-color: #EDEDED
+    &:hover, &.active {
+        background-color: #EDEDED;
+
+        a {
+            color: #2B5D7E;
+        }
+
+        .icon-article {
+            &:before {
+                color: #2B5D7E;
+            }
+        }
+
+        color: #2B5D7E;
     }
 
 
@@ -807,7 +809,7 @@
 }
 .anchor-glossary{
     position: relative;
-    top: -104px;
+    top: -134px;
 }
 .list-glossary {
     display: flex;
@@ -864,6 +866,7 @@
 
     ul {
         padding: 0 0 0 20px;
+        list-style: disc;
     }
 }
 .characters {
