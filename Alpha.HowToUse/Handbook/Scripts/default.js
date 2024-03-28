@@ -60,6 +60,9 @@ var DefaultPage = /** @class */ (function () {
         };
         this.searchArticle = function () {
             var keyword = _this.$('#txt-search').val();
+            if (keyword.length <= 2) {
+                return;
+            }
             _this.$("#ifr-main").attr("src", _this.$("#RootPath").val() + "Article/Search?keyword=" + keyword);
         };
         this.showHideLanguage = function () {

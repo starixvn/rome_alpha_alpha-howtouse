@@ -25,6 +25,9 @@ var HomePage = /** @class */ (function () {
         };
         this.searchArticle = function () {
             var keyword = _this.$('#txt-search').val();
+            if (keyword.length <= 2) {
+                return;
+            }
             location.href = _this.$("#RootPath").val() + "Article/Search?keyword=" + keyword;
         };
         this.selectedSuggestion = function (id) {

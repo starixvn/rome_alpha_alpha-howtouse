@@ -90,6 +90,10 @@ class DefaultPage {
 
     searchArticle = () => {
         var keyword = this.$('#txt-search').val();
+        if (keyword.length <= 2) {
+            return;
+        }
+
         this.$("#ifr-main").attr("src", this.$("#RootPath").val() + "Article/Search?keyword=" + keyword);
     };
 

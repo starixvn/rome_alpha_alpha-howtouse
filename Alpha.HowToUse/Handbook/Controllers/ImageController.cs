@@ -15,7 +15,7 @@ namespace Alpha.HowToUse.Handbook.Controllers
             handler = new ImageHandler();
         }
 
-        [OutputCache(Duration = 60 * 60 * 24, VaryByParam = "*", Location = OutputCacheLocation.ServerAndClient)]
+        [OutputCache(Duration = 60 * 60 * 24, VaryByParam = "*", Location = OutputCacheLocation.Client)]
         public ActionResult Get(string name)
         {
             var result = handler.Get(name);

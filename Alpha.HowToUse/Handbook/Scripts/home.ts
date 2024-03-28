@@ -37,6 +37,10 @@ class HomePage {
 
     searchArticle = () => {
         var keyword = this.$('#txt-search').val();
+        if (keyword.length <= 2) {
+            return;
+        }
+
         location.href = this.$("#RootPath").val() + "Article/Search?keyword=" + keyword;
     };
 
