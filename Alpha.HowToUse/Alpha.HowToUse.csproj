@@ -347,6 +347,10 @@
     <Content Include="Handbook\Styles\bundles\common.min.css">
       <DependentUpon>common.css</DependentUpon>
     </Content>
+    <Content Include="Handbook\Styles\bundles\page-default.css" />
+    <Content Include="Handbook\Styles\bundles\page-default.min.css">
+      <DependentUpon>page-default.css</DependentUpon>
+    </Content>
     <Content Include="Handbook\Styles\bundles\page-home.css" />
     <Content Include="Handbook\Styles\bundles\page-home.min.css">
       <DependentUpon>page-home.css</DependentUpon>
@@ -354,6 +358,9 @@
     <Content Include="Handbook\Styles\images\avatar.png" />
     <Content Include="Handbook\Styles\images\bg-search.png" />
     <Content Include="Handbook\Styles\images\content.png" />
+    <Content Include="Handbook\Styles\images\feedback-report.svg" />
+    <Content Include="Handbook\Styles\images\feedback.svg" />
+    <Content Include="Handbook\Styles\images\icon-close-feedback2.png" />
     <Content Include="Handbook\Styles\images\icon_user_default.png" />
     <Content Include="Handbook\Styles\images\logo.svg" />
     <Content Include="Handbook\Styles\pages\artiles\get-by-slug.css">
@@ -362,11 +369,11 @@
     <Content Include="Handbook\Styles\pages\artiles\get-by-slug.min.css">
       <DependentUpon>get-by-slug.css</DependentUpon>
     </Content>
-    <Content Include="Handbook\Styles\pages\page-handbook - Copy.css">
-      <DependentUpon>page-home.scss</DependentUpon>
+    <Content Include="Handbook\Styles\pages\page-default.css">
+      <DependentUpon>page-default.scss</DependentUpon>
     </Content>
-    <Content Include="Handbook\Styles\pages\page-handbook - Copy.min.css">
-      <DependentUpon>page-handbook - Copy.css</DependentUpon>
+    <Content Include="Handbook\Styles\pages\page-default.min.css">
+      <DependentUpon>page-default.css</DependentUpon>
     </Content>
     <Content Include="Handbook\Styles\pages\page-handbook.css">
       <DependentUpon>page-handbook.scss</DependentUpon>
@@ -811,6 +818,7 @@
     <Content Include="Handbook\Styles\pages\artiles\get-by-slug.scss" />
     <Content Include="Handbook\Views\Home\Blank.cshtml" />
     <Content Include="Handbook\Views\Default\GetBySlug.cshtml" />
+    <Content Include="Handbook\Styles\pages\page-default.scss" />
     <None Include="Web.backupMNL.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -867,6 +875,7 @@
     <Compile Include="Handbook\RouteConfig.cs" />
     <Compile Include="Handbook\Services\IProfileService.cs" />
     <Compile Include="Handbook\ViewModels\BriefProfileViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\ArticleViewModel.cs" />
     <Compile Include="Handbook\ViewModels\CategoryViewModel.cs" />
     <Compile Include="Handbook\ViewModels\HomeViewModel.cs" />
     <Compile Include="Handbook\ViewModels\GetBySlugViewModel.cs" />
@@ -956,6 +965,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Handbook\Resources\LanguageResources.ja-JP.resx" />
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.ko-KR.resx" />
     <EmbeddedResource Include="Handbook\Resources\LanguageResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>LanguageResources.Designer.cs</LastGenOutput>
@@ -991,6 +1001,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Handbook\Scripts\articles\get-by-slug.ts" />
     <TypeScriptCompile Include="Handbook\Scripts\auto-suggestion.ts" />
+    <Content Include="Handbook\Scripts\old-main.js" />
     <TypeScriptCompile Include="Handbook\Scripts\home.ts" />
     <TypeScriptCompile Include="Handbook\Scripts\glossary.ts" />
     <TypeScriptCompile Include="Handbook\Scripts\default.ts" />

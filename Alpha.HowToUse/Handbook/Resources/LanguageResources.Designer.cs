@@ -88,6 +88,15 @@ namespace Alpha.HowToUse.Handbook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string close {
+            get {
+                return ResourceManager.GetString("close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contents.
         /// </summary>
         public static string Contents {
@@ -124,11 +133,18 @@ namespace Alpha.HowToUse.Handbook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome to our Agency System,
+        ///   Looks up a localized string similar to Welcome to the &lt;b&gt;Agency Handbook&lt;/b&gt;!
         ///&lt;br /&gt;
-        ///Here, you’ll find a world of information to help you get familiar with all functionalities in our system including the Agent Wap version. This manual is a work in progress and will continue to be updated since we&apos;ll keep on enhancing our products and services. As a result, some sections might become obsolete and require updating.
         ///&lt;br /&gt;
-        ///To explore this handbook, please go through all functions in the left menu and each function will be described in detail on how it w [rest of string was truncated]&quot;;.
+        ///This Handbook equips you with everything you need to master Agency system&apos;s functionalities, and it is constantly updated to keep you in the loop with our latest offerings.
+        ///&lt;br /&gt;
+        ///&lt;br /&gt;
+        ///
+        ///&lt;b&gt;Explore Our Resources:&lt;/b&gt;
+        ///&lt;br /&gt;
+        ///- &lt;b&gt;Function Guides&lt;/b&gt;: Dive into detailed descriptions and step-by-step instructions for all functions listed in the left-hand menu.
+        ///&lt;br /&gt;
+        ///- &lt;b&gt;Glossary&lt;/b&gt;: Find clear explanations of all the terms used in Agency Syste [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HomePage_Content {
             get {

@@ -23,7 +23,8 @@
     width: 400px;
     height: 36px;
     font-size: 14px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    box-shadow: none; }
 
 .btn-search {
   border: 0;
@@ -99,7 +100,8 @@
         margin-top: 28px; }
       .menu ul li a {
         display: block;
-        color: #a4a4a4; }
+        color: #a4a4a4;
+        text-decoration: none; }
         .menu ul li a:hover {
           color: #345164;
           font-weight: 700; }
@@ -116,6 +118,8 @@
         text-align: center;
         line-height: 44px;
         border-radius: 5px; }
+        .menu ul li [class^="icon-"]:after, .menu ul li [class*=" icon-"]:after {
+          display: none; }
 
 .language {
   display: flex;
@@ -208,7 +212,8 @@
     display: inline-flex;
     align-items: flex-start;
     padding-right: 10px;
-    line-height: 28px; }
+    line-height: 28px;
+    text-decoration: none; }
   .item-cat .count {
     background: #DEE9EF;
     padding: 0 8px;
@@ -252,7 +257,8 @@
     .docsearch .search input {
       height: 48px;
       width: 100%;
-      padding: 0 12px; }
+      padding: 0 12px;
+      box-shadow: none; }
     .docsearch .search .btn-search {
       padding: 0 12px; }
 
@@ -365,7 +371,7 @@
     color: #828282;
     margin-bottom: 2px; }
   .item-article .read-more {
-    color: #345164; }
+    color: #107ABF; }
 
 .info-article {
   display: flex;
@@ -629,8 +635,8 @@
 
 .icon-back-to-top {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 65px;
+  right: 0;
   font-size: 24px;
   width: 42px;
   height: 42px;

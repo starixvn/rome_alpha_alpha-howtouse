@@ -1,18 +1,26 @@
 ﻿/// <reference path="auto-suggestion.ts" />
 
+declare var popupManager: any;
+
 class DefaultPage {
     $: JQueryStatic;
     topWindow: any;
     autoSuggestion: AutoSuggestion;
+    popupManager: any;
 
     enterKeyCode = 13;
     currentUrlCookieName = 'DFFKDHFJKLDHFJDH2';
     recheckInIntervalMiliseconds = 30000;
 
-    constructor($: JQueryStatic, topWindow: any, autoSuggestion: AutoSuggestion) {
+    constructor(
+        $: JQueryStatic,
+        topWindow: any,
+        autoSuggestion: AutoSuggestion,
+        popupManager: any) {
         this.$ = $;
         this.topWindow = topWindow;
         this.autoSuggestion = autoSuggestion;
+        this.popupManager = popupManager;
     }
 
     init = () => {
@@ -32,6 +40,8 @@ class DefaultPage {
                 ? currentUrl : "Home";
             this.$("#ifr-main").attr("src", mainSrc);
         }
+
+        this.initFeedbackFunction(undefined, 470);
     };
     registerEvents = () => {
         this.$('.btn-search').click(() => this.searchArticle());
@@ -67,7 +77,7 @@ class DefaultPage {
         this.$(".item-slug").click(function () {
             self.$(".item-cat.active").removeClass('active');
             var $this = self.$(this);
-            $this.parents('.item-cat').addClass('active');                 
+            $this.parents('.item-cat').addClass('active');
         });
 
         this.$("#ifr-main").on('load', () => {
@@ -148,10 +158,50 @@ class DefaultPage {
         var url = this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
         this.$("#ifr-main").attr("src", url);
     };
+
+    getCustomerCookiesName = (key) => {
+        var custId = this.$("#CustId").val();
+        var subAccId = this.$("#SubAccId").val();
+        return `${key}_${custId}_${subAccId}`;
+    };
+
+    initFeedbackFunction = (width, height) => {
+        const hideFeedbackFunctionSessionKey = this.getCustomerCookiesName('HideFeedbackFunction_Handbook');
+        if (sessionStorage.getItem(hideFeedbackFunctionSessionKey) === "1") {
+            return;
+        }
+
+        var functionId = 8;
+        var url = this.$("#MessageRootPath").val() + 'Feedback/CheckExist?id=' + functionId;
+        this.$.get(url, (result) => {
+            if (result.IsExist) {
+                return;
+            }
+
+            var feedbackFunction = this.$("#feedback-function");
+            const feedbackBox = feedbackFunction.find(".feedback-box");
+            feedbackBox.find(".txt-feedback").text(result.FunctionName || "Feedback");
+            feedbackBox
+                .off()
+                .click(() => {
+                    var url = this.$("#MessageRootPath").val() + 'Feedback/Function?id=' + functionId;
+                    this.popupManager.open(url, undefined, width || 440, height || 380, null, null, null, null, null, null, { customClass: "feedback-modal" });
+                });
+
+            feedbackFunction.find(".icon-close-feedback")
+                .off()
+                .click(function () {
+                    sessionStorage.setItem(hideFeedbackFunctionSessionKey, "1");
+                    feedbackFunction.addClass("hidden");
+                });
+
+            feedbackFunction.removeClass("hidden");
+        });
+    };
 };
 
 $(function () {
     const autoSuggestion = new AutoSuggestion($);
-    const page = new DefaultPage($, window.top, autoSuggestion);
+    const page = new DefaultPage($, window.top, autoSuggestion, popupManager);
     page.init();
 });

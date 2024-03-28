@@ -11,6 +11,12 @@
     ]
   },
   {
+    "outputFileName": "Handbook/Styles/bundles/page-default.css",
+    "inputFiles": [
+      "Handbook/Styles/pages/page-default.css"
+    ]
+  },
+  {
     "outputFileName": "Handbook/Styles/bundles/page-home.css",
     "inputFiles": [
       "Handbook/Styles/pages/page-home.css"
@@ -20,6 +26,7 @@
     "outputFileName": "Handbook/Scripts/bundles/default.js",
     "inputFiles": [
       "Handbook/Scripts/auto-suggestion.js",
+      "Handbook/Scripts/old-main.js",
       "Handbook/Scripts/default.js"
     ]
   },

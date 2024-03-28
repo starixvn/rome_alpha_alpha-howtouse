@@ -1,6 +1,6 @@
 /// <reference path="auto-suggestion.ts" />
 var DefaultPage = /** @class */ (function () {
-    function DefaultPage($, topWindow, autoSuggestion) {
+    function DefaultPage($, topWindow, autoSuggestion, popupManager) {
         var _this = this;
         this.enterKeyCode = 13;
         this.currentUrlCookieName = 'DFFKDHFJKLDHFJDH2';
@@ -20,6 +20,7 @@ var DefaultPage = /** @class */ (function () {
                     ? currentUrl : "Home";
                 _this.$("#ifr-main").attr("src", mainSrc);
             }
+            _this.initFeedbackFunction(undefined, 470);
         };
         this.registerEvents = function () {
             _this.$('.btn-search').click(function () { return _this.searchArticle(); });
@@ -122,16 +123,51 @@ var DefaultPage = /** @class */ (function () {
             var url = _this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
             _this.$("#ifr-main").attr("src", url);
         };
+        this.getCustomerCookiesName = function (key) {
+            var custId = _this.$("#CustId").val();
+            var subAccId = _this.$("#SubAccId").val();
+            return key + "_" + custId + "_" + subAccId;
+        };
+        this.initFeedbackFunction = function (width, height) {
+            var hideFeedbackFunctionSessionKey = _this.getCustomerCookiesName('HideFeedbackFunction_Handbook');
+            if (sessionStorage.getItem(hideFeedbackFunctionSessionKey) === "1") {
+                return;
+            }
+            var functionId = 8;
+            var url = _this.$("#MessageRootPath").val() + 'Feedback/CheckExist?id=' + functionId;
+            _this.$.get(url, function (result) {
+                if (result.IsExist) {
+                    return;
+                }
+                var feedbackFunction = _this.$("#feedback-function");
+                var feedbackBox = feedbackFunction.find(".feedback-box");
+                feedbackBox.find(".txt-feedback").text(result.FunctionName || "Feedback");
+                feedbackBox
+                    .off()
+                    .click(function () {
+                    var url = _this.$("#MessageRootPath").val() + 'Feedback/Function?id=' + functionId;
+                    _this.popupManager.open(url, undefined, width || 440, height || 380, null, null, null, null, null, null, { customClass: "feedback-modal" });
+                });
+                feedbackFunction.find(".icon-close-feedback")
+                    .off()
+                    .click(function () {
+                    sessionStorage.setItem(hideFeedbackFunctionSessionKey, "1");
+                    feedbackFunction.addClass("hidden");
+                });
+                feedbackFunction.removeClass("hidden");
+            });
+        };
         this.$ = $;
         this.topWindow = topWindow;
         this.autoSuggestion = autoSuggestion;
+        this.popupManager = popupManager;
     }
     return DefaultPage;
 }());
 ;
 $(function () {
     var autoSuggestion = new AutoSuggestion($);
-    var page = new DefaultPage($, window.top, autoSuggestion);
+    var page = new DefaultPage($, window.top, autoSuggestion, popupManager);
     page.init();
 });
 //# sourceMappingURL=default.js.map

@@ -53,7 +53,8 @@ namespace Alpha.HowToUse.Handbook.Controllers
                 Categories = categories.OrderBy(c => c.Order),
 
                 UserId = userSession.UserId,
-                CustId = userSession.CustId
+                CustId = userSession.CustId,
+                SubAccId = userSession.SubAccId
             };
 
             return View("~/Handbook/Views/Default/Index.cshtml", viewModel);

@@ -120,19 +120,64 @@
   <data name="Introduction" xml:space="preserve">
     <value> แนะนำ</value>
   </data>
-  <data name="HomePage_Content" xml:space="preserve">
-    <value>ยินดีต้อนรับเข้าสู่ระบบเอเย่นของเรา,
-&lt;br /&gt;
-ที่นี่ คุณจะพบโลกใบใหม่ที่เต็มไปด้วยข้อมูล ที่จะช่วยให้คุณคุ้นเคยกับฟังก์ชันของระบบเอเย่นในเวอร์ชั่น WAP คู่มือ นี้ยังอยู่ระหว่างดำเนินการ และจะยังคงเพิ่มเนื้อหาผลิตภัณฑ์การให้บริการที่ดียิ่งขึ้น อย่างไรก็ตาม อาจจะยังมีบางส่นที่ยังล้าสมัยและต้องใช้เวลาในการปรับปรุงเพิ่มเติม
-&lt;br /&gt;
-เพื่อสำรวจคู่มือนี้ คุณสามารถคลิกที่แถบเมนูซ้ายมือเพื่อดูรายละเอียดและการทำงานของแต่ละฟังก์ชัน คุณสามารถติดต่อ upline ของคุณได้ เพื่อสอบถามข้อมูลและคำแนะนำเพิ่มเติม
-&lt;br /&gt;
-ทางเรายินดีรับฟังความคิดเห็นและข้อเสนอแนะที่มีคุณค่าจากคุณ เพื่อเป็นแนวทางการปรับปรุงการให้บริการที่ดียิ่งขึ้น</value>
-  </data>
   <data name="Home" xml:space="preserve">
     <value>ทีมเหย้า</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>ค้นหา</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>ปิด</value>
+  </data>
+  <data name="HomePage_Title" xml:space="preserve">
+    <value>เราจะช่วยคุณได้อย่างไร?</value>
+  </data>
+  <data name="AllCategories" xml:space="preserve">
+    <value>ทุกหมวดหมู่</value>
+  </data>
+  <data name="Glossary" xml:space="preserve">
+    <value>อภิธานศัพท์</value>
+  </data>
+  <data name="PublishedOn" xml:space="preserve">
+    <value>เผยแพร่เมื่อ</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>สารบัญ</value>
+  </data>
+  <data name="AngencyHandbook" xml:space="preserve">
+    <value>คู่มือเอเย่นต์</value>
+  </data>
+  <data name="NoRecords" xml:space="preserve">
+    <value>ไม่มีข้อมูลที่จะแสดง</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>อ่านเพิ่มเติม</value>
+  </data>
+  <data name="Handbook" xml:space="preserve">
+    <value>คู่มื</value>
+  </data>
+  <data name="HomePage_Content" xml:space="preserve">
+    <value>ยินดีต้อนรับสู่ &lt;b&gt;คู่มือเอเย่นท์&lt;/b&gt;!
+&lt;br /&gt;
+&lt;br /&gt;
+คู่มือนี้จัดเตรียมทุกสิ่งที่คุณต้องการเพื่อควบคุมฟังก์ชันการทำงานของระบบเอเย่นท์ และมีการอัปเดตอยู่ตลอดเวลาเพื่อให้คุณไม่พลาดข้อเสนอล่าสุดของเรา
+&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;b&gt;สำรวจทรัพยากรของเรา:&lt;/b&gt;
+&lt;br /&gt;
+- &lt;b&gt;คำแนะนำเกี่ยวกับฟังก์ชัน&lt;/b&gt;: เจาะลึกคำอธิบายโดยละเอียดและคำแนะนำทีละขั้นตอนสำหรับฟังก์ชันทั้งหมดที่แสดงอยู่ในเมนูด้านซ้าย
+&lt;br /&gt;
+- &lt;b&gt;อภิธานศัพท์&lt;/b&gt;: ค้นหาคำอธิบายที่ชัดเจนของคำศัพท์ทั้งหมดที่ใช้ในระบบเอเย่นท์
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;ต้องการความช่วยเหลือเพิ่มเติม?&lt;/b&gt;
+&lt;br /&gt;
+หากต้องการความช่วยเหลือเกี่ยวกับคุณสมบัติใหม่หรือต้องการคำชี้แจงของศัพท์ใดๆ โปรดติดต่ออัพไลน์ของคุณ
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;ความคิดเห็นของคุณมีความสำคัญ!&lt;/b&gt;
+&lt;br /&gt;
+แบ่งปันความคิดของคุณเพื่อช่วยเราปรับปรุงคู่มือเล่มนี้และปรับปรุงประสบการณ์โดยรวมของคุณ</value>
   </data>
 </root>

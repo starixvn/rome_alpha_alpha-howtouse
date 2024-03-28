@@ -148,13 +148,28 @@
     <value>Introduction</value>
   </data>
   <data name="HomePage_Content" xml:space="preserve">
-    <value>Welcome to our Agency System,
+    <value>Welcome to the &lt;b&gt;Agency Handbook&lt;/b&gt;!
 &lt;br /&gt;
-Here, you’ll find a world of information to help you get familiar with all functionalities in our system including the Agent Wap version. This manual is a work in progress and will continue to be updated since we'll keep on enhancing our products and services. As a result, some sections might become obsolete and require updating.
 &lt;br /&gt;
-To explore this handbook, please go through all functions in the left menu and each function will be described in detail on how it works. For additional instruction on how to approach new functions, please contact your upline.
+This Handbook equips you with everything you need to master Agency system's functionalities, and it is constantly updated to keep you in the loop with our latest offerings.
 &lt;br /&gt;
-We would, as always, value your feedback and suggestions to help us improve our services</value>
+&lt;br /&gt;
+
+&lt;b&gt;Explore Our Resources:&lt;/b&gt;
+&lt;br /&gt;
+- &lt;b&gt;Function Guides&lt;/b&gt;: Dive into detailed descriptions and step-by-step instructions for all functions listed in the left-hand menu.
+&lt;br /&gt;
+- &lt;b&gt;Glossary&lt;/b&gt;: Find clear explanations of all the terms used in Agency System.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Need More Help?&lt;/b&gt;
+&lt;br /&gt;
+For assistance with new features or clarification on any terms, feel free to contact your upline.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Your Feedback Matters!&lt;/b&gt;
+&lt;br /&gt;
+Share your thoughts to help us enhance this Handbook and improve your overall experience.</value>
   </data>
   <data name="NoRecords" xml:space="preserve">
     <value>There are no records to display.</value>
@@ -164,5 +179,8 @@ We would, as always, value your feedback and suggestions to help us improve our 
   </data>
   <data name="Contents" xml:space="preserve">
     <value>Contents</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>Close</value>
   </data>
 </root>

@@ -26,5 +26,9 @@
   {
     "outputFile": "Handbook/Styles/pages/artiles/get-by-slug.css",
     "inputFile": "Handbook/Styles/pages/artiles/get-by-slug.scss"
+  },
+  {
+    "outputFile": "Handbook/Styles/pages/page-default.css",
+    "inputFile": "Handbook/Styles/pages/page-default.scss"
   }
 ]
