@@ -165,6 +165,23 @@ body:not(.en-US) .box .box-title {
       padding: 5px;
       vertical-align: middle;
       height: 32px; }
+  .detail-article .article-content table.table-no-border {
+    width: auto !important;
+    height: auto !important;
+    border: 0;
+    margin: 0 0 12px !important; }
+    .detail-article .article-content table.table-no-border tr th, .detail-article .article-content table.table-no-border tr td {
+      border: 0;
+      text-align: left;
+      vertical-align: top;
+      padding: 0;
+      font-weight: normal;
+      width: auto !important;
+      height: auto !important;
+      font-size: 16px;
+      line-height: 26px; }
+      .detail-article .article-content table.table-no-border tr th[rowspan], .detail-article .article-content table.table-no-border tr td[rowspan] {
+        white-space: nowrap; }
 
 .box {
   border: 1px solid #D1D1D1;

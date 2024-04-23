@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 
 namespace Alpha.HowToUse.Handbook.Configurations
 {
@@ -14,5 +15,18 @@ namespace Alpha.HowToUse.Handbook.Configurations
         public static string SiteLabel789y => ConfigurationManager.AppSettings["SiteLabel789y"];
         public static bool IsSiteLabel789y => SiteLabel.Equals(SiteLabel789y);
         public static bool SupportVietnamese => IsSiteLabel789y;
+
+        public static bool SupportedNewHandbook
+        {
+            get
+            {
+                var label = SiteLabel;
+                var marketsSupportedNewHandbook = ConfigurationManager.AppSettings["MarketsSupportedNewHandbook"];
+
+                return string.Equals("*", marketsSupportedNewHandbook, StringComparison.OrdinalIgnoreCase)
+                        || (!string.IsNullOrWhiteSpace(marketsSupportedNewHandbook)
+                            && ("," + marketsSupportedNewHandbook + ",").ToLowerInvariant().IndexOf(label.ToLowerInvariant()) != -1);
+            }
+        }
     }
 }

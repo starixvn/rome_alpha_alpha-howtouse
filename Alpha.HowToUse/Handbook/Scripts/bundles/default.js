@@ -465,6 +465,12 @@ var DefaultPage = /** @class */ (function () {
                 _this.$("#ifr-main").attr("src", mainSrc);
             }
             _this.initFeedbackFunction(undefined, 470);
+            window.onfocus = function () { _this.reCheckin(); };
+            _this.$("#ifr-main").on('load.newmain', function () { _this.reCheckin(); });
+            try {
+                document.addEventListener("visibilitychange", function () { !document.hidden && _this.reCheckin(); });
+            }
+            catch (e) { }
         };
         this.registerEvents = function () {
             _this.$('.btn-search').click(function () { return _this.searchArticle(); });

@@ -2,11 +2,10 @@
 using System.Web.Mvc;
 using System.Web.UI;
 using Alpha.HowToUse.Handbook.Handlers;
-using Alpha.Web;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class ImageController : BaseController
+    public class ImageController : HandbookBaseController
     {
         public ImageHandler handler;
 

@@ -1,11 +1,9 @@
-﻿using System.Web.Mvc;
-using Alpha.HowToUse.Handbook.Handlers;
-using Alpha.Web;
+﻿using Alpha.HowToUse.Handbook.Handlers;
 using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class LanguageController : BaseController
+    public class LanguageController : HandbookBaseController
     {
         private readonly IUserSession userSession;
         public LanguageHandler handler;

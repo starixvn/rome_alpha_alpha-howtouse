@@ -4,12 +4,11 @@ using Alpha.HowToUse.Handbook.Consts;
 using Alpha.HowToUse.Handbook.Handlers;
 using Alpha.HowToUse.Handbook.Models;
 using Alpha.HowToUse.Handbook.ViewModels;
-using Alpha.Web;
 using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class CategoryController : BaseController
+    public class CategoryController : HandbookBaseController
     {
         public CategoryHandler handler;
         private readonly IUserSession userSession;

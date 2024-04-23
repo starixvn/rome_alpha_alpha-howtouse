@@ -5,12 +5,11 @@ using Alpha.HowToUse.Handbook.Handlers;
 using Alpha.HowToUse.Handbook.Models;
 using Alpha.HowToUse.Handbook.Services;
 using Alpha.HowToUse.Handbook.ViewModels;
-using Alpha.Web;
 using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class DefaultController : BaseController
+    public class DefaultController : HandbookBaseController
     {
         private readonly IUserSession userSession;
         public readonly IProfileService profileService;

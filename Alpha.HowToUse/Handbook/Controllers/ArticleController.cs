@@ -4,12 +4,11 @@ using System.Web.Mvc;
 using Alpha.HowToUse.Handbook.Handlers;
 using Alpha.HowToUse.Handbook.Models;
 using Alpha.HowToUse.Handbook.ViewModels;
-using Alpha.Web;
 using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class ArticleController : BaseController
+    public class ArticleController : HandbookBaseController
     {
         public ArticleHandler articleHandler;
         private readonly IUserSession userSession;

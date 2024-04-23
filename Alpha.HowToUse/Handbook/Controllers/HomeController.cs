@@ -1,11 +1,10 @@
 ﻿using System.Web.Mvc;
 using Alpha.HowToUse.Handbook.ViewModels;
-using Alpha.Web;
 using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class HomeController : BaseController
+    public class HomeController : HandbookBaseController
     {
         private readonly IUserSession userSession;
 

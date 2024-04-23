@@ -1,12 +1,11 @@
 ﻿using System.Web.Mvc;
 using Alpha.HowToUse.Handbook.Handlers;
 using Alpha.HowToUse.Handbook.ViewModels;
-using Alpha.Web;
 using AlphaPlus.User.Models;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
-    public class GlossaryController : BaseController
+    public class GlossaryController : HandbookBaseController
     {
         private readonly IUserSession userSession;
         public GlossaryHandler glossaryHandler;

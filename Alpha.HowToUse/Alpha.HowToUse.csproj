@@ -845,6 +845,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Handbook\Consts\LanguageConsts.cs" />
+    <Compile Include="Handbook\Controllers\HandbookBaseController.cs" />
     <Compile Include="Handbook\Controllers\ImageController.cs" />
     <Compile Include="Handbook\Controllers\CategoryController.cs" />
     <Compile Include="Handbook\Controllers\ArticleController.cs" />
