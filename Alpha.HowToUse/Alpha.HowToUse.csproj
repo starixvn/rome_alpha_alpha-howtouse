@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -23,6 +24,7 @@
     <TargetFrameworkProfile />
     <Use64BitIISExpress />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <TypeScriptToolsVersion>4.3</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,11 +55,23 @@
     <Reference Include="AlphaPlus.Configurations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AlphaPlus.Configurations.1.0.0\lib\netstandard2.0\AlphaPlus.Configurations.dll</HintPath>
     </Reference>
+    <Reference Include="AlphaPlus.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AlphaPlus.Logging.1.0.0\lib\netstandard2.0\AlphaPlus.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="AlphaPlus.Logging.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AlphaPlus.Logging.Web.1.0.0\lib\net461\AlphaPlus.Logging.Web.dll</HintPath>
+    </Reference>
     <Reference Include="AlphaPlus.User.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AlphaPlus.User.Models.1.0.0\lib\netstandard2.0\AlphaPlus.User.Models.dll</HintPath>
     </Reference>
     <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyNetQ, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyNetQ.2.3.3\lib\net451\EasyNetQ.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.Age.UI, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Age.UI.4.0.0\lib\net461\Fanex.Age.UI.dll</HintPath>
@@ -71,19 +85,40 @@
     <Reference Include="Fanex.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Common.1.1.0.1\lib\net40\Fanex.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.Logging, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.Logging.2.0.0\lib\net461\Fanex.Logging.dll</HintPath>
+    <Reference Include="Fanex.Data, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Data.4.2.2\lib\net461\Fanex.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Data.Repository, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Data.Repository.4.2.2\lib\net461\Fanex.Data.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Data.SqlServer, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Data.SqlServer.4.2.2\lib\net461\Fanex.Data.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Logging, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Logging.2.0.1\lib\net461\Fanex.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.Logging.Extensions, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Logging.Extensions.1.0.6\lib\net461\Fanex.Logging.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Fanex.Logging.Extensions.Database, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Logging.Extensions.Database.1.0.8\lib\net461\Fanex.Logging.Extensions.Database.dll</HintPath>
+    </Reference>
     <Reference Include="Fanex.Logging.Extensions.Web, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Logging.Extensions.Web.1.0.8\lib\net461\Fanex.Logging.Extensions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Logging.RabbitMQ, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Logging.RabbitMQ.1.0.1\lib\net461\Fanex.Logging.RabbitMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.Logging.Sentry.RavenClient, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Logging.Sentry.RavenClient.1.0.1\lib\net461\Fanex.Logging.Sentry.RavenClient.dll</HintPath>
     </Reference>
     <Reference Include="MessagePack, Version=1.7.3.4, Culture=neutral, PublicKeyToken=b4a0369545f0a1be, processorArchitecture=MSIL">
       <HintPath>..\packages\MessagePack.1.7.3.4\lib\net45\MessagePack.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.1.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28\lib\net46\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -92,8 +127,8 @@
     <Reference Include="Microsoft.Web.RedisSessionStateProvider, Version=2.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.RedisSessionStateProvider.2.2.6\lib\net40\Microsoft.Web.RedisSessionStateProvider.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Nini, Version=1.1.0.0, Culture=neutral, PublicKeyToken=691faec150a7fa7b, processorArchitecture=MSIL">
       <HintPath>..\packages\Trove.Nini.1.1.0.0\lib\net20\Nini.dll</HintPath>
@@ -102,9 +137,24 @@
     <Reference Include="Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2, processorArchitecture=MSIL">
       <HintPath>..\packages\Pipelines.Sockets.Unofficial.1.0.7\lib\net461\Pipelines.Sockets.Unofficial.dll</HintPath>
     </Reference>
+    <Reference Include="RabbitMQ.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\RabbitMQ.Client.5.1.2\lib\net451\RabbitMQ.Client.dll</HintPath>
+    </Reference>
     <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.105.2.3\lib\net4\RestSharp.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpRaven, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpRaven.2.4.0\lib\net45\SharpRaven.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.3.2.2\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.3.2.2\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.2.2\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
       <HintPath>..\packages\StackExchange.Redis.2.0.519\lib\net461\StackExchange.Redis.dll</HintPath>
@@ -142,6 +192,12 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
       <Private>True</Private>
@@ -168,6 +224,7 @@
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -219,6 +276,117 @@
     <Content Include="Content.htm" />
     <Content Include="Footer.html" />
     <Content Include="Global.asax" />
+    <Content Include="Handbook\App_Data\SPNames\INTERNAL.MNL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\INTERNAL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\LOCAL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\MNL\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\PRO\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\SIT\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\App_Data\SPNames\UAT\DBAGE.bodb_AGE.xml" />
+    <Content Include="Handbook\Scripts\bundles\articles\get-by-slug.js" />
+    <Content Include="Handbook\Scripts\bundles\articles\get-by-slug.min.js">
+      <DependentUpon>get-by-slug.js</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Scripts\bundles\default.js" />
+    <Content Include="Handbook\Scripts\bundles\default.min.js">
+      <DependentUpon>default.js</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Scripts\bundles\glossary.js" />
+    <Content Include="Handbook\Scripts\bundles\glossary.min.js">
+      <DependentUpon>glossary.js</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Scripts\bundles\home.js" />
+    <Content Include="Handbook\Scripts\bundles\home.min.js">
+      <DependentUpon>home.js</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\demo-files\demo.css" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\demo-files\demo.js" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\demo.html" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\fonts\Iconalpha.svg" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\Read Me.txt" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\style.css" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Black.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BlackItalic.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Bold.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BoldItalic.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Light.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-LightItalic.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Medium.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-MediumItalic.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Regular.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-RegularItalic.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Thin.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-ThinItalic.svg" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\roboto.css" />
+    <Content Include="Handbook\Styles\base\reset.css">
+      <DependentUpon>reset.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\base\reset.min.css">
+      <DependentUpon>reset.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\base\roboto-fonts.css">
+      <DependentUpon>roboto-fonts.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\base\roboto-fonts.min.css">
+      <DependentUpon>roboto-fonts.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\base\scaffolding.css">
+      <DependentUpon>scaffolding.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\base\utilities.css">
+      <DependentUpon>utilities.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\base\utilities.min.css">
+      <DependentUpon>utilities.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\bundles\articles\get-by-slug.css" />
+    <Content Include="Handbook\Styles\bundles\articles\get-by-slug.min.css">
+      <DependentUpon>get-by-slug.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\bundles\common.css" />
+    <Content Include="Handbook\Styles\bundles\common.min.css">
+      <DependentUpon>common.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\bundles\page-default.css" />
+    <Content Include="Handbook\Styles\bundles\page-default.min.css">
+      <DependentUpon>page-default.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\bundles\page-home.css" />
+    <Content Include="Handbook\Styles\bundles\page-home.min.css">
+      <DependentUpon>page-home.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\images\avatar.png" />
+    <Content Include="Handbook\Styles\images\bg-search.png" />
+    <Content Include="Handbook\Styles\images\content.png" />
+    <Content Include="Handbook\Styles\images\feedback-report.svg" />
+    <Content Include="Handbook\Styles\images\feedback.svg" />
+    <Content Include="Handbook\Styles\images\icon-close-feedback2.png" />
+    <Content Include="Handbook\Styles\images\icon_user_default.png" />
+    <Content Include="Handbook\Styles\images\logo.svg" />
+    <Content Include="Handbook\Styles\pages\artiles\get-by-slug.css">
+      <DependentUpon>get-by-slug.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\pages\artiles\get-by-slug.min.css">
+      <DependentUpon>get-by-slug.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\pages\page-default.css">
+      <DependentUpon>page-default.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\pages\page-default.min.css">
+      <DependentUpon>page-default.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\pages\page-handbook.css">
+      <DependentUpon>page-handbook.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\pages\page-handbook.min.css">
+      <DependentUpon>page-handbook.css</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\pages\page-home.css">
+      <DependentUpon>page-home.scss</DependentUpon>
+    </Content>
+    <Content Include="Handbook\Styles\pages\page-home.min.css">
+      <DependentUpon>page-home.css</DependentUpon>
+    </Content>
     <Content Include="Index.aspx" />
     <Content Include="Index.htm" />
     <Content Include="Intro\Intro_en-US.html" />
@@ -563,6 +731,94 @@
       <SubType>Designer</SubType>
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Handbook\Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Handbook\Views\Default\Index.cshtml" />
+    <Content Include="Handbook\Views\Glossary\Index.cshtml" />
+    <Content Include="Handbook\Views\Article\Search.cshtml" />
+    <Content Include="Handbook\Views\Article\GetBySlug.cshtml" />
+    <Content Include="Handbook\Styles\base\reset.scss" />
+    <Content Include="Handbook\Styles\base\roboto-fonts.scss" />
+    <Content Include="Handbook\Styles\base\scaffolding.scss" />
+    <Content Include="Handbook\Styles\base\utilities.scss" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Black.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Black.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Black.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Black.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BlackItalic.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BlackItalic.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BlackItalic.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Bold.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Bold.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Bold.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Bold.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BoldItalic.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BoldItalic.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-BoldItalic.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Light.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Light.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Light.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Light.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-LightItalic.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-LightItalic.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-LightItalic.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-LightItalic.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Medium.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Medium.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Medium.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Medium.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-MediumItalic.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-MediumItalic.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-MediumItalic.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Regular.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Regular.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Regular.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Regular.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-RegularItalic.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-RegularItalic.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-RegularItalic.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-RegularItalic.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Thin.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Thin.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Thin.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-Thin.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-ThinItalic.eot" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-ThinItalic.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-ThinItalic.woff" />
+    <Content Include="Handbook\Styles\base\fonts\roboto\file-fonts\Roboto-ThinItalic.woff2" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\selection.json" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\fonts\Iconalpha.eot" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\fonts\Iconalpha.ttf" />
+    <Content Include="Handbook\Styles\base\fonts\iconhandbook\fonts\Iconalpha.woff" />
+    <Content Include="Handbook\Styles\pages\page-handbook.scss" />
+    <Content Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="typings\globals\bootstrap\typings.json" />
+    <Content Include="typings\globals\hammerjs\typings.json" />
+    <Content Include="typings\globals\jasmine-jquery\typings.json" />
+    <Content Include="typings\globals\jasmine\typings.json" />
+    <Content Include="typings\globals\jquery.blockui\typings.json" />
+    <Content Include="typings\globals\jquery.cookie\typings.json" />
+    <Content Include="typings\globals\jqueryui\typings.json" />
+    <Content Include="typings\globals\jquery\typings.json" />
+    <Content Include="typings\globals\moment\typings.json" />
+    <Content Include="typings\globals\storejs\typings.json" />
+    <Content Include="typings\globals\toastr\typings.json" />
+    <Content Include="Handbook\Views\Default\BriefProfile.cshtml" />
+    <Content Include="Handbook\Views\Home\Index.cshtml" />
+    <Content Include="Handbook\Views\Category\GetBySlug.cshtml" />
+    <Content Include="Handbook\Styles\pages\page-home.scss" />
+    <Content Include="Handbook\Styles\pages\artiles\get-by-slug.scss" />
+    <Content Include="Handbook\Views\Home\Blank.cshtml" />
+    <Content Include="Handbook\Views\Default\GetBySlug.cshtml" />
+    <Content Include="Handbook\Styles\pages\page-default.scss" />
     <None Include="Web.backupMNL.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -588,6 +844,45 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handbook\Consts\LanguageConsts.cs" />
+    <Compile Include="Handbook\Controllers\HandbookBaseController.cs" />
+    <Compile Include="Handbook\Controllers\ImageController.cs" />
+    <Compile Include="Handbook\Controllers\CategoryController.cs" />
+    <Compile Include="Handbook\Controllers\ArticleController.cs" />
+    <Compile Include="Handbook\Controllers\LanguageController.cs" />
+    <Compile Include="Handbook\Controllers\HomeController.cs" />
+    <Compile Include="Handbook\Controllers\GlossaryController.cs" />
+    <Compile Include="Handbook\Criteria\SelectProfilePictureCriteria.cs" />
+    <Compile Include="Handbook\Handlers\ImageHandler.cs" />
+    <Compile Include="Handbook\Handlers\ArticleHandler.cs" />
+    <Compile Include="Handbook\Handlers\GlossaryHandler.cs" />
+    <Compile Include="Handbook\Handlers\LanguageHandler.cs" />
+    <Compile Include="Handbook\Helpers\AppSettingsHelper.cs" />
+    <Compile Include="Handbook\GlobalExtension.cs" />
+    <Compile Include="Handbook\Controllers\DefaultController.cs" />
+    <Compile Include="Handbook\Handlers\APIHandler.cs" />
+    <Compile Include="Handbook\Handlers\CategoryHandler.cs" />
+    <Compile Include="Handbook\Models\GlossaryModel.cs" />
+    <Compile Include="Handbook\Models\CategoryModel.cs" />
+    <Compile Include="Handbook\Models\ArticleModel.cs" />
+    <Compile Include="Handbook\Models\MarketModel.cs" />
+    <Compile Include="Handbook\Models\ProfilePictureModel.cs" />
+    <Compile Include="Handbook\Models\SuggestionModel.cs" />
+    <Compile Include="Handbook\Resources\LanguageResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Handbook\RouteConfig.cs" />
+    <Compile Include="Handbook\Services\IProfileService.cs" />
+    <Compile Include="Handbook\ViewModels\BriefProfileViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\ArticleViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\CategoryViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\HomeViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\GetBySlugViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\SearchArticleViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\GlossaryViewModel.cs" />
+    <Compile Include="Handbook\ViewModels\IndexViewModel.cs" />
     <Compile Include="Helpers\TplSettingHelper.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -670,6 +965,16 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.ja-JP.resx" />
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.ko-KR.resx" />
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LanguageResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.th-TH.resx" />
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.vi-VN.resx" />
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.zh-CN.resx" />
+    <EmbeddedResource Include="Handbook\Resources\LanguageResources.zh-TW.resx" />
     <EmbeddedResource Include="LocalResources\HowToUse.ja-JP.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -694,12 +999,36 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Handbook\Scripts\articles\get-by-slug.ts" />
+    <TypeScriptCompile Include="Handbook\Scripts\auto-suggestion.ts" />
+    <Content Include="Handbook\Scripts\old-main.js" />
+    <TypeScriptCompile Include="Handbook\Scripts\home.ts" />
+    <TypeScriptCompile Include="Handbook\Scripts\glossary.ts" />
+    <TypeScriptCompile Include="Handbook\Scripts\default.ts" />
+    <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\hammerjs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jasmine-jquery\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jasmine\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jquery.blockui\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jquery.cookie\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jqueryui\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jquery\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\moment\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\storejs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\toastr\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

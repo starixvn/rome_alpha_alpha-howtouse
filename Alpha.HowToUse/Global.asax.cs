@@ -1,5 +1,6 @@
 ﻿namespace Alpha.UserGuide
 {
+    using Alpha.HowToUse.Handbook;
     using Alpha.HowToUse.Helpers;
     using Alpha.Web.Helpers;
     using AlphaPlus.Configurations;
@@ -14,6 +15,8 @@
     {
         protected void Application_Start()
         {
+            GlobalExtension.Init();
+
             AlphaPlus.Configurations.ConfigurationManager.Init(new ConfigurationHelper());
             TplSettings.UrlVersion = AppSettings.JsVersion;
             TplSettings.Init(new TplSettingHelper());
@@ -23,7 +26,7 @@
 
         void Application_AcquireRequestState(object sender, EventArgs e)
         {
-            if (UserSession.Current.IsProtectedMode)
+            if (UserSession.Current.IsProtectedMode || UserSession.Current.UserId <= 0)
             {
                 TerminateSessionAndSignOut();
             }
