@@ -210,4 +210,7 @@
   <data name="LastBets" xml:space="preserve">
     <value>เดิมพันล่าสุด </value>
   </data>
+  <data name="MemberBettingBehavior" xml:space="preserve">
+    <value>พฤติกรรมการเดิมพันของสมาชิก</value>
+  </data>
 </root>
