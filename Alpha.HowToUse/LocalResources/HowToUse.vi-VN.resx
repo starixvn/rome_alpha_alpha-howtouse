@@ -205,4 +205,7 @@
   <data name="LastBets" xml:space="preserve">
     <value>Cược Gần Nhất</value>
   </data>
+  <data name="MemberBettingBehavior" xml:space="preserve">
+    <value>Member Betting Behavior</value>
+  </data>
 </root>

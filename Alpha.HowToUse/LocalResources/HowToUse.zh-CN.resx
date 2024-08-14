@@ -210,4 +210,7 @@
   <data name="LastBets" xml:space="preserve">
     <value>最后投注</value>
   </data>
+  <data name="MemberBettingBehavior" xml:space="preserve">
+    <value>会员投注模式</value>
+  </data>
 </root>
