@@ -4,6 +4,7 @@
 
 @{
     Layout = null;
+    var relativePath = "../";
 }
 
 <!DOCTYPE html>
@@ -13,10 +14,10 @@
     <title>@LanguageResources.AngencyHandbook</title>
     @StaticResources.RenderStyles("~/Handbook/Styles/bundles/common")
 </head>
-<body data-lang="@Model.Language">
+<body data-lang="@Model.LanguageKey">
     <header class="header">
         <h1 class="logo">
-            <a target="main" href="~/Home" class="hover">
+            <a target="main" href="@AppPathHelper.GetRelativePath("site-howtouse", "../Home")" class="hover">
                 <img src="~/Handbook/Styles/images/logo.svg" alt="@LanguageResources.Handbook" />
             </a>
         </h1>
@@ -38,13 +39,13 @@
 
                 <ul class="list-menu">
                     <li class="item-menu">
-                        <a target="main" href="~/Home">
+                        <a target="main" href="@AppPathHelper.GetRelativePath("site-howtouse", "../Home")">
                             <span class="icon-home"></span>
                             @LanguageResources.Home
                         </a>
                     </li>
                     <li class="item-menu">
-                        <a target="main" href="~/Glossary">
+                        <a target="main" href="@AppPathHelper.GetRelativePath("site-howtouse", "../Glossary")">
                             <span class="icon-glossary"></span>
                             @LanguageResources.Glossary
                         </a>
@@ -73,18 +74,22 @@
                 <ul class="list-item-cat">
                     @foreach (var c in Model.Categories)
                     {
-                        @RenderCategory(c)
+                        @RenderCategory(c, relativePath)
                     }
                 </ul>
             </div>
         </div>
-        <iframe id="ifr-main" name="main" src="~/Article/GetBySlug?slug=@Model.Slug"></iframe>
+        <iframe id="ifr-main" name="main" src="@AppPathHelper.GetRelativePath("site-howtouse", "../Article/GetBySlug?slug=" + Model.Slug)"></iframe>
 
     </main>
 
     @Html.Hidden("OnUserId", Model.OnUserId)
+    @Html.Hidden("CustId", Model.CustId)
+    @Html.Hidden("SubAccId", Model.SubAccId)
+    @Html.Hidden("UserId", Model.UserId)
     @Html.Hidden("OldMainRootPath", Model.OldMainRootPath)
-    @Html.Hidden("RootPath", Url.Content("~"))
+    @Html.Hidden("MessageRootPath", Model.MessageRootPath)
+    @Html.Hidden("RootPath", AppPathHelper.GetRelativePath("site-howtouse", "../"))
     @Html.Hidden("NoRecords", LanguageResources.NoRecords)
     @Html.Hidden("SetCurrentURL", 0)
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
@@ -93,7 +98,7 @@
 </body>
 </html>
 
-@helper RenderCategory(CategoryModel category)
+@helper RenderCategory(CategoryModel category, string relativePath)
 {
     if (category.Categories == null || !category.Categories.Any())
     {
@@ -102,7 +107,7 @@
         <li>
             <div class="item-cat">
                 <span class="icon-right"></span>
-                <a class="text" target="main" href="~/Category/GetBySlug?slug=@category.Slug">
+                <a class="text" target="main" href="@category.GetUrl(relativePath)">
                     <span class="icon-folder"></span>@category.ShortName
                 </a>
                 <span class="count">@articles.Count()</span>
@@ -111,7 +116,7 @@
             <ul class="list-item-article">
                 @foreach (var a in articles)
                 {
-                    @RenderAticle(a)
+                    @RenderAticle(a, relativePath)
                 }
             </ul>
         </li>
@@ -122,7 +127,7 @@
     <li>
         <div class="item-cat">
             <span class="icon-right"></span>
-            <a class="text" target="main" href="~/Category/GetBySlug?slug=@category.Slug">
+            <a class="text" target="main" href="@category.GetUrl(relativePath)">
                 <span class="icon-folder"></span>@category.ShortName
             </a>
             <span class="count">@category.Categories.Count()</span>
@@ -130,17 +135,17 @@
         <ul class="list-item-cat">
             @foreach (var c in category.Categories)
             {
-                @RenderCategory(c)
+                @RenderCategory(c, relativePath)
             }
         </ul>
     </li>
 }
 
-@helper RenderAticle(ArticleModel a)
+@helper RenderAticle(ArticleModel a, string relativePath)
 {
     <li>
         <div class="item-cat">
-            <a class="text item-slug" target="main" href="~/Article/GetBySlug?slug=@a.Slug">
+            <a class="text item-slug" target="@a.GetTargetFrame()" href="@a.GetUrl(relativePath)">
                 <span class="icon-article"></span>@a.Title
             </a>
         </div>

@@ -24,6 +24,7 @@ namespace Alpha.HowToUse.Handbook.Controllers
             categoryHandler = new CategoryHandler(userSession);
         }
 
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public ActionResult Index()
         {
             var profilePicture = profileService.GetProfilePicture(userSession.CustId);
@@ -46,7 +47,8 @@ namespace Alpha.HowToUse.Handbook.Controllers
 
             var viewModel = new IndexViewModel
             {
-                Language = langKey,
+                LanguageKey = langKey,
+
                 OnUserId = userSession.OnUserId,
                 BriefProfile = briefProfile,
                 Categories = categories.OrderBy(c => c.Order),
@@ -59,6 +61,7 @@ namespace Alpha.HowToUse.Handbook.Controllers
             return View("~/Handbook/Views/Default/Index.cshtml", viewModel);
         }
 
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public ActionResult GetBySlug(string slug)
         {
             var profilePicture = profileService.GetProfilePicture(userSession.CustId);
@@ -70,15 +73,26 @@ namespace Alpha.HowToUse.Handbook.Controllers
 
             var langKey = userSession.LangKey.ToLowerInvariant();
             var locale = LanguageConsts.Locales[langKey];
-            var categories = categoryHandler.GetAll();
+            var categories = categoryHandler.GetAll() ?? Enumerable.Empty<CategoryModel>();
+            foreach (var c in categories)
+            {
+                if (c.Articles != null)
+                {
+                    c.Articles = c.Articles.OrderBy(a => a.Order);
+                }
+            }
 
             var viewModel = new GetBySlugViewModel
             {
-                Language = langKey,
+                LanguageKey = langKey,
                 OnUserId = userSession.OnUserId,
                 BriefProfile = briefProfile,
-                Categories = categories ?? Enumerable.Empty<CategoryModel>(),
-                Slug = slug
+                Categories = categories.OrderBy(c => c.Order),
+                Slug = slug,
+
+                UserId = userSession.UserId,
+                CustId = userSession.CustId,
+                SubAccId = userSession.SubAccId
             };
 
             return View("~/Handbook/Views/Default/GetBySlug.cshtml", viewModel);

@@ -45,7 +45,21 @@ class HomePage {
     };
 
     selectedSuggestion = (id) => {
-        location.href = this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
+        var url = this.$("#RootPath").val() + "Article/GetBySlugSuggest";
+        this.$.ajax({
+            type: "POST",
+            url: url,
+            data: { slug: id },
+            success: (result) => {
+                if (result.TargetFrame == 'main') {
+                    location.href = this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
+                } else {
+                    window.open(result.Url);
+                }
+            },
+            complete: () => {
+            }
+        });
     };
 };
 

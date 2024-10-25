@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using System.Linq;
 
 namespace Alpha.HowToUse.Handbook.Configurations
 {
@@ -20,12 +21,22 @@ namespace Alpha.HowToUse.Handbook.Configurations
         {
             get
             {
-                var label = SiteLabel;
                 var marketsSupportedNewHandbook = ConfigurationManager.AppSettings["MarketsSupportedNewHandbook"];
 
-                return string.Equals("*", marketsSupportedNewHandbook, StringComparison.OrdinalIgnoreCase)
-                        || (!string.IsNullOrWhiteSpace(marketsSupportedNewHandbook)
-                            && ("," + marketsSupportedNewHandbook + ",").ToLowerInvariant().IndexOf(label.ToLowerInvariant()) != -1);
+                if (string.IsNullOrWhiteSpace(marketsSupportedNewHandbook))
+                {
+                    return false;
+                }
+
+                if (string.Equals("*", marketsSupportedNewHandbook, StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                }
+
+                var label = SiteLabel;
+                return marketsSupportedNewHandbook
+                    .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Any(s => string.Equals(s, label, StringComparison.OrdinalIgnoreCase));
             }
         }
     }

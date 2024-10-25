@@ -527,9 +527,15 @@ var DefaultPage = /** @class */ (function () {
         this.changeLanguage = function (s) {
             _this.$.ajax({
                 type: 'GET',
-                url: "Language/Change?selected=" + s,
+                url: _this.$("#RootPath").val() + "Language/Change?selected=" + s,
                 success: function (data, textStatus, jqXHR) {
-                    _this.topWindow.location.reload(true);
+                    var currentURL = _this.getCurrentUrl();
+                    if (currentURL.indexOf('/Article/GetBySlug?') === -1) {
+                        _this.topWindow.location.reload(true);
+                    }
+                    else {
+                        _this.topWindow.location.href = currentURL.replace('/Article/GetBySlug?', '/Default/GetBySlug?');
+                    }
                 },
                 complete: function (jqXHR, textStatus) { }
             });
@@ -573,8 +579,22 @@ var DefaultPage = /** @class */ (function () {
             });
         };
         this.selectedSuggestion = function (id) {
-            var url = _this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
-            _this.$("#ifr-main").attr("src", url);
+            var url = _this.$("#RootPath").val() + "Article/GetBySlugSuggest";
+            _this.$.ajax({
+                type: "POST",
+                url: url,
+                data: { slug: id },
+                success: function (result) {
+                    if (result.TargetFrame == 'main') {
+                        _this.$("#ifr-main").attr("src", url);
+                    }
+                    else {
+                        window.open(result.Url);
+                    }
+                },
+                complete: function () {
+                }
+            });
         };
         this.getCustomerCookiesName = function (key) {
             var custId = _this.$("#CustId").val();

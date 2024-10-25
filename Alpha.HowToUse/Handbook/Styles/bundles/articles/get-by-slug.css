@@ -140,6 +140,14 @@ body:not(.en-US) .box .box-title {
         content: "\e90e";
         top: 7px;
         left: -2px; }
+      .detail-article .article-content ul li li li li:before {
+        content: "\e910";
+        top: 7px;
+        left: -2px; }
+      .detail-article .article-content ul li li li li li:before {
+        content: "\e911";
+        top: 7px;
+        left: -2px; }
   .detail-article .article-content ol {
     counter-reset: item;
     line-height: 16px;
@@ -191,34 +199,36 @@ body:not(.en-US) .box .box-title {
   .box .box-title {
     font-size: 18px;
     font-weight: 500; }
-  .box .box-content p {
-    font-size: 16px;
-    line-height: 1.625;
-    margin: 0; }
-  .box .box-content ul {
-    padding: 0;
-    margin: 0;
-    list-style: disc;
-    padding: 0 0 0 24px; }
-    .box .box-content ul li {
+  .box .box-content {
+    margin-bottom: 0 !important; }
+    .box .box-content p {
       font-size: 16px;
       line-height: 1.625;
-      margin: 0 !important; }
-      .box .box-content ul li:before {
-        font-family: 'Iconalpha' !important;
-        speak: never;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        font-size: 12px;
-        color: #333;
-        position: absolute;
-        content: "\e90d";
-        top: 7px;
-        left: -1px; }
+      margin: 0; }
+    .box .box-content ul {
+      padding: 0;
+      margin: 0;
+      list-style: disc;
+      padding: 0 0 0 24px; }
+      .box .box-content ul li {
+        font-size: 16px;
+        line-height: 1.625;
+        margin: 0 !important; }
+        .box .box-content ul li:before {
+          font-family: 'Iconalpha' !important;
+          speak: never;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          font-size: 12px;
+          color: #333;
+          position: absolute;
+          content: "\e90d";
+          top: 7px;
+          left: -1px; }
   .box-note {
     border-color: #90BDEA;
     background: #E7F3FF; }

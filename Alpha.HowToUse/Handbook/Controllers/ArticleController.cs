@@ -54,5 +54,13 @@ namespace Alpha.HowToUse.Handbook.Controllers
             var result = articleHandler.Suggest(keyword)?.Take(SuggestedLimit) ?? new List<SuggestionModel>();
             return Json(result.OrderBy(r => r.Value), JsonRequestBehavior.AllowGet);
         }
+
+        [HttpPost]
+        public JsonResult GetBySlugSuggest(string slug)
+        {
+            var article = articleHandler.GetBySlug(slug);
+
+            return Json(article, JsonRequestBehavior.AllowGet);
+        }
     }
 }
