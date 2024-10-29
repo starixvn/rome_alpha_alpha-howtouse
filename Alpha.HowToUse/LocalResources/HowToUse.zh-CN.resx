@@ -178,7 +178,7 @@
     <value>修改多重账号</value>
   </data>
   <data name="AgentList" xml:space="preserve">
-    <value>代理</value>
+    <value>代理名单</value>
   </data>
   <data name="BonusDetail" xml:space="preserve">
     <value>Bonus Detail</value>
@@ -187,7 +187,7 @@
     <value>总代理名单</value>
   </data>
   <data name="MemberList" xml:space="preserve">
-    <value>会员</value>
+    <value>会员名单</value>
   </data>
   <data name="BetCreditTracking" xml:space="preserve">
     <value>追踪投注额度</value>

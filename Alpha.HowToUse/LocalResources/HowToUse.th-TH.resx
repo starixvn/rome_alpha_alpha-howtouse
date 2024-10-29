@@ -178,7 +178,7 @@
     <value>แก้ไข หลากหลาย</value>
   </data>
   <data name="AgentList" xml:space="preserve">
-    <value>รายชื่อ เอเจนต์</value>
+    <value>รายชื่อเอเย่นต์</value>
   </data>
   <data name="BonusDetail" xml:space="preserve">
     <value>Bonus Detail</value>
@@ -187,10 +187,10 @@
     <value>รายชื่อตัวแทนหลัก</value>
   </data>
   <data name="MemberList" xml:space="preserve">
-    <value>รายชื่อลูกค้า</value>
+    <value>รายชื่อสมาชิก</value>
   </data>
   <data name="BetCreditTracking" xml:space="preserve">
-    <value>ติดตามเครดิตเดิมพัน</value>
+    <value>ความเคลื่อนไหวของเครดิตเดิมพัน</value>
   </data>
   <data name="MyWatchlist" xml:space="preserve">
     <value>รายการเฝ้าดูของฉัน</value>
