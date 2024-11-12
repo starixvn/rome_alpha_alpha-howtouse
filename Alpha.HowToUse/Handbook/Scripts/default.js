@@ -21,12 +21,6 @@ var DefaultPage = /** @class */ (function () {
                 _this.$("#ifr-main").attr("src", mainSrc);
             }
             _this.initFeedbackFunction(undefined, 470);
-            window.onfocus = function () { _this.reCheckin(); };
-            _this.$("#ifr-main").on('load.newmain', function () { _this.reCheckin(); });
-            try {
-                document.addEventListener("visibilitychange", function () { !document.hidden && _this.reCheckin(); });
-            }
-            catch (e) { }
         };
         this.registerEvents = function () {
             _this.$('.btn-search').click(function () { return _this.searchArticle(); });
@@ -61,8 +55,9 @@ var DefaultPage = /** @class */ (function () {
             _this.$("#ifr-main").on('load', function () {
                 self.cacheCurrentUrl();
             });
-            _this.reCheckin();
-            setTimeout(function () { _this.reCheckin(); }, _this.recheckInIntervalMiliseconds);
+            setTimeout(function () {
+                _this.reCheckin();
+            }, _this.recheckInIntervalMiliseconds);
         };
         this.searchArticle = function () {
             var keyword = _this.$('#txt-search').val();
@@ -120,7 +115,6 @@ var DefaultPage = /** @class */ (function () {
                     try {
                         result = eval("(" + result + ")");
                         var errCode = result.errCode;
-                        var errMsg = result.errMsg;
                         if (errCode !== 0) {
                             //self.topWindow.location.reload(true);
                             self.topWindow.location = self.$("#OldMainRootPath").val() + "/_Authorization/SignIn.aspx";

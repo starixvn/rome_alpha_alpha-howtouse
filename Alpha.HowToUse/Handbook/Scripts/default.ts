@@ -42,16 +42,6 @@ class DefaultPage {
         }
 
         this.initFeedbackFunction(undefined, 470);
-
-        window.onfocus = () => { this.reCheckin(); };
-
-        this.$("#ifr-main").on('load.newmain', () => { this.reCheckin(); });
-
-        try {
-            document.addEventListener("visibilitychange",
-                () => { !document.hidden && this.reCheckin(); });
-        }
-        catch (e) { }
     };
     registerEvents = () => {
         this.$('.btn-search').click(() => this.searchArticle());
@@ -94,8 +84,9 @@ class DefaultPage {
             self.cacheCurrentUrl();
         });
 
-        this.reCheckin();
-        setTimeout(() => { this.reCheckin(); }, this.recheckInIntervalMiliseconds);
+        setTimeout(() => {
+            this.reCheckin();
+        }, this.recheckInIntervalMiliseconds);
     };
 
     searchArticle = () => {
@@ -158,7 +149,6 @@ class DefaultPage {
                 try {
                     result = eval("(" + result + ")");
                     var errCode = result.errCode;
-                    var errMsg = result.errMsg;
 
                     if (errCode !== 0) {
                         //self.topWindow.location.reload(true);
