@@ -142,7 +142,8 @@ var DefaultPage = /** @class */ (function () {
                 data: { slug: id },
                 success: function (result) {
                     if (result.TargetFrame == 'main') {
-                        _this.$("#ifr-main").attr("src", url);
+                        var articleURL = _this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
+                        _this.$("#ifr-main").attr("src", articleURL);
                     }
                     else {
                         window.open(result.Url);
