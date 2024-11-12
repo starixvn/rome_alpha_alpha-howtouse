@@ -94,7 +94,7 @@
     @Html.Hidden("SetCurrentURL", 0)
     @StaticResources.AssetScripts.RenderCommon("/bundles/common/common")
     @StaticResources.AssetScripts.Render("/bundles/site-handbook/common")
-    @StaticResources.RenderScripts("~/Handbook/Scripts/bundles/default")
+    <script type="text/javascript" src="@Url.Content("~/Handbook/Scripts/bundles/default.min.js?v=2")"></script>
 </body>
 </html>
 
