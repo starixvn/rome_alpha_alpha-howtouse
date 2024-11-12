@@ -7,13 +7,13 @@ namespace Alpha.HowToUse.Handbook.ViewModels
 {
     public class IndexViewModel
     {
-        public string Language { get; set; }
+        public string LanguageKey { get; set; }
         public int OnUserId { get; set; }
 
         public bool SupportVietnamese => Configurations.AppSettingsHelper.SupportVietnamese;
-        public string LanguageName => LanguageConsts.LanguageNames[Language];
-        public string Locale => LanguageConsts.Locales[Language];
-        public string LanguageCode => LanguageConsts.Codes[Language];
+        public string LanguageName => LanguageConsts.LanguageNames[LanguageKey];
+        public string Locale => LanguageConsts.Locales[LanguageKey];
+        public string LanguageCode => LanguageConsts.Codes[LanguageKey];
         public string OldMainRootPath => MicroSites.OldMainUrl("~/");
         public string MessageRootPath => MicroSites.MessageUrl("~/");
 

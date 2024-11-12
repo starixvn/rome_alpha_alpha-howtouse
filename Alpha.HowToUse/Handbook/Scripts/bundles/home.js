@@ -95,7 +95,22 @@ var HomePage = /** @class */ (function () {
             location.href = _this.$("#RootPath").val() + "Article/Search?keyword=" + keyword;
         };
         this.selectedSuggestion = function (id) {
-            location.href = _this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
+            var url = _this.$("#RootPath").val() + "Article/GetBySlugSuggest";
+            _this.$.ajax({
+                type: "POST",
+                url: url,
+                data: { slug: id },
+                success: function (result) {
+                    if (result.TargetFrame == 'main') {
+                        location.href = _this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
+                    }
+                    else {
+                        window.open(result.Url);
+                    }
+                },
+                complete: function () {
+                }
+            });
         };
         this.$ = $;
         this.autoSuggestion = autoSuggestion;

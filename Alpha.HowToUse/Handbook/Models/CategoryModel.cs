@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Alpha.Web.Helpers;
 
 namespace Alpha.HowToUse.Handbook.Models
 {
@@ -12,5 +13,10 @@ namespace Alpha.HowToUse.Handbook.Models
         public IEnumerable<CategoryModel> Categories { get; set; } = new List<CategoryModel>();
         public IEnumerable<MarketModel> Markets { get; set; } = new List<MarketModel>();
         public IEnumerable<ArticleModel> Articles { get; set; } = new List<ArticleModel>();
+
+        public string GetUrl(string relativePath = "")
+        {
+            return AppPathHelper.GetRelativePath("site-howtouse", $"{relativePath}Category/GetBySlug?slug=" + Slug);
+        }
     }
 }

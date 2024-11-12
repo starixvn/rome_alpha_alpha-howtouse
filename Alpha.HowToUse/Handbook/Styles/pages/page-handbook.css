@@ -523,6 +523,8 @@
     line-height: 16px;
     display: inline-block;
     font-weight: 500 !important; }
+    .list-content li a * {
+      font-weight: 500 !important; }
     .list-content li a.active, .list-content li a:hover {
       font-weight: bold;
       color: #345164;

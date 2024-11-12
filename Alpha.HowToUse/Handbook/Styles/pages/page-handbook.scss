@@ -791,6 +791,10 @@
             display: inline-block;
             font-weight: 500 !important;
 
+            * {
+                font-weight: 500 !important;
+            }
+
             &.active, &:hover {
                 font-weight: bold;
                 color: #345164;

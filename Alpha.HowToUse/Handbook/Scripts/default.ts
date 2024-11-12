@@ -120,9 +120,15 @@ class DefaultPage {
     changeLanguage = (s) => {
         this.$.ajax({
             type: 'GET',
-            url: "Language/Change?selected=" + s,
+            url: this.$("#RootPath").val() + "Language/Change?selected=" + s,
             success: (data, textStatus, jqXHR) => {
-                this.topWindow.location.reload(true);
+                var currentURL = this.getCurrentUrl();
+
+                if (currentURL.indexOf('/Article/GetBySlug?') === -1) {
+                    this.topWindow.location.reload(true);
+                } else {
+                    this.topWindow.location.href = currentURL.replace('/Article/GetBySlug?', '/Default/GetBySlug?');
+                }
             },
             complete: function (jqXHR, textStatus) { }
         });
@@ -169,8 +175,21 @@ class DefaultPage {
     };
 
     selectedSuggestion = (id) => {
-        var url = this.$("#RootPath").val() + "Article/GetBySlug?slug=" + id;
-        this.$("#ifr-main").attr("src", url);
+        var url = this.$("#RootPath").val() + "Article/GetBySlugSuggest";
+        this.$.ajax({
+            type: "POST",
+            url: url,
+            data: { slug: id },
+            success: (result) => {
+                if (result.TargetFrame == 'main') {
+                    this.$("#ifr-main").attr("src", url);
+                } else {
+                    window.open(result.Url);
+                }
+            },
+            complete: () => {
+            }
+        });
     };
 
     getCustomerCookiesName = (key) => {

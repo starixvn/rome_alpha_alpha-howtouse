@@ -217,6 +217,24 @@
                             top: 7px;
                             left: -2px;
                         }
+
+                        li {
+
+                            &:before {
+                                content: "\e910";
+                                top: 7px;
+                                left: -2px;
+                            }
+
+                            li {
+
+                                &:before {
+                                    content: "\e911";
+                                    top: 7px;
+                                    left: -2px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -302,6 +320,8 @@
     }
 
     .box-content {
+        margin-bottom: 0 !important;
+
         p {
             font-size: 16px;
             line-height: 1.625;

@@ -5,7 +5,9 @@
 @{
     Layout = null;
     var category = Model.Category ?? new Alpha.HowToUse.Handbook.Models.CategoryModel();
+    var relativePath = "../";
 }
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +23,7 @@
                 @foreach (var c in category.Categories)
                 {
 
-                    <a href="@Url.Content("~/Category/GetBySlug?slug=" + c.Slug)" class="item-folder">
+                    <a href="@c.GetUrl(relativePath)" class="item-folder">
                         <span class="icon-folder-open"></span>
                         <span class="title-cat">@c.Name</span>
                     </a>
@@ -30,7 +32,7 @@
             <div class="block-item">
                 @foreach (var a in category.Articles)
                 {
-                    <a href="@Url.Content("~/Article/GetBySlug?slug=" + a.Slug)" class="item-article-short">
+                    <a href="@a.GetUrl(relativePath)" target="@a.GetTargetFrame()" class="item-article-short">
                         <span class="icon-article"></span>
                         <span class="info">
                             <span class="title">@a.Title</span>
