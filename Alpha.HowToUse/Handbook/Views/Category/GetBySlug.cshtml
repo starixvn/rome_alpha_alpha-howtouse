@@ -14,8 +14,10 @@
     <meta name="viewport" content="width=device-width" />
     <title>@LanguageResources.AngencyHandbook</title>
     @StaticResources.RenderStyles("~/Handbook/Styles/bundles/common")
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagScript()
 </head>
 <body>
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagNoScript()
     <div class="container">
         <div class="left-container"></div> <!-- keep this this to prevent break layout -->
         <div class="center-container">

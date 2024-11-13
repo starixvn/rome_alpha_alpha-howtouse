@@ -14,8 +14,10 @@
     <title>@LanguageResources.AngencyHandbook</title>
     @StaticResources.RenderStyles("~/Handbook/Styles/bundles/common")
     @StaticResources.RenderStyles("~/Handbook/Styles/bundles/articles/get-by-slug")
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagScript()
 </head>
 <body class="@Model.Language">
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagNoScript()
     <div class="container">
         <div class="left-container"></div> <!-- keep this this to prevent break layout -->
         <div class="center-container">

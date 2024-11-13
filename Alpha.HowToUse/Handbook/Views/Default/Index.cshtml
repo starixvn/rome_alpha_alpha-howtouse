@@ -14,8 +14,10 @@
     @StaticResources.AssetStyles.RenderCommon("/bundles/common/common")
     @StaticResources.RenderStyles("~/Handbook/Styles/bundles/common")
     @StaticResources.RenderStyles("~/Handbook/Styles/bundles/page-default")
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagScript()
 </head>
 <body data-lang="@Model.LanguageKey">
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagNoScript()
     <header class="header">
         <h1 class="logo">
             <a target="main" href="@AppPathHelper.GetRelativePath("site-howtouse", "Home")" class="hover">
