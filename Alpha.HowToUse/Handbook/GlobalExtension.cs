@@ -15,6 +15,11 @@ using AlphaPlus.Logging;
 using AlphaPlus.Logging.Web;
 using Fanex.Logging.Extensions.Database;
 using Alpha.Web.Helpers;
+using Alpha.NetThrottling.Mvc;
+using Alpha.NetThrottling.Utils;
+using Alpha.NetThrottling;
+using Alpha.NetThrottling.Models;
+using Alpha.NetThrottling.Resolvers;
 
 namespace Alpha.HowToUse.Handbook
 {
@@ -35,6 +40,8 @@ namespace Alpha.HowToUse.Handbook
             var sensitivteInfo = new[] { "password", "seccode", "securitycode" };
             LoggingConfig.Init(sensitivteInfo, DatabaseInfoGetters.GetDbExceptionInfo);
 
+            GlobalFilters.Filters.Add(new NetThrottlingFilterAttribute(isUsedRedis: false));
+
             RegisterDIs();
 
             DbSettingProviderManager
@@ -53,9 +60,21 @@ namespace Alpha.HowToUse.Handbook
             container.RegisterPerWebRequest<IDynamicRepository, DynamicRepository>();
             container.RegisterPerWebRequest<IProfileService, ProfileService>();
 
+            RegisterNetThrottling(container);
+
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
             container.Verify();
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
+        }
+
+        private static void RegisterNetThrottling(Container container)
+        {
+            container.Register<INetThrottler>(() => new NetThrottler(false));
+            container.Register<IThrottleSetting>(() => new ThrottleSetting(false));
+            container.Register<IClock, Clock>(Lifestyle.Scoped);
+            container.Register<ILogger, Logger>(Lifestyle.Scoped);
+            container.Register<ICacheServiceFactory, CacheServiceFactory>(Lifestyle.Scoped);
+            container.Register<IResolver, BaseResolver>(Lifestyle.Scoped);
         }
     }
 }
