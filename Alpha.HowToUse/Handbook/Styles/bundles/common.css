@@ -988,7 +988,9 @@ a, a:focus, a:active, a:target, a:hover {
   width: 284px; }
   .right-container .inner {
     position: sticky;
-    top: 0; }
+    top: 0;
+    height: 96vh;
+    overflow: auto; }
 
 .user {
   width: 44px;
