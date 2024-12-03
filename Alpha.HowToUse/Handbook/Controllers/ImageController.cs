@@ -2,9 +2,11 @@
 using System.Web.Mvc;
 using System.Web.UI;
 using Alpha.HowToUse.Handbook.Handlers;
+using Alpha.NetThrottling.Mvc;
 
 namespace Alpha.HowToUse.Handbook.Controllers
 {
+    [DisableNetThrottling]
     public class ImageController : HandbookBaseController
     {
         public ImageHandler handler;

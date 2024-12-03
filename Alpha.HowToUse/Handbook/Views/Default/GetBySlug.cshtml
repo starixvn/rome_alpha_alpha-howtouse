@@ -13,8 +13,10 @@
     <meta name="viewport" content="width=device-width" />
     <title>@LanguageResources.AngencyHandbook</title>
     @StaticResources.RenderStyles("~/Handbook/Styles/bundles/common")
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagScript()
 </head>
 <body data-lang="@Model.LanguageKey">
+    @Alpha.Web.Helpers.GoogleAnalyticHepler.GtagNoScript()
     <header class="header">
         <h1 class="logo">
             <a target="main" href="@AppPathHelper.GetRelativePath("site-howtouse", "../Home")" class="hover">
